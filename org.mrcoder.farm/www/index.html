@@ -24,20 +24,43 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/magic.min.css">
+        <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="js/jqueryui.easings.min.js"></script>
+
+
         <title>Hello World</title>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          var pepe = $.fn.fullpage({
+            slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+          });
+
+          $('h1').hover(function () {
+            $(this).addClass('magictime perspectiveUp');
+          });
+
+        });
+      </script>
+
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+
+
+    <div class="section active" id="section0"><h1>fullPage.js</h1></div>
+
+    <div class="section" id="section1">
+      <div class="slide active"><h1>Simple Demo</h1></div>
+      <div class="slide"><h1>Only text</h1></div>
+      <div class="slide"><h1>And text</h1></div>
+      <div class="slide"><h1>And more text</h1></div>
+    </div>
+    <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+    <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+
     </body>
 </html>
