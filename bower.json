@@ -2,6 +2,8 @@
   "name": "likisfarm",
   "version": "0.0.0",
   "dependencies": {
+	  "magic": "https://github.com/miniMAC/magic.git",
+	  "jqueryFullPage": "https://github.com/alvarotrigo/fullPage.js.git"
   }
 }
 
