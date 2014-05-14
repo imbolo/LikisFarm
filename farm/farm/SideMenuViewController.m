@@ -7,6 +7,7 @@
 //
 
 #import "SideMenuViewController.h"
+#import "SWRevealViewController.h"
 
 @interface SideMenuViewController ()
 
@@ -27,6 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _menuItems = @[@"smcHome", @"smcTodos", @"smcCookbook", @"smcSettings"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +47,25 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
+{
+        // configure the segue.
+    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] )
+    {
+        SWRevealViewControllerSegue* rvcs = (SWRevealViewControllerSegue*) segue;
+        
+        SWRevealViewController* rvc = self.revealViewController;
+        NSAssert( rvc != nil, @"oops! must have a revealViewController" );
+        
+        NSAssert( [rvc.frontViewController isKindOfClass: [UINavigationController class]], @"oops!  for this segue we want a permanent navigation controller in the front!" );
+        
+        rvcs.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc)
+        {
+            UINavigationController* nc = [[UINavigationController alloc] initWithRootViewController:dvc];
+            [rvc pushFrontViewController:nc animated:YES];
+        };
+    }
+}
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -54,27 +75,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return self.menuItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    
-    switch ( indexPath.row )
-    {
-        case 0:
-            CellIdentifier = @"map";
-            break;
-            
-        case 1:
-            CellIdentifier = @"blue";
-            break;
-            
-        case 2:
-            CellIdentifier = @"red";
-            break;
-    }
+    NSString *CellIdentifier = [self.menuItems objectAtIndex: [indexPath row]];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
     
