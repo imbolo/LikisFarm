@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7350A403-EB89-4FC4-87C7-1E12D8C0D519</string>
+	<key>IDESourceControlProjectName</key>
+	<string>farm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0E64CC0B-15AB-4F51-9D88-CA36B353A6B3</key>
+		<string>ssh://github.com/imbolo/LikisFarm.git</string>
+		<key>EA8A51A4-E8DF-4F5D-BA5F-B703F4D274CF</key>
+		<string>ssh://github.com/imbolo/SWRevealViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>farm/farm.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0E64CC0B-15AB-4F51-9D88-CA36B353A6B3</key>
+		<string>../../..</string>
+		<key>EA8A51A4-E8DF-4F5D-BA5F-B703F4D274CF</key>
+		<string>../../../../../ios/SWRevealViewController</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/imbolo/LikisFarm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0E64CC0B-15AB-4F51-9D88-CA36B353A6B3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0E64CC0B-15AB-4F51-9D88-CA36B353A6B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LikisFarm</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA8A51A4-E8DF-4F5D-BA5F-B703F4D274CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SWRevealViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _menuItems = @[@"smcHome", @"smcTodos", @"smcCookbook", @"smcSettings"];
+    _menuItems = @[@"smcHome", @"smcReservation", @"smcMyfarm", @"smcCookbook", @"smcSettings"];
 }
 
 - (void)didReceiveMemoryWarning

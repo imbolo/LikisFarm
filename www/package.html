@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<style type="text/css">
+		.slider {
+			
+		}
+		.slider .bar {
+			height: 20px; width: 50%; clear: none; float: left;
+		}
+		.slider .barLeft {
+			border-radius: 10px 0 0 10px;
+			background: pink;
+		}
+		.slider .barRight {
+			border-radius: 0 10px 10px 0;
+			background: #afa;
+		}
+		.slider .handler {
+			position: relative; top: -4px;
+			height: 30px; width: 30px; border-radius: 30px; background: white;
+			border: 1px solid black;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="slider">
+			<div class="bar barLeft">
+			</div>
+			<div class="bar barRight">
+			</div>
+			<div class="handler">
+			</div>
+		</div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		var isMouseDown = false;
+		$('.handler').on('touchstart', function(ev) {
+			isMouseDown = true;
+		});
+		$(document).on('touchend', function(ev) {
+			isMouseDown = false;
+		});
+		$(document).on('touchmove', function(ev) {
+			if (!isMouseDown) {
+				return;
+			}
+			console.log(ev.touches[0].clientX);
+			$('.handler').css('left', ev.touches[0].clientX);
+		});
+		</script>
+	</body>
+</html>

@@ -1,19 +1,19 @@
 //
-//  TodosViewController.m
+//  ReservationViewController.m
 //  farm
 //
-//  Created by liuyang on 14-5-14.
+//  Created by liuyang on 14-5-15.
 //  Copyright (c) 2014年 mrcoder. All rights reserved.
 //
 
-#import "TodosViewController.h"
+#import "ReservationViewController.h"
 #import "SWRevealViewController.h"
 
-@interface TodosViewController ()
+@interface ReservationViewController ()
 
 @end
 
-@implementation TodosViewController
+@implementation ReservationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,7 +35,7 @@
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     
     //load html
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"todos" ofType:@"html"];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"reservation" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     
     NSString *path = [[NSBundle mainBundle] bundlePath];
@@ -45,8 +45,8 @@
     _webView.backgroundColor = [UIColor clearColor];
     _webView.opaque = NO;
     [_webView loadHTMLString:htmlString baseURL:baseURL];
-//    _webView.scrollView.scrollEnabled = NO;
-//    _webView.scrollView.bounces = NO;
+    _webView.scrollView.scrollEnabled = NO;
+    _webView.scrollView.bounces = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,5 +65,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)gotoShopcart:(id)sender {
+    NSLog(@"click goto shop button");
+    
+    UIViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"orderDetailView"];
+    
+    [self.navigationController pushViewController:nextView animated:YES];
+}
 
 @end

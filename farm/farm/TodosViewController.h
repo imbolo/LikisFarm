@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface TodosViewController : UIViewController
+@interface TodosViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButtonItem;
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

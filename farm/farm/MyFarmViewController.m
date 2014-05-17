@@ -1,18 +1,18 @@
 //
-//  BaseViewController.m
+//  MyFarmViewController.m
 //  farm
 //
-//  Created by liuyang on 14-5-14.
+//  Created by liuyang on 14-5-18.
 //  Copyright (c) 2014年 mrcoder. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "MyFarmViewController.h"
 
-@interface BaseViewController ()
+@interface MyFarmViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation MyFarmViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,10 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"viewBackground.png"]];
-    UIImage* image = [UIImage imageNamed:@"viewBackground.png"];
-    self.view.layer.contents = (id) image.CGImage;
-//    self.view.layer.backgroundColor = [UIColor clearColor].CGColor;
 }
 
 - (void)didReceiveMemoryWarning

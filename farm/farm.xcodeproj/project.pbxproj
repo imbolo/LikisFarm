@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD52AA6F1927660C00367197 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD52AA6E1927660C00367197 /* OrderDetailViewController.m */; };
+		CD52AA75192822A200367197 /* viewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA73192822A200367197 /* viewBackground.png */; };
+		CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA74192822A200367197 /* viewBackground@2x.png */; };
+		CD52AA781928264300367197 /* order-background.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA771928264300367197 /* order-background.png */; };
+		CD52AA7A192827D300367197 /* toPayBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA79192827D300367197 /* toPayBtn.png */; };
+		CD52AA7D192829E900367197 /* MyFarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD52AA7C192829E900367197 /* MyFarmViewController.m */; };
 		CDD8E4B81922E9E60095247B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD8E4B71922E9E60095247B /* Foundation.framework */; };
 		CDD8E4BA1922E9E60095247B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD8E4B91922E9E60095247B /* CoreGraphics.framework */; };
 		CDD8E4BC1922E9E60095247B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD8E4BB1922E9E60095247B /* UIKit.framework */; };
@@ -26,6 +32,10 @@
 		CDD8E4F81922EF9F0095247B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4F71922EF9F0095247B /* SWRevealViewController.m */; };
 		CDD8E4FB1922F3540095247B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4FA1922F3540095247B /* BaseViewController.m */; };
 		CDD8E4FE1922F35D0095247B /* TodosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4FD1922F35D0095247B /* TodosViewController.m */; };
+		CDE7907B19245AA1007996AB /* www in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907A19245AA1007996AB /* www */; };
+		CDE79080192466BB007996AB /* todos.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907F192466BB007996AB /* todos.html */; };
+		CDE79082192467E3007996AB /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE79081192467E3007996AB /* reservation.html */; };
+		CDE7908519246928007996AB /* ReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7908419246928007996AB /* ReservationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD52AA6D1927660C00367197 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		CD52AA6E1927660C00367197 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		CD52AA73192822A200367197 /* viewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewBackground.png; sourceTree = "<group>"; };
+		CD52AA74192822A200367197 /* viewBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viewBackground@2x.png"; sourceTree = "<group>"; };
+		CD52AA771928264300367197 /* order-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "order-background.png"; sourceTree = "<group>"; };
+		CD52AA79192827D300367197 /* toPayBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toPayBtn.png; sourceTree = "<group>"; };
+		CD52AA7B192829E900367197 /* MyFarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFarmViewController.h; sourceTree = "<group>"; };
+		CD52AA7C192829E900367197 /* MyFarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFarmViewController.m; sourceTree = "<group>"; };
 		CDD8E4B41922E9E60095247B /* farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD8E4B71922E9E60095247B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDD8E4B91922E9E60095247B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,6 +85,11 @@
 		CDD8E4FA1922F3540095247B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		CDD8E4FC1922F35D0095247B /* TodosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodosViewController.h; sourceTree = "<group>"; };
 		CDD8E4FD1922F35D0095247B /* TodosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodosViewController.m; sourceTree = "<group>"; };
+		CDE7907A19245AA1007996AB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = farm/www; sourceTree = "<group>"; };
+		CDE7907F192466BB007996AB /* todos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = todos.html; path = farm/todos.html; sourceTree = "<group>"; };
+		CDE79081192467E3007996AB /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reservation.html; sourceTree = "<group>"; };
+		CDE7908319246927007996AB /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
+		CDE7908419246928007996AB /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +116,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD52AA701928219C00367197 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				CD52AA73192822A200367197 /* viewBackground.png */,
+				CD52AA74192822A200367197 /* viewBackground@2x.png */,
+				CD52AA79192827D300367197 /* toPayBtn.png */,
+				CD52AA771928264300367197 /* order-background.png */,
+			);
+			name = res;
+			path = farm/res;
+			sourceTree = "<group>";
+		};
 		CDD8E4AB1922E9E60095247B = {
 			isa = PBXGroup;
 			children = (
+				CD52AA701928219C00367197 /* res */,
+				CDE7907C19246671007996AB /* pages */,
+				CDE7907A19245AA1007996AB /* www */,
 				CDD8E4EF1922EA060095247B /* library */,
 				CDD8E4BD1922E9E60095247B /* farm */,
 				CDD8E4DF1922E9E60095247B /* farmTests */,
@@ -128,17 +166,23 @@
 			isa = PBXGroup;
 			children = (
 				CDD8E4C61922E9E60095247B /* AppDelegate.h */,
+				CDD8E4C71922E9E60095247B /* AppDelegate.m */,
+				CD52AA6D1927660C00367197 /* OrderDetailViewController.h */,
+				CD52AA6E1927660C00367197 /* OrderDetailViewController.m */,
+				CDE7908319246927007996AB /* ReservationViewController.h */,
+				CDE7908419246928007996AB /* ReservationViewController.m */,
 				CDD8E4F31922EA580095247B /* SideMenuViewController.h */,
 				CDD8E4F41922EA580095247B /* SideMenuViewController.m */,
 				CDD8E4F91922F3540095247B /* BaseViewController.h */,
 				CDD8E4FA1922F3540095247B /* BaseViewController.m */,
 				CDD8E4FC1922F35D0095247B /* TodosViewController.h */,
 				CDD8E4FD1922F35D0095247B /* TodosViewController.m */,
-				CDD8E4C71922E9E60095247B /* AppDelegate.m */,
 				CDD8E4C91922E9E60095247B /* Main_iPhone.storyboard */,
 				CDD8E4CC1922E9E60095247B /* Main_iPad.storyboard */,
 				CDD8E4CF1922E9E60095247B /* ViewController.h */,
 				CDD8E4D01922E9E60095247B /* ViewController.m */,
+				CD52AA7B192829E900367197 /* MyFarmViewController.h */,
+				CD52AA7C192829E900367197 /* MyFarmViewController.m */,
 				CDD8E4D21922E9E60095247B /* Images.xcassets */,
 				CDD8E4BE1922E9E60095247B /* Supporting Files */,
 			);
@@ -181,6 +225,15 @@
 				CDD8E4F71922EF9F0095247B /* SWRevealViewController.m */,
 			);
 			name = library;
+			sourceTree = "<group>";
+		};
+		CDE7907C19246671007996AB /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				CDE7907F192466BB007996AB /* todos.html */,
+				CDE79081192467E3007996AB /* reservation.html */,
+			);
+			name = pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +312,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */,
+				CDE79082192467E3007996AB /* reservation.html in Resources */,
 				CDD8E4CE1922E9E60095247B /* Main_iPad.storyboard in Resources */,
 				CDD8E4D31922E9E60095247B /* Images.xcassets in Resources */,
 				CDD8E4CB1922E9E60095247B /* Main_iPhone.storyboard in Resources */,
+				CDE7907B19245AA1007996AB /* www in Resources */,
+				CD52AA781928264300367197 /* order-background.png in Resources */,
+				CD52AA75192822A200367197 /* viewBackground.png in Resources */,
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
+				CDE79080192466BB007996AB /* todos.html in Resources */,
+				CD52AA7A192827D300367197 /* toPayBtn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +344,13 @@
 				CDD8E4F51922EA580095247B /* SideMenuViewController.m in Sources */,
 				CDD8E4FB1922F3540095247B /* BaseViewController.m in Sources */,
 				CDD8E4D11922E9E60095247B /* ViewController.m in Sources */,
+				CD52AA6F1927660C00367197 /* OrderDetailViewController.m in Sources */,
+				CD52AA7D192829E900367197 /* MyFarmViewController.m in Sources */,
 				CDD8E4FE1922F35D0095247B /* TodosViewController.m in Sources */,
 				CDD8E4F81922EF9F0095247B /* SWRevealViewController.m in Sources */,
 				CDD8E4C81922E9E60095247B /* AppDelegate.m in Sources */,
 				CDD8E4C41922E9E60095247B /* main.m in Sources */,
+				CDE7908519246928007996AB /* ReservationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+        <style type="text/css">
+		* {
+		    -webkit-touch-callout: none;
+		    -webkit-user-select: none; 
+			-webkit-transition: all 0.3s;
+		}
+		body {
+			margin: 0px;
+			overflow: hidden;
+		}
+		.addToCart {
+			position: fixed;
+			bottom: 0;
+		}
+		.addToCart .count {
+			margin-bottom: 10px;
+			margin-left: 16px;
+			height: 64px;			
+			-webkit-box-shadow: 2px 3px 5px #000000;
+			box-shadow: 2px 3px 5px #000000;
+			background-color:rgba(255, 255, 255, 0.8);
+			-webkit-overflow-scrolling: touch;
+			-webkit-box-shadow: 5px 5px 28px #000000;
+			box-shadow: 5px 5px 28px #000000;
+		}
+		.addToCart img {			
+			width: 300px;
+		}
+		.count .cost {
+			margin-left: 20px;
+			display: inline-block;
+			line-height: 64px;
+			color: #4fbd97;
+			font-size: 32px;
+		}
+		.count .caculator {
+			position: absolute;
+			top: 16px; right: 24px;
+			display: inline-block;			
+		}
+		.caculator .operator {
+			display: inline-block;		
+			width: 32px; height: 32px;
+			line-height: 34px;
+			text-align: center;
+			border-radius: 4px;
+			background: #fa6649;
+			color: white;
+			opacity: 1;
+/*			font-size: 34px;*/
+		}
+		.caculator .operator:active {
+			background: #aa6649;
+		}
+		.caculator .mount {
+			display: inline-block;		
+			width: 32px; height: 32px;
+			line-height: 34px;
+			text-align: center;
+			border-radius: 4px;
+			background: white;
+/*			box-sizing: border-box;*/
+			border: 1px solid #fa6649;
+			color: grey;
+/*			font-size: 24px;*/
+		}
+		.arrow {
+		}
+		.arrow img.left {
+			position: absolute;
+			left: 0px;
+			top: 30%;
+			width: 30px;
+		}
+		.arrow img.right {
+			position: absolute;
+			right: 0px;
+			top: 30%;
+			width: 30px;
+			-webkit-transform: rotate(180deg);
+		}
+		.topMenu {			
+			position: absolute;
+			top: 0;
+			left: 10px;
+			height: 30px;			
+			overflow-x: scroll;
+			overflow-y: hidden;
+			-webkit-overflow-scrolling: touch;
+			-webkit-box-shadow: 5px 5px 28px #000000;
+			box-shadow: 5px 5px 28px #000000;
+			
+		}
+		.topMenu ul {
+			width: 400%;
+			margin-top: 0px;
+			margin-left: -40px;
+			list-style: none;
+			white-space: nowrap;
+		}
+		.topMenu ul li {
+			width: 74px;
+			height: 24px;
+			line-height: 22px;
+			text-align: center;
+			display: inline-block;
+			padding: 4px 10px;
+			float: left;
+			background: #231F20;
+			color: #4fbd97;
+			border-right: 1px dashed white;
+		}
+		.topMenu ul li.current {
+			background: #4fbd97;
+			color: white;
+		}
+		.food-list {
+			width: 1000%;
+			-webkit-transition: all .3s;
+		}
+		.food-item {			
+			margin-top: 50px;
+			display: inline-block;
+			width: 10%;
+			text-align: center; 
+		}
+		
+        </style>
+    </head>
+    <body>
+		<div class="topMenu">
+			<ul id="listMenu">
+				<li class="current">西兰花</li>
+				<li>番茄</li>
+				<li>紫甘蓝</li>
+				<li>草莓</li>
+				<li>苹果</li>
+			</ul>
+		</div>
+		<div id="food-list" class="food-list">
+			<div class="food-item">
+				<img src="www/xilanhua.png" width="240px" />
+			</div>
+			<div class="food-item">
+				<img src="www/xilanhua.png" width="240px" />
+			</div>
+			<div class="food-item">
+				<img src="www/xilanhua.png" width="240px" />
+			</div>
+			<div class="food-item">
+				<img src="www/xilanhua.png" width="240px" />
+			</div>
+			<div class="food-item">
+				<img src="www/xilanhua.png" width="240px" />
+			</div>
+		</div>		
+		
+		<div class="arrow">
+			<img class="left" src="www/arrow.png" alt="Arrow">
+			<img class="right" src="www/arrow.png" alt="Arrow">
+		</div>
+		<div class="addToCart">
+			<div class="count">
+				<div class="cost">
+					<span>¥</span><span>27</span><span>/</span><span style="font-size: 16px">株</span>					
+				</div>
+				<div class="caculator">
+					<a id="opMinus" class="operator">-</a>
+					<div id="count" class="mount">0</div>
+					<a id="opPlus" class="operator">+</a>					
+				</div>
+			</div>
+			<img class="" src="www/add-to-cart.png" alt="Add To Cart">
+		</div>
+		
+		<script type="text/javascript" src="www/zepto.min.js"></script>
+		<script type="text/javascript">
+		// (function($){
+			
+			var count = 0;
+			var countText = $('#count');
+			var topMenuList = $('#listMenu li');
+			var foodList = $('#food-list');
+			var mvStep = 10,
+				translateX = 0,
+				leftBound = 0;
+				rightBound = ($('#food-list .food-item').length - 1) * - mvStep,
+				currentIndex = 0; 
+			var menuWidth = 74,
+				menuMarginLeft = 10,
+				des = window.screen.width - menuWidth;			
+			
+			
+			$('#listMenu').on('tap', 'li', function(ev) {
+
+				selectItem($(this).index())
+			});
+		
+			$('#opMinus').on('tap', function(ev) {
+				count>=0 && countText.html(count--);
+			});
+		
+			$('#opPlus').on('tap', function(ev) {
+				countText.html(count++);
+			});
+		
+			$('.arrow .left').on('tap', function(ev) {
+				if(translateX >= leftBound) return;
+				translateX += mvStep;
+				foodList.css('-webkit-transform', "translateX("+ translateX +"%)");
+				
+				currentIndex --;
+				selectItem(currentIndex);
+			});
+			$('.arrow .right').on('tap', function(ev) {
+				if(translateX <= rightBound) return;
+				translateX -= mvStep;
+				foodList.css('-webkit-transform', "translateX("+ translateX +"%)");		
+				
+				currentIndex ++;	
+				selectItem(currentIndex);
+			});
+			function selectItem(index) {				
+				topMenuList.removeClass('current');
+				topMenuList[index].className = "current";
+				moveMenuItemToScreen($(topMenuList[index]));
+			}
+			function moveMenuItemToScreen(item) {
+				var left = item.offset().left,
+					right = item.offset().left + menuWidth;
+				if(left > des) {
+					$('.topMenu').scrollLeft(left);
+				}
+				if(right < menuWidth + menuMarginLeft) {
+					$('.topMenu').scrollLeft(left);
+				}
+			}
+		// })(Zepto);
+		
+		</script>
+    </body>
+</html>
