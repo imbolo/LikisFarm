@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4B5BE6192B0A3E00F4CE33 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B5BE5192B0A3E00F4CE33 /* SettingsViewController.m */; };
+		CD4B5BE9192B0B0600F4CE33 /* whiteBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BE7192B0B0600F4CE33 /* whiteBg.png */; };
+		CD4B5BEA192B0B0600F4CE33 /* whiteBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BE8192B0B0600F4CE33 /* whiteBg@2x.png */; };
+		CD4B5BED192B0B3100F4CE33 /* WhiteBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B5BEC192B0B3100F4CE33 /* WhiteBaseViewController.m */; };
+		CD4B5BF0192B0E5800F4CE33 /* sidemenuBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BEE192B0E5800F4CE33 /* sidemenuBg.png */; };
+		CD4B5BF1192B0E5800F4CE33 /* sidemenuBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BEF192B0E5800F4CE33 /* sidemenuBg@2x.png */; };
+		CD4B5BF4192B106500F4CE33 /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BF2192B106500F4CE33 /* navbar.png */; };
+		CD4B5BF5192B106500F4CE33 /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BF3192B106500F4CE33 /* navbar@2x.png */; };
+		CD4B5BFB192B1E9F00F4CE33 /* iconCookbook.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BF6192B1E9F00F4CE33 /* iconCookbook.png */; };
+		CD4B5BFC192B1E9F00F4CE33 /* iconHome.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BF7192B1E9F00F4CE33 /* iconHome.png */; };
+		CD4B5BFD192B1E9F00F4CE33 /* iconMyfarm.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BF8192B1E9F00F4CE33 /* iconMyfarm.png */; };
+		CD4B5BFE192B1E9F00F4CE33 /* iconReservation.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BF9192B1E9F00F4CE33 /* iconReservation.png */; };
+		CD4B5BFF192B1E9F00F4CE33 /* iconSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BFA192B1E9F00F4CE33 /* iconSettings.png */; };
+		CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5C00192B207200F4CE33 /* iconMenu.png */; };
+		CD4B5C05192B249400F4CE33 /* 冬青黑体W3.otf in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5C04192B246300F4CE33 /* 冬青黑体W3.otf */; };
+		CD4B5C07192B277100F4CE33 /* sideLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5C06192B277100F4CE33 /* sideLogo.png */; };
+		CD4B5C09192B2A6B00F4CE33 /* tmp_package.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5C08192B2A6B00F4CE33 /* tmp_package.png */; };
+		CD4B5C0B192B307200F4CE33 /* shopcart.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5C0A192B307200F4CE33 /* shopcart.png */; };
+		CD4B5C0E192B309700F4CE33 /* PackageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B5C0D192B309700F4CE33 /* PackageDetailViewController.m */; };
 		CD52AA6F1927660C00367197 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD52AA6E1927660C00367197 /* OrderDetailViewController.m */; };
 		CD52AA75192822A200367197 /* viewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA73192822A200367197 /* viewBackground.png */; };
 		CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA74192822A200367197 /* viewBackground@2x.png */; };
@@ -57,6 +76,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD4B5BE4192B0A3E00F4CE33 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		CD4B5BE5192B0A3E00F4CE33 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		CD4B5BE7192B0B0600F4CE33 /* whiteBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBg.png; sourceTree = "<group>"; };
+		CD4B5BE8192B0B0600F4CE33 /* whiteBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteBg@2x.png"; sourceTree = "<group>"; };
+		CD4B5BEB192B0B3100F4CE33 /* WhiteBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteBaseViewController.h; sourceTree = "<group>"; };
+		CD4B5BEC192B0B3100F4CE33 /* WhiteBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteBaseViewController.m; sourceTree = "<group>"; };
+		CD4B5BEE192B0E5800F4CE33 /* sidemenuBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenuBg.png; sourceTree = "<group>"; };
+		CD4B5BEF192B0E5800F4CE33 /* sidemenuBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidemenuBg@2x.png"; sourceTree = "<group>"; };
+		CD4B5BF2192B106500F4CE33 /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbar.png; sourceTree = "<group>"; };
+		CD4B5BF3192B106500F4CE33 /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar@2x.png"; sourceTree = "<group>"; };
+		CD4B5BF6192B1E9F00F4CE33 /* iconCookbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconCookbook.png; sourceTree = "<group>"; };
+		CD4B5BF7192B1E9F00F4CE33 /* iconHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconHome.png; sourceTree = "<group>"; };
+		CD4B5BF8192B1E9F00F4CE33 /* iconMyfarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMyfarm.png; sourceTree = "<group>"; };
+		CD4B5BF9192B1E9F00F4CE33 /* iconReservation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconReservation.png; sourceTree = "<group>"; };
+		CD4B5BFA192B1E9F00F4CE33 /* iconSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSettings.png; sourceTree = "<group>"; };
+		CD4B5C00192B207200F4CE33 /* iconMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMenu.png; sourceTree = "<group>"; };
+		CD4B5C04192B246300F4CE33 /* 冬青黑体W3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "冬青黑体W3.otf"; sourceTree = "<group>"; };
+		CD4B5C06192B277100F4CE33 /* sideLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideLogo.png; sourceTree = "<group>"; };
+		CD4B5C08192B2A6B00F4CE33 /* tmp_package.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmp_package.png; sourceTree = "<group>"; };
+		CD4B5C0A192B307200F4CE33 /* shopcart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopcart.png; sourceTree = "<group>"; };
+		CD4B5C0C192B309700F4CE33 /* PackageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDetailViewController.h; sourceTree = "<group>"; };
+		CD4B5C0D192B309700F4CE33 /* PackageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDetailViewController.m; sourceTree = "<group>"; };
 		CD52AA6D1927660C00367197 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
 		CD52AA6E1927660C00367197 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
 		CD52AA73192822A200367197 /* viewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewBackground.png; sourceTree = "<group>"; };
@@ -139,10 +180,26 @@
 		CD52AA701928219C00367197 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				CD4B5C00192B207200F4CE33 /* iconMenu.png */,
+				CD4B5BF6192B1E9F00F4CE33 /* iconCookbook.png */,
+				CD4B5BF7192B1E9F00F4CE33 /* iconHome.png */,
+				CD4B5BF8192B1E9F00F4CE33 /* iconMyfarm.png */,
+				CD4B5BF9192B1E9F00F4CE33 /* iconReservation.png */,
+				CD4B5BFA192B1E9F00F4CE33 /* iconSettings.png */,
+				CD4B5BF2192B106500F4CE33 /* navbar.png */,
+				CD4B5BF3192B106500F4CE33 /* navbar@2x.png */,
+				CD4B5BEE192B0E5800F4CE33 /* sidemenuBg.png */,
+				CD4B5BEF192B0E5800F4CE33 /* sidemenuBg@2x.png */,
+				CD4B5C06192B277100F4CE33 /* sideLogo.png */,
 				CD52AA73192822A200367197 /* viewBackground.png */,
 				CD52AA74192822A200367197 /* viewBackground@2x.png */,
 				CD52AA79192827D300367197 /* toPayBtn.png */,
 				CD52AA771928264300367197 /* order-background.png */,
+				CD4B5BE7192B0B0600F4CE33 /* whiteBg.png */,
+				CD4B5BE8192B0B0600F4CE33 /* whiteBg@2x.png */,
+				CD4B5C04192B246300F4CE33 /* 冬青黑体W3.otf */,
+				CD4B5C08192B2A6B00F4CE33 /* tmp_package.png */,
+				CD4B5C0A192B307200F4CE33 /* shopcart.png */,
 			);
 			name = res;
 			path = farm/res;
@@ -213,6 +270,12 @@
 				CDD0FE71192AE831000B7B26 /* CookbookDetailViewController.m */,
 				CDD0FE75192AF55E000B7B26 /* PackageViewController.h */,
 				CDD0FE76192AF55E000B7B26 /* PackageViewController.m */,
+				CD4B5BE4192B0A3E00F4CE33 /* SettingsViewController.h */,
+				CD4B5BE5192B0A3E00F4CE33 /* SettingsViewController.m */,
+				CD4B5BEB192B0B3100F4CE33 /* WhiteBaseViewController.h */,
+				CD4B5BEC192B0B3100F4CE33 /* WhiteBaseViewController.m */,
+				CD4B5C0C192B309700F4CE33 /* PackageDetailViewController.h */,
+				CD4B5C0D192B309700F4CE33 /* PackageDetailViewController.m */,
 			);
 			path = farm;
 			sourceTree = "<group>";
@@ -344,21 +407,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4B5C05192B249400F4CE33 /* 冬青黑体W3.otf in Resources */,
+				CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */,
+				CD4B5C09192B2A6B00F4CE33 /* tmp_package.png in Resources */,
+				CD4B5C0B192B307200F4CE33 /* shopcart.png in Resources */,
 				CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */,
 				CDE79082192467E3007996AB /* reservation.html in Resources */,
 				CDD8E4CE1922E9E60095247B /* Main_iPad.storyboard in Resources */,
+				CD4B5BFB192B1E9F00F4CE33 /* iconCookbook.png in Resources */,
 				CDD0FE74192AE883000B7B26 /* cookbook-detail.html in Resources */,
 				CDD8E4D31922E9E60095247B /* Images.xcassets in Resources */,
 				CDD8E4CB1922E9E60095247B /* Main_iPhone.storyboard in Resources */,
 				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
+				CD4B5BFE192B1E9F00F4CE33 /* iconReservation.png in Resources */,
 				CDE7907B19245AA1007996AB /* www in Resources */,
+				CD4B5BE9192B0B0600F4CE33 /* whiteBg.png in Resources */,
 				CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */,
+				CD4B5BF1192B0E5800F4CE33 /* sidemenuBg@2x.png in Resources */,
+				CD4B5C07192B277100F4CE33 /* sideLogo.png in Resources */,
 				CD52AA7F1928624A00367197 /* myfarm.html in Resources */,
 				CD52AA781928264300367197 /* order-background.png in Resources */,
+				CD4B5BFD192B1E9F00F4CE33 /* iconMyfarm.png in Resources */,
+				CD4B5BEA192B0B0600F4CE33 /* whiteBg@2x.png in Resources */,
+				CD4B5BFC192B1E9F00F4CE33 /* iconHome.png in Resources */,
+				CD4B5BF5192B106500F4CE33 /* navbar@2x.png in Resources */,
 				CD52AA75192822A200367197 /* viewBackground.png in Resources */,
+				CD4B5BF4192B106500F4CE33 /* navbar.png in Resources */,
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
 				CDE79080192466BB007996AB /* todos.html in Resources */,
+				CD4B5BF0192B0E5800F4CE33 /* sidemenuBg.png in Resources */,
 				CD52AA7A192827D300367197 /* toPayBtn.png in Resources */,
+				CD4B5BFF192B1E9F00F4CE33 /* iconSettings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4B5C0E192B309700F4CE33 /* PackageDetailViewController.m in Sources */,
 				CDD8E4F51922EA580095247B /* SideMenuViewController.m in Sources */,
 				CDD8E4FB1922F3540095247B /* BaseViewController.m in Sources */,
 				CDD8E4D11922E9E60095247B /* ViewController.m in Sources */,
@@ -389,8 +469,10 @@
 				CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */,
 				CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */,
 				CDD8E4C41922E9E60095247B /* main.m in Sources */,
+				CD4B5BE6192B0A3E00F4CE33 /* SettingsViewController.m in Sources */,
 				CDE7908519246928007996AB /* ReservationViewController.m in Sources */,
 				CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */,
+				CD4B5BED192B0B3100F4CE33 /* WhiteBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

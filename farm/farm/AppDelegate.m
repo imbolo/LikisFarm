@@ -13,6 +13,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+
+    //    [[UINavigationBar appearance] setBackButtonBackgroundImage:@"iconMenu.png" forState:UIControlStateNormal barMetrics:UIBarMetricsDefault]; // 返回按钮的背景
+//    NSArray *familyNames = [UIFont familyNames];
+//    for (NSString *familyName in familyNames) {
+//        printf("Family: %s \n",[familyName UTF8String]);
+//        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+//        for (NSString * fontName in fontNames) {
+//            printf("\tFont: %s \n",[fontName UTF8String]);
+//        }
+//    }
+
+    [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:21.0]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil, NSShadowAttributeName,[UIFont fontWithName:@"HiraginoSansGB-W3" size:24.0], NSFontAttributeName, nil]];
+
     return YES;
 }
 							

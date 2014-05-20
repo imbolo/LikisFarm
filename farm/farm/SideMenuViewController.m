@@ -29,6 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _menuItems = @[@"smcHome", @"smcReservation", @"smcMyfarm", @"smcCookbook", @"smcSettings"];
+    
+    _menuList.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +85,13 @@
     NSString *CellIdentifier = [self.menuItems objectAtIndex: [indexPath row]];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    
+    UIColor *color = [[UIColor alloc]initWithRed:98/255.0 green:217/255.0 blue:176/255.0 alpha:0.8];//通过RGB来定义自己的颜色
+    cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+    cell.selectedBackgroundView.backgroundColor = color;
     
     return cell;
 }
