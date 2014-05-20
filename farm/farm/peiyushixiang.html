@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+		<style type="text/css">
+		* {
+			margin: 0; padding: 0;			
+		}
+		body {
+			padding: 20px;
+		}
+		.container {	
+			position: relative;
+			width: 100%;	
+			height: 100px;
+			overflow: hidden;
+			text-align: center;
+/*			padding: 20px;*/
+		}
+		.blue {
+			background: #aaf;
+		}
+		.pink {
+			background: #faa;
+		}
+		.item {		
+			position: absolute;	
+			width: 100%;
+			height: 100px;
+			-webkit-transition: all .3s;
+			transition: all .3s;
+		}
+		.back {
+/*			top: 20px;*/
+			background: url('www/peiyushixiang-bottom.png') no-repeat;
+			padding-top: 30px;
+		}
+		.front {	
+			top:-6px;
+			left: 10px;		
+			width: 90%;
+			background: url('www/tip-unclick.png') no-repeat;
+			
+		}
+		.top-60 {
+			top: -66px;
+		}
+		.btn {
+			border: none;
+			border-radius: 4px;
+			width: 80px;
+			height: 30px;
+			background: #65dfb5;
+			color: white;
+			outline: none;
+		}
+		.btn:active {
+			background: #45bf95;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item back">				
+				<!-- <button id="btn">托管</button> -->				
+				<div class="J_backContent">
+					<span style="font-size: 18px; color:#65dfb5; visibility: visible; ">4月16日～18日</span>
+					<div>
+						<button class="btn">我不去</button>
+						<button class="btn">我会去</button>
+					</div>
+				</div>
+				<div class="J_selectTip">
+					<span style="font-size: 18px; color:#65dfb5">请选择</span>
+				</div>
+			</div>
+			<div class="item front">				
+			</div>
+		</div>
+		
+		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>		
+		<script type="text/javascript">
+		$('.front').on('tap', function(ev) {
+			$('.front').addClass('top-60');
+			$('.J_backContent').css('visibility', 'visible');
+			$('.J_selectTip').hide();
+		});
+		$('.back').on('tap', function(ev) {
+			$('.front').removeClass('top-60');
+			$('.J_backContent').css('visibility', 'hidden');
+			$('.J_selectTip').show();
+		});
+		</script>
+	</body>
+</html>

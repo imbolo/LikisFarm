@@ -13,6 +13,14 @@
 		CD52AA781928264300367197 /* order-background.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA771928264300367197 /* order-background.png */; };
 		CD52AA7A192827D300367197 /* toPayBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA79192827D300367197 /* toPayBtn.png */; };
 		CD52AA7D192829E900367197 /* MyFarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD52AA7C192829E900367197 /* MyFarmViewController.m */; };
+		CD52AA7F1928624A00367197 /* myfarm.html in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA7E1928624A00367197 /* myfarm.html */; };
+		CD52AA821928C3D200367197 /* PeiyushixiangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD52AA811928C3D200367197 /* PeiyushixiangViewController.m */; };
+		CD52AA84192A361900367197 /* peiyushixiang.html in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA83192A361900367197 /* peiyushixiang.html */; };
+		CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */; };
+		CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */ = {isa = PBXBuildFile; fileRef = CDD0FE6E192AE755000B7B26 /* cookbook.html */; };
+		CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE71192AE831000B7B26 /* CookbookDetailViewController.m */; };
+		CDD0FE74192AE883000B7B26 /* cookbook-detail.html in Resources */ = {isa = PBXBuildFile; fileRef = CDD0FE73192AE883000B7B26 /* cookbook-detail.html */; };
+		CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE76192AF55E000B7B26 /* PackageViewController.m */; };
 		CDD8E4B81922E9E60095247B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD8E4B71922E9E60095247B /* Foundation.framework */; };
 		CDD8E4BA1922E9E60095247B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD8E4B91922E9E60095247B /* CoreGraphics.framework */; };
 		CDD8E4BC1922E9E60095247B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD8E4BB1922E9E60095247B /* UIKit.framework */; };
@@ -57,6 +65,18 @@
 		CD52AA79192827D300367197 /* toPayBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toPayBtn.png; sourceTree = "<group>"; };
 		CD52AA7B192829E900367197 /* MyFarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFarmViewController.h; sourceTree = "<group>"; };
 		CD52AA7C192829E900367197 /* MyFarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFarmViewController.m; sourceTree = "<group>"; };
+		CD52AA7E1928624A00367197 /* myfarm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = myfarm.html; path = farm/myfarm.html; sourceTree = "<group>"; };
+		CD52AA801928C3D200367197 /* PeiyushixiangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeiyushixiangViewController.h; sourceTree = "<group>"; };
+		CD52AA811928C3D200367197 /* PeiyushixiangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeiyushixiangViewController.m; sourceTree = "<group>"; };
+		CD52AA83192A361900367197 /* peiyushixiang.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = peiyushixiang.html; path = farm/peiyushixiang.html; sourceTree = "<group>"; };
+		CDD0FE6B192AE507000B7B26 /* CookbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookbookViewController.h; sourceTree = "<group>"; };
+		CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookbookViewController.m; sourceTree = "<group>"; };
+		CDD0FE6E192AE755000B7B26 /* cookbook.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = cookbook.html; path = farm/cookbook.html; sourceTree = "<group>"; };
+		CDD0FE70192AE831000B7B26 /* CookbookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookbookDetailViewController.h; sourceTree = "<group>"; };
+		CDD0FE71192AE831000B7B26 /* CookbookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookbookDetailViewController.m; sourceTree = "<group>"; };
+		CDD0FE73192AE883000B7B26 /* cookbook-detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "cookbook-detail.html"; path = "farm/cookbook-detail.html"; sourceTree = "<group>"; };
+		CDD0FE75192AF55E000B7B26 /* PackageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageViewController.h; sourceTree = "<group>"; };
+		CDD0FE76192AF55E000B7B26 /* PackageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageViewController.m; sourceTree = "<group>"; };
 		CDD8E4B41922E9E60095247B /* farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD8E4B71922E9E60095247B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDD8E4B91922E9E60095247B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -185,6 +205,14 @@
 				CD52AA7C192829E900367197 /* MyFarmViewController.m */,
 				CDD8E4D21922E9E60095247B /* Images.xcassets */,
 				CDD8E4BE1922E9E60095247B /* Supporting Files */,
+				CD52AA801928C3D200367197 /* PeiyushixiangViewController.h */,
+				CD52AA811928C3D200367197 /* PeiyushixiangViewController.m */,
+				CDD0FE6B192AE507000B7B26 /* CookbookViewController.h */,
+				CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */,
+				CDD0FE70192AE831000B7B26 /* CookbookDetailViewController.h */,
+				CDD0FE71192AE831000B7B26 /* CookbookDetailViewController.m */,
+				CDD0FE75192AF55E000B7B26 /* PackageViewController.h */,
+				CDD0FE76192AF55E000B7B26 /* PackageViewController.m */,
 			);
 			path = farm;
 			sourceTree = "<group>";
@@ -231,7 +259,11 @@
 			isa = PBXGroup;
 			children = (
 				CDE7907F192466BB007996AB /* todos.html */,
+				CD52AA83192A361900367197 /* peiyushixiang.html */,
+				CD52AA7E1928624A00367197 /* myfarm.html */,
 				CDE79081192467E3007996AB /* reservation.html */,
+				CDD0FE6E192AE755000B7B26 /* cookbook.html */,
+				CDD0FE73192AE883000B7B26 /* cookbook-detail.html */,
 			);
 			name = pages;
 			sourceTree = "<group>";
@@ -315,9 +347,13 @@
 				CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */,
 				CDE79082192467E3007996AB /* reservation.html in Resources */,
 				CDD8E4CE1922E9E60095247B /* Main_iPad.storyboard in Resources */,
+				CDD0FE74192AE883000B7B26 /* cookbook-detail.html in Resources */,
 				CDD8E4D31922E9E60095247B /* Images.xcassets in Resources */,
 				CDD8E4CB1922E9E60095247B /* Main_iPhone.storyboard in Resources */,
+				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
 				CDE7907B19245AA1007996AB /* www in Resources */,
+				CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */,
+				CD52AA7F1928624A00367197 /* myfarm.html in Resources */,
 				CD52AA781928264300367197 /* order-background.png in Resources */,
 				CD52AA75192822A200367197 /* viewBackground.png in Resources */,
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
@@ -348,9 +384,13 @@
 				CD52AA7D192829E900367197 /* MyFarmViewController.m in Sources */,
 				CDD8E4FE1922F35D0095247B /* TodosViewController.m in Sources */,
 				CDD8E4F81922EF9F0095247B /* SWRevealViewController.m in Sources */,
+				CD52AA821928C3D200367197 /* PeiyushixiangViewController.m in Sources */,
 				CDD8E4C81922E9E60095247B /* AppDelegate.m in Sources */,
+				CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */,
+				CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */,
 				CDD8E4C41922E9E60095247B /* main.m in Sources */,
 				CDE7908519246928007996AB /* ReservationViewController.m in Sources */,
+				CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

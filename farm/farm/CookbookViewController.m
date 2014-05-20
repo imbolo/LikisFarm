@@ -1,19 +1,19 @@
 //
-//  MyFarmViewController.m
+//  CookbookViewController.m
 //  farm
 //
-//  Created by liuyang on 14-5-18.
+//  Created by liuyang on 14-5-20.
 //  Copyright (c) 2014年 mrcoder. All rights reserved.
 //
 
-#import "MyFarmViewController.h"
+#import "CookbookViewController.h"
 #import "SWRevealViewController.h"
 
-@interface MyFarmViewController ()
+@interface CookbookViewController ()
 
 @end
 
-@implementation MyFarmViewController
+@implementation CookbookViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,14 +30,12 @@
     // Do any additional setup after loading the view.
     
     //side menu
-    //侧边菜单
-    //侧边菜单
     [self.revealButtonItem setTarget: self.revealViewController];
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     
     //load html
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"myfarm" ofType:@"html"];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"cookbook" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     
     NSString *path = [[NSBundle mainBundle] bundlePath];
@@ -45,9 +43,9 @@
     
     _webView.backgroundColor = [UIColor clearColor];
     _webView.opaque = NO;
-    _webView.scrollView.scrollEnabled = NO;
-//    _webView.scrollView.bounces = NO;
-
+//    _webView.scrollView.scrollEnabled = NO;
+    //    _webView.scrollView.bounces = NO;
+    
     [_webView loadHTMLString:htmlString baseURL:baseURL];
 }
 
@@ -72,16 +70,13 @@
 {
     NSString* url = [request.URL absoluteString];
     
-    if ([url  isEqual: @"action:goto:peiyushixiang"]) {
-        ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"peiyushixiang"];
-        [self.navigationController pushViewController:nextView animated:YES];
-    }
-    else if ([url  isEqual: @"action:goto:package"]) {
-        ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"packagefood"];
+    if ([url  isEqual: @"action:goto:cookbook-detail"]) {
+        ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"cookbook-detail"];
         [self.navigationController pushViewController:nextView animated:YES];
     }
     
     return YES;
 }
+
 
 @end
