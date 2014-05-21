@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-@interface MyCenterViewController : BaseViewController
+@interface MyCenterViewController : BaseViewController<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButtonItem;
 
+@property (weak, nonatomic) IBOutlet UIImageView *topImageView;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *bottomScrollView;
 @end

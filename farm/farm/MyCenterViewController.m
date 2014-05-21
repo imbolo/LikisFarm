@@ -9,11 +9,41 @@
 #import "MyCenterViewController.h"
 #import "SWRevealViewController.h"
 
+static CGFloat ImageHeight  = 180.0;
+static CGFloat ImageWidth  = 320.0;
+
 @interface MyCenterViewController ()
 
 @end
 
 @implementation MyCenterViewController
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    
+//    int xStart;
+//    // gt ios 7.0
+//    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0) {
+//        xStart = 20 + 44; // status bar height + top bar height
+//    }
+//    // lt ios 7.0
+//    else {
+//        xStart = 0;
+//    }
+    
+    CGFloat yOffset = self.bottomScrollView.contentOffset.y;
+    
+    if (yOffset < 0) {
+        
+        CGFloat factor = ((ABS(yOffset)+ImageHeight)*ImageWidth)/ImageHeight;
+        CGRect f = CGRectMake(-(factor-ImageWidth)/2, 0, factor, ImageHeight+ABS(yOffset));
+        self.topImageView.frame = f;
+    } else {
+        CGRect f = self.topImageView.frame;
+        f.origin.y = -yOffset;
+        self.topImageView.frame = f;
+    }
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,6 +54,13 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    CGRect bounds = self.view.bounds;
+    self.bottomScrollView.frame = bounds;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,6 +69,23 @@
     [self.revealButtonItem setTarget: self.revealViewController];
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+    
+    
+    //
+    
+//    UIImageView *fakeView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default.png"]];
+    
+//    CGRect frame = fakeView.frame;
+//    frame.origin.y = ImageHeight;
+//    fakeView.frame = frame;
+    
+    self.bottomScrollView.delegate = self;
+    self.bottomScrollView.backgroundColor = [UIColor clearColor];
+//    self.bottomScrollView.contentSize = CGSizeMake(320, frame.size.height+ImageHeight);
+    
+//    [self.bottomScrollView addSubview:fakeView];
+//    fakeView.layer.zPosition = -1;
+    
 }
 
 - (void)didReceiveMemoryWarning

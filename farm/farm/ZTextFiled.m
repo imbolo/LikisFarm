@@ -30,7 +30,10 @@
 
 - (void) drawPlaceholderInRect:(CGRect)rect {
     [[UIColor grayColor] setFill];
-    [[self placeholder] drawInRect:rect withFont:[UIFont systemFontOfSize:14]];
+    CGRect placeholderRect = CGRectMake(rect.origin.x, (rect.size.height- self.font.pointSize)/2, rect.size.width, self.font.pointSize);
+    
+    [[self placeholder] drawInRect:placeholderRect withFont:[UIFont systemFontOfSize:12]];
 }
+
 
 @end

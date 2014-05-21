@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Config.h"
 
 @implementation AppDelegate
 
@@ -109,6 +110,12 @@
      }];
     
 
+}
+
+- (void) checkIOSVersion
+{
+    double version = [[UIDevice currentDevice].systemVersion doubleValue];
+//    [Config getInstance]
 }
 
 @end

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+		<link rel="stylesheet" href="www/global.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		
 		<style type="text/css">
 		* {
@@ -12,12 +13,16 @@
 			width: 100%;
 			overflow-x: hidden;
 		}
+		.tacenter {
+			text-align: center;
+		}
 		.container {
 			height: 50px;
 			text-align: center;
 			overflow-x: hidden;
 		}
 		.barButton {
+			margin-top: 12px;
 			display: inline-block;
 			width: 188px;
 			height: 36px;
@@ -30,7 +35,8 @@
 		.barButton .left{
 			float: left;
 			height: 100%;
-			width: 49%;
+			box-sizing: border-box;
+			width: 50%;
 			line-height: 36px;
 			border-right: 1px dotted white;
 			border-radius: 4px 0 0 4px;
@@ -62,11 +68,11 @@
 				<div class="right J_buttonBarItem">成熟果实</div>
 			</div>					
 		</div>	
-		<div id="growList" class="grow-list">
-			<img src="www/growing-list.png" width="320" alt="Growing List">
+		<div id="growList" class="grow-list tacenter">
+			<img src="www/growing-list.png" width="290" alt="Growing List">
 		</div>
-		<div id="maturedList" class="grow-list" style="display: none">
-			<img src="www/matured-list.png" width="320" alt="Growing List">
+		<div id="maturedList" class="grow-list tacenter" style="display: none">
+			<img src="www/matured-list.png" width="280" alt="Growing List">
 		</div>
 		
 		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>

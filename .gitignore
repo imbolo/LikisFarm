@@ -1,2 +1,3 @@
 org.mrcoder.farm/platforms/*
 .DS_Store
+node_modules

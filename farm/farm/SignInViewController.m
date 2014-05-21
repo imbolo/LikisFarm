@@ -33,6 +33,25 @@
     self.view.layer.contents = (id) image.CGImage;
     //hide top bar
     self.navigationController.navigationBarHidden = YES;
+    
+    
+//    [self.text addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+}
+
+- (void)textFieldDidChange:(id)sender
+{
+    UITextField *textField = (UITextField *)sender;
+    
+    if (textField == self.textFiledUserName) {
+        // Set to custom font if the textfield is cleared, else set it to system font
+        // This is a workaround because secure text fields don't play well with custom fonts
+        if (textField.text.length == 0) {
+            textField.font = [UIFont fontWithName:@"OpenSans" size:textField.font.pointSize];
+        }
+        else {
+            textField.font = [UIFont systemFontOfSize:textField.font.pointSize];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +59,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     
-    [_textFiledUserName setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:12.0]];
+//    [_textFiledUserName setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:12.0]];
 }
 
 /*

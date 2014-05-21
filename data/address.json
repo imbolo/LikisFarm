@@ -1,0 +1,13 @@
+[{
+	"name": "李琦",
+	"city": "重庆市沙坪坝区",
+	"address": "虎溪镇大学城四川美术学院",
+	"apartment": "7号楼",
+	"isChecked": "yes"
+}, {
+	"name": "李琦",
+	"city": "杭州市余杭区",
+	"address": "翡翠城东北区芦苑3幢2单元",
+	"apartment": "501",
+	"isChecked": "no"
+}]

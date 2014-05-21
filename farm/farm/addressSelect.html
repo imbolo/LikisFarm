@@ -56,38 +56,52 @@
 	}
 	</style>
 	<body>
-		<div class="item">
-			<div class="text">
-				<p class="topText">
-					<span class="mr3">李琦</span>
-					<span>重庆市沙坪坝区</span>
-				</p>
-				<p class="bottomText">
-					<span class="mr3">虎溪镇大学城四川美术学院</span>
-					<span>7号楼</span>
-				</p>
+		<script id="listTemplate" type="text/template">
+			<div class="item">
+				<div class="text">
+					<p class="topText">
+						<span class="mr3">{{name}}</span>
+						<span>{{city}}</span>
+					</p>
+					<p class="bottomText">
+						<span class="mr3">{{address}}</span>
+						<span>{{apartment}}</span>
+					</p>
+				</div>
+				<div class="check {{isChecked}}">
+				</div>
 			</div>
-			<div class="check yes">
-			</div>
-		</div>
+		</script>
 	
-		<div class="item">
-			<div class="text">
-				<p class="topText">
-					<span class="mr3">李琦</span>
-					<span>重庆市沙坪坝区</span>
-				</p>
-				<p class="bottomText">
-					<span class="mr3">虎溪镇大学城四川美术学院</span>
-					<span>7号楼</span>
-				</p>
-			</div>
-			<div class="check no">
-			</div>
+		<div id="content">
 		</div>
 		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-		$('.item').on('tap', function(ev) {
+		//渲染函数
+		function render(data, tpl) {
+			var str = "";
+			var tmpTpl;
+			$.each(data, function(index, item) {
+				tmpTpl = tpl;
+				for (var key in item) {				
+					tmpTpl = tmpTpl.replace("{{"+ key +"}}", item[key]);
+				}
+				str += tmpTpl;				
+			});			
+			return str;
+		}		
+		
+		$(function(){
+			var template = $('#listTemplate').html();	
+			
+			$.getJSON('http://ch.mrcoder.org:3000/address', function(data) {			
+				console.log(data);
+				$('#content').html( render(data, template) );				
+			});		
+			
+		});				
+		
+		$('#content').on('tap', '.item', function(ev) {
 			var check = $(this).find('.check');						
 			
 			$('.check').removeClass('no');

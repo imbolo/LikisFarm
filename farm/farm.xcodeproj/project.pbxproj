@@ -78,6 +78,20 @@
 		CDD8E4FE1922F35D0095247B /* TodosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4FD1922F35D0095247B /* TodosViewController.m */; };
 		CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F11192C697000D8B9CC /* addressSelect.html */; };
 		CDDF5F15192C76C800D8B9CC /* MyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF5F14192C76C800D8B9CC /* MyCenterViewController.m */; };
+		CDDF5F18192C7D5A00D8B9CC /* centerTopImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F16192C7D5A00D8B9CC /* centerTopImage.png */; };
+		CDDF5F19192C7D5A00D8B9CC /* centerTopImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F17192C7D5A00D8B9CC /* centerTopImage@2x.png */; };
+		CDDF5F1E192C82A000D8B9CC /* 关注他.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F1A192C82A000D8B9CC /* 关注他.png */; };
+		CDDF5F1F192C82A000D8B9CC /* 关注他@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F1B192C82A000D8B9CC /* 关注他@2x.png */; };
+		CDDF5F20192C82A000D8B9CC /* 在关注.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F1C192C82A000D8B9CC /* 在关注.png */; };
+		CDDF5F21192C82A000D8B9CC /* 在关注@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F1D192C82A000D8B9CC /* 在关注@2x.png */; };
+		CDDF5F24192C82FC00D8B9CC /* 赞.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F22192C82FC00D8B9CC /* 赞.png */; };
+		CDDF5F25192C82FC00D8B9CC /* 赞@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F23192C82FC00D8B9CC /* 赞@2x.png */; };
+		CDDF5F28192C882100D8B9CC /* tmp_小厨选项.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F26192C882100D8B9CC /* tmp_小厨选项.png */; };
+		CDDF5F29192C882100D8B9CC /* tmp_小厨选项@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F27192C882100D8B9CC /* tmp_小厨选项@2x.png */; };
+		CDDF5F2C192C897800D8B9CC /* iconShopcart.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F2A192C897800D8B9CC /* iconShopcart.png */; };
+		CDDF5F2D192C897800D8B9CC /* iconShopcart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F2B192C897800D8B9CC /* iconShopcart@2x.png */; };
+		CDDF5F2F192C8A5500D8B9CC /* iconMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F2E192C8A5500D8B9CC /* iconMenu@2x.png */; };
+		CDDF5F33192CB4BD00D8B9CC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF5F32192CB4BD00D8B9CC /* Config.m */; };
 		CDE7907B19245AA1007996AB /* www in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907A19245AA1007996AB /* www */; };
 		CDE79080192466BB007996AB /* todos.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907F192466BB007996AB /* todos.html */; };
 		CDE79082192467E3007996AB /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE79081192467E3007996AB /* reservation.html */; };
@@ -188,6 +202,21 @@
 		CDDF5F11192C697000D8B9CC /* addressSelect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = addressSelect.html; path = farm/addressSelect.html; sourceTree = "<group>"; };
 		CDDF5F13192C76C800D8B9CC /* MyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCenterViewController.h; sourceTree = "<group>"; };
 		CDDF5F14192C76C800D8B9CC /* MyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCenterViewController.m; sourceTree = "<group>"; };
+		CDDF5F16192C7D5A00D8B9CC /* centerTopImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerTopImage.png; sourceTree = "<group>"; };
+		CDDF5F17192C7D5A00D8B9CC /* centerTopImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "centerTopImage@2x.png"; sourceTree = "<group>"; };
+		CDDF5F1A192C82A000D8B9CC /* 关注他.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关注他.png"; sourceTree = "<group>"; };
+		CDDF5F1B192C82A000D8B9CC /* 关注他@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关注他@2x.png"; sourceTree = "<group>"; };
+		CDDF5F1C192C82A000D8B9CC /* 在关注.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "在关注.png"; sourceTree = "<group>"; };
+		CDDF5F1D192C82A000D8B9CC /* 在关注@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "在关注@2x.png"; sourceTree = "<group>"; };
+		CDDF5F22192C82FC00D8B9CC /* 赞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "赞.png"; sourceTree = "<group>"; };
+		CDDF5F23192C82FC00D8B9CC /* 赞@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "赞@2x.png"; sourceTree = "<group>"; };
+		CDDF5F26192C882100D8B9CC /* tmp_小厨选项.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmp_小厨选项.png"; sourceTree = "<group>"; };
+		CDDF5F27192C882100D8B9CC /* tmp_小厨选项@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmp_小厨选项@2x.png"; sourceTree = "<group>"; };
+		CDDF5F2A192C897800D8B9CC /* iconShopcart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconShopcart.png; sourceTree = "<group>"; };
+		CDDF5F2B192C897800D8B9CC /* iconShopcart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconShopcart@2x.png"; sourceTree = "<group>"; };
+		CDDF5F2E192C8A5500D8B9CC /* iconMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMenu@2x.png"; sourceTree = "<group>"; };
+		CDDF5F31192CB4BD00D8B9CC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		CDDF5F32192CB4BD00D8B9CC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		CDE7907A19245AA1007996AB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = farm/www; sourceTree = "<group>"; };
 		CDE7907F192466BB007996AB /* todos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = todos.html; path = farm/todos.html; sourceTree = "<group>"; };
 		CDE79081192467E3007996AB /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reservation.html; sourceTree = "<group>"; };
@@ -222,16 +251,25 @@
 		CD52AA701928219C00367197 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				CDDF5F22192C82FC00D8B9CC /* 赞.png */,
+				CDDF5F23192C82FC00D8B9CC /* 赞@2x.png */,
+				CDDF5F1A192C82A000D8B9CC /* 关注他.png */,
+				CDDF5F1B192C82A000D8B9CC /* 关注他@2x.png */,
+				CDDF5F1C192C82A000D8B9CC /* 在关注.png */,
+				CDDF5F1D192C82A000D8B9CC /* 在关注@2x.png */,
 				CD8031AF192C482400AC7D4D /* loginBtn.png */,
 				CD8031B0192C482400AC7D4D /* loginBtn@2x.png */,
 				CD803198192BA86400AC7D4D /* Default.png */,
 				CD80319A192BA8E000AC7D4D /* Default@2x.png */,
 				CD4B5C00192B207200F4CE33 /* iconMenu.png */,
+				CDDF5F2E192C8A5500D8B9CC /* iconMenu@2x.png */,
 				CD4B5BF6192B1E9F00F4CE33 /* iconCookbook.png */,
 				CD4B5BF7192B1E9F00F4CE33 /* iconHome.png */,
 				CD4B5BF8192B1E9F00F4CE33 /* iconMyfarm.png */,
 				CD4B5BF9192B1E9F00F4CE33 /* iconReservation.png */,
 				CD4B5BFA192B1E9F00F4CE33 /* iconSettings.png */,
+				CDDF5F2A192C897800D8B9CC /* iconShopcart.png */,
+				CDDF5F2B192C897800D8B9CC /* iconShopcart@2x.png */,
 				CD4B5BF2192B106500F4CE33 /* navbar.png */,
 				CD4B5BF3192B106500F4CE33 /* navbar@2x.png */,
 				CD4B5BEE192B0E5800F4CE33 /* sidemenuBg.png */,
@@ -256,6 +294,10 @@
 				CD8031A8192C3D5100AC7D4D /* tmp_login@2x.png */,
 				CD8031B3192C5FA100AC7D4D /* addressBtn.png */,
 				CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */,
+				CDDF5F16192C7D5A00D8B9CC /* centerTopImage.png */,
+				CDDF5F17192C7D5A00D8B9CC /* centerTopImage@2x.png */,
+				CDDF5F26192C882100D8B9CC /* tmp_小厨选项.png */,
+				CDDF5F27192C882100D8B9CC /* tmp_小厨选项@2x.png */,
 			);
 			name = res;
 			path = farm/res;
@@ -307,6 +349,7 @@
 		CDD8E4BD1922E9E60095247B /* farm */ = {
 			isa = PBXGroup;
 			children = (
+				CDDF5F30192CB4AC00D8B9CC /* config */,
 				CD8031AB192C439E00AC7D4D /* view */,
 				CDD8E4C61922E9E60095247B /* AppDelegate.h */,
 				CDD8E4C71922E9E60095247B /* AppDelegate.m */,
@@ -388,6 +431,15 @@
 				CDD8E4F71922EF9F0095247B /* SWRevealViewController.m */,
 			);
 			name = library;
+			sourceTree = "<group>";
+		};
+		CDDF5F30192CB4AC00D8B9CC /* config */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF5F31192CB4BD00D8B9CC /* Config.h */,
+				CDDF5F32192CB4BD00D8B9CC /* Config.m */,
+			);
+			name = config;
 			sourceTree = "<group>";
 		};
 		CDE7907C19246671007996AB /* pages */ = {
@@ -486,27 +538,36 @@
 				CD4B5C05192B249400F4CE33 /* 冬青黑体W3.otf in Resources */,
 				CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */,
 				CD8031A6192C3C2D00AC7D4D /* signinBG@2x.png in Resources */,
+				CDDF5F2D192C897800D8B9CC /* iconShopcart@2x.png in Resources */,
 				CD4B5C09192B2A6B00F4CE33 /* tmp_package.png in Resources */,
+				CDDF5F28192C882100D8B9CC /* tmp_小厨选项.png in Resources */,
 				CD4B5C0B192B307200F4CE33 /* shopcart.png in Resources */,
 				CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */,
 				CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */,
 				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
+				CDDF5F1F192C82A000D8B9CC /* 关注他@2x.png in Resources */,
 				CDE79082192467E3007996AB /* reservation.html in Resources */,
+				CDDF5F19192C7D5A00D8B9CC /* centerTopImage@2x.png in Resources */,
 				CDD8E4CE1922E9E60095247B /* Main_iPad.storyboard in Resources */,
 				CD8031B1192C482400AC7D4D /* loginBtn.png in Resources */,
 				CD803199192BA86400AC7D4D /* Default.png in Resources */,
+				CDDF5F21192C82A000D8B9CC /* 在关注@2x.png in Resources */,
 				CD8031A9192C3D5100AC7D4D /* tmp_login.png in Resources */,
 				CD8031A5192C3C2D00AC7D4D /* signinBG.png in Resources */,
 				CD4B5BFB192B1E9F00F4CE33 /* iconCookbook.png in Resources */,
 				CDD0FE74192AE883000B7B26 /* cookbook-detail.html in Resources */,
+				CDDF5F1E192C82A000D8B9CC /* 关注他.png in Resources */,
 				CDD8E4D31922E9E60095247B /* Images.xcassets in Resources */,
 				CD80319F192C353B00AC7D4D /* splash@2x.png in Resources */,
 				CDD8E4CB1922E9E60095247B /* Main_iPhone.storyboard in Resources */,
 				CD80319B192BA8E000AC7D4D /* Default@2x.png in Resources */,
 				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
+				CDDF5F25192C82FC00D8B9CC /* 赞@2x.png in Resources */,
 				CD4B5BFE192B1E9F00F4CE33 /* iconReservation.png in Resources */,
 				CDE7907B19245AA1007996AB /* www in Resources */,
+				CDDF5F29192C882100D8B9CC /* tmp_小厨选项@2x.png in Resources */,
 				CD80319E192C353B00AC7D4D /* splash.png in Resources */,
+				CDDF5F20192C82A000D8B9CC /* 在关注.png in Resources */,
 				CD8031B2192C482400AC7D4D /* loginBtn@2x.png in Resources */,
 				CD8031B5192C5FA100AC7D4D /* addressBtn.png in Resources */,
 				CD803196192B7AEC00AC7D4D /* backButton.png in Resources */,
@@ -514,6 +575,7 @@
 				CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */,
 				CD4B5BF1192B0E5800F4CE33 /* sidemenuBg@2x.png in Resources */,
 				CD4B5C07192B277100F4CE33 /* sideLogo.png in Resources */,
+				CDDF5F2C192C897800D8B9CC /* iconShopcart.png in Resources */,
 				CD52AA7F1928624A00367197 /* myfarm.html in Resources */,
 				CD52AA781928264300367197 /* order-background.png in Resources */,
 				CD4B5BFD192B1E9F00F4CE33 /* iconMyfarm.png in Resources */,
@@ -527,6 +589,9 @@
 				CD803197192B7AEC00AC7D4D /* backButton@2x.png in Resources */,
 				CDE79080192466BB007996AB /* todos.html in Resources */,
 				CD4B5BF0192B0E5800F4CE33 /* sidemenuBg.png in Resources */,
+				CDDF5F24192C82FC00D8B9CC /* 赞.png in Resources */,
+				CDDF5F18192C7D5A00D8B9CC /* centerTopImage.png in Resources */,
+				CDDF5F2F192C8A5500D8B9CC /* iconMenu@2x.png in Resources */,
 				CD52AA7A192827D300367197 /* toPayBtn.png in Resources */,
 				CD4B5BFF192B1E9F00F4CE33 /* iconSettings.png in Resources */,
 			);
@@ -566,6 +631,7 @@
 				CD4B5BE6192B0A3E00F4CE33 /* SettingsViewController.m in Sources */,
 				CDE7908519246928007996AB /* ReservationViewController.m in Sources */,
 				CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */,
+				CDDF5F33192CB4BD00D8B9CC /* Config.m in Sources */,
 				CD8031A2192C3AB800AC7D4D /* SignInViewController.m in Sources */,
 				CD4B5BED192B0B3100F4CE33 /* WhiteBaseViewController.m in Sources */,
 			);
