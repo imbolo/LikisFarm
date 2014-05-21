@@ -1,18 +1,19 @@
 //
-//  PackageDetailViewController.m
+//  MyCenterViewController.m
 //  farm
 //
-//  Created by liuyang on 14-5-20.
+//  Created by liuyang on 14-5-21.
 //  Copyright (c) 2014年 mrcoder. All rights reserved.
 //
 
-#import "PackageDetailViewController.h"
+#import "MyCenterViewController.h"
+#import "SWRevealViewController.h"
 
-@interface PackageDetailViewController ()
+@interface MyCenterViewController ()
 
 @end
 
-@implementation PackageDetailViewController
+@implementation MyCenterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +28,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    //侧边菜单
+    [self.revealButtonItem setTarget: self.revealViewController];
+    [self.revealButtonItem setAction: @selector( revealToggle: )];
+    [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,11 +50,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)gotoAddressSelect:(id)sender {
-    
-    ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"addressSelect"];
-    
-    [self.navigationController pushViewController:nextView animated:YES];
-}
 
 @end

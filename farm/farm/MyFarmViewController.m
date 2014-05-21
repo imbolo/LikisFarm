@@ -72,11 +72,6 @@
 {
     NSString* url = [request.URL absoluteString];
     
-    UIBarButtonItem *returnButtonItem = [[UIBarButtonItem alloc] init];
-    returnButtonItem.title = @"";
-    self.navigationItem.backBarButtonItem = returnButtonItem;
-    
-    
     if ([url  isEqual: @"action:goto:peiyushixiang"]) {
         ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"peiyushixiang"];
         [self.navigationController pushViewController:nextView animated:YES];

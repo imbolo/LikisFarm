@@ -31,6 +31,21 @@
     UIImage* image = [UIImage imageNamed:@"viewBackground.png"];
     self.view.layer.contents = (id) image.CGImage;
 //    self.view.layer.backgroundColor = [UIColor clearColor].CGColor;
+//
+    double version = [[UIDevice currentDevice].systemVersion doubleValue];
+    if ( version >= 7.0f && self.navigationController ) {
+        
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+       
+        UIBarButtonItem *returnButtonItem = [[UIBarButtonItem alloc] init];
+        returnButtonItem.title = @"";
+        self.navigationItem.backBarButtonItem = returnButtonItem;
+        self.navigationController.navigationBar.backIndicatorImage = [UIImage imageNamed:@"backButton.png"];
+        self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"backButton.png"];
+        
+
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

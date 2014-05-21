@@ -35,6 +35,23 @@
 		CD52AA7F1928624A00367197 /* myfarm.html in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA7E1928624A00367197 /* myfarm.html */; };
 		CD52AA821928C3D200367197 /* PeiyushixiangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD52AA811928C3D200367197 /* PeiyushixiangViewController.m */; };
 		CD52AA84192A361900367197 /* peiyushixiang.html in Resources */ = {isa = PBXBuildFile; fileRef = CD52AA83192A361900367197 /* peiyushixiang.html */; };
+		CD803196192B7AEC00AC7D4D /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CD803194192B7AEC00AC7D4D /* backButton.png */; };
+		CD803197192B7AEC00AC7D4D /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD803195192B7AEC00AC7D4D /* backButton@2x.png */; };
+		CD803199192BA86400AC7D4D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD803198192BA86400AC7D4D /* Default.png */; };
+		CD80319B192BA8E000AC7D4D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD80319A192BA8E000AC7D4D /* Default@2x.png */; };
+		CD80319E192C353B00AC7D4D /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = CD80319C192C353B00AC7D4D /* splash.png */; };
+		CD80319F192C353B00AC7D4D /* splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD80319D192C353B00AC7D4D /* splash@2x.png */; };
+		CD8031A2192C3AB800AC7D4D /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8031A1192C3AB800AC7D4D /* SignInViewController.m */; };
+		CD8031A5192C3C2D00AC7D4D /* signinBG.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031A3192C3C2D00AC7D4D /* signinBG.png */; };
+		CD8031A6192C3C2D00AC7D4D /* signinBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031A4192C3C2D00AC7D4D /* signinBG@2x.png */; };
+		CD8031A9192C3D5100AC7D4D /* tmp_login.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031A7192C3D5100AC7D4D /* tmp_login.png */; };
+		CD8031AA192C3D5100AC7D4D /* tmp_login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031A8192C3D5100AC7D4D /* tmp_login@2x.png */; };
+		CD8031AE192C43B400AC7D4D /* ZTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8031AD192C43B400AC7D4D /* ZTextFiled.m */; };
+		CD8031B1192C482400AC7D4D /* loginBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031AF192C482400AC7D4D /* loginBtn.png */; };
+		CD8031B2192C482400AC7D4D /* loginBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031B0192C482400AC7D4D /* loginBtn@2x.png */; };
+		CD8031B5192C5FA100AC7D4D /* addressBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031B3192C5FA100AC7D4D /* addressBtn.png */; };
+		CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */; };
+		CD8031B9192C60CB00AC7D4D /* AddressSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8031B8192C60CB00AC7D4D /* AddressSelectViewController.m */; };
 		CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */; };
 		CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */ = {isa = PBXBuildFile; fileRef = CDD0FE6E192AE755000B7B26 /* cookbook.html */; };
 		CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE71192AE831000B7B26 /* CookbookDetailViewController.m */; };
@@ -59,6 +76,8 @@
 		CDD8E4F81922EF9F0095247B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4F71922EF9F0095247B /* SWRevealViewController.m */; };
 		CDD8E4FB1922F3540095247B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4FA1922F3540095247B /* BaseViewController.m */; };
 		CDD8E4FE1922F35D0095247B /* TodosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD8E4FD1922F35D0095247B /* TodosViewController.m */; };
+		CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F11192C697000D8B9CC /* addressSelect.html */; };
+		CDDF5F15192C76C800D8B9CC /* MyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF5F14192C76C800D8B9CC /* MyCenterViewController.m */; };
 		CDE7907B19245AA1007996AB /* www in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907A19245AA1007996AB /* www */; };
 		CDE79080192466BB007996AB /* todos.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907F192466BB007996AB /* todos.html */; };
 		CDE79082192467E3007996AB /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE79081192467E3007996AB /* reservation.html */; };
@@ -110,6 +129,26 @@
 		CD52AA801928C3D200367197 /* PeiyushixiangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeiyushixiangViewController.h; sourceTree = "<group>"; };
 		CD52AA811928C3D200367197 /* PeiyushixiangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeiyushixiangViewController.m; sourceTree = "<group>"; };
 		CD52AA83192A361900367197 /* peiyushixiang.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = peiyushixiang.html; path = farm/peiyushixiang.html; sourceTree = "<group>"; };
+		CD803194192B7AEC00AC7D4D /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		CD803195192B7AEC00AC7D4D /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
+		CD803198192BA86400AC7D4D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CD80319A192BA8E000AC7D4D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CD80319C192C353B00AC7D4D /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		CD80319D192C353B00AC7D4D /* splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash@2x.png"; sourceTree = "<group>"; };
+		CD8031A0192C3AB800AC7D4D /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		CD8031A1192C3AB800AC7D4D /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		CD8031A3192C3C2D00AC7D4D /* signinBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signinBG.png; sourceTree = "<group>"; };
+		CD8031A4192C3C2D00AC7D4D /* signinBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signinBG@2x.png"; sourceTree = "<group>"; };
+		CD8031A7192C3D5100AC7D4D /* tmp_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmp_login.png; sourceTree = "<group>"; };
+		CD8031A8192C3D5100AC7D4D /* tmp_login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmp_login@2x.png"; sourceTree = "<group>"; };
+		CD8031AC192C43B400AC7D4D /* ZTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTextFiled.h; sourceTree = "<group>"; };
+		CD8031AD192C43B400AC7D4D /* ZTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTextFiled.m; sourceTree = "<group>"; };
+		CD8031AF192C482400AC7D4D /* loginBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBtn.png; sourceTree = "<group>"; };
+		CD8031B0192C482400AC7D4D /* loginBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBtn@2x.png"; sourceTree = "<group>"; };
+		CD8031B3192C5FA100AC7D4D /* addressBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addressBtn.png; sourceTree = "<group>"; };
+		CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addressBtn@2x.png"; sourceTree = "<group>"; };
+		CD8031B7192C60CB00AC7D4D /* AddressSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelectViewController.h; sourceTree = "<group>"; };
+		CD8031B8192C60CB00AC7D4D /* AddressSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelectViewController.m; sourceTree = "<group>"; };
 		CDD0FE6B192AE507000B7B26 /* CookbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookbookViewController.h; sourceTree = "<group>"; };
 		CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookbookViewController.m; sourceTree = "<group>"; };
 		CDD0FE6E192AE755000B7B26 /* cookbook.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = cookbook.html; path = farm/cookbook.html; sourceTree = "<group>"; };
@@ -146,6 +185,9 @@
 		CDD8E4FA1922F3540095247B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		CDD8E4FC1922F35D0095247B /* TodosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodosViewController.h; sourceTree = "<group>"; };
 		CDD8E4FD1922F35D0095247B /* TodosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodosViewController.m; sourceTree = "<group>"; };
+		CDDF5F11192C697000D8B9CC /* addressSelect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = addressSelect.html; path = farm/addressSelect.html; sourceTree = "<group>"; };
+		CDDF5F13192C76C800D8B9CC /* MyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCenterViewController.h; sourceTree = "<group>"; };
+		CDDF5F14192C76C800D8B9CC /* MyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCenterViewController.m; sourceTree = "<group>"; };
 		CDE7907A19245AA1007996AB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = farm/www; sourceTree = "<group>"; };
 		CDE7907F192466BB007996AB /* todos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = todos.html; path = farm/todos.html; sourceTree = "<group>"; };
 		CDE79081192467E3007996AB /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reservation.html; sourceTree = "<group>"; };
@@ -180,6 +222,10 @@
 		CD52AA701928219C00367197 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				CD8031AF192C482400AC7D4D /* loginBtn.png */,
+				CD8031B0192C482400AC7D4D /* loginBtn@2x.png */,
+				CD803198192BA86400AC7D4D /* Default.png */,
+				CD80319A192BA8E000AC7D4D /* Default@2x.png */,
 				CD4B5C00192B207200F4CE33 /* iconMenu.png */,
 				CD4B5BF6192B1E9F00F4CE33 /* iconCookbook.png */,
 				CD4B5BF7192B1E9F00F4CE33 /* iconHome.png */,
@@ -200,9 +246,28 @@
 				CD4B5C04192B246300F4CE33 /* 冬青黑体W3.otf */,
 				CD4B5C08192B2A6B00F4CE33 /* tmp_package.png */,
 				CD4B5C0A192B307200F4CE33 /* shopcart.png */,
+				CD803194192B7AEC00AC7D4D /* backButton.png */,
+				CD803195192B7AEC00AC7D4D /* backButton@2x.png */,
+				CD80319C192C353B00AC7D4D /* splash.png */,
+				CD80319D192C353B00AC7D4D /* splash@2x.png */,
+				CD8031A3192C3C2D00AC7D4D /* signinBG.png */,
+				CD8031A4192C3C2D00AC7D4D /* signinBG@2x.png */,
+				CD8031A7192C3D5100AC7D4D /* tmp_login.png */,
+				CD8031A8192C3D5100AC7D4D /* tmp_login@2x.png */,
+				CD8031B3192C5FA100AC7D4D /* addressBtn.png */,
+				CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */,
 			);
 			name = res;
 			path = farm/res;
+			sourceTree = "<group>";
+		};
+		CD8031AB192C439E00AC7D4D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CD8031AC192C43B400AC7D4D /* ZTextFiled.h */,
+				CD8031AD192C43B400AC7D4D /* ZTextFiled.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		CDD8E4AB1922E9E60095247B = {
@@ -242,6 +307,7 @@
 		CDD8E4BD1922E9E60095247B /* farm */ = {
 			isa = PBXGroup;
 			children = (
+				CD8031AB192C439E00AC7D4D /* view */,
 				CDD8E4C61922E9E60095247B /* AppDelegate.h */,
 				CDD8E4C71922E9E60095247B /* AppDelegate.m */,
 				CD52AA6D1927660C00367197 /* OrderDetailViewController.h */,
@@ -276,6 +342,12 @@
 				CD4B5BEC192B0B3100F4CE33 /* WhiteBaseViewController.m */,
 				CD4B5C0C192B309700F4CE33 /* PackageDetailViewController.h */,
 				CD4B5C0D192B309700F4CE33 /* PackageDetailViewController.m */,
+				CD8031A0192C3AB800AC7D4D /* SignInViewController.h */,
+				CD8031A1192C3AB800AC7D4D /* SignInViewController.m */,
+				CD8031B7192C60CB00AC7D4D /* AddressSelectViewController.h */,
+				CD8031B8192C60CB00AC7D4D /* AddressSelectViewController.m */,
+				CDDF5F13192C76C800D8B9CC /* MyCenterViewController.h */,
+				CDDF5F14192C76C800D8B9CC /* MyCenterViewController.m */,
 			);
 			path = farm;
 			sourceTree = "<group>";
@@ -321,6 +393,7 @@
 		CDE7907C19246671007996AB /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				CDDF5F11192C697000D8B9CC /* addressSelect.html */,
 				CDE7907F192466BB007996AB /* todos.html */,
 				CD52AA83192A361900367197 /* peiyushixiang.html */,
 				CD52AA7E1928624A00367197 /* myfarm.html */,
@@ -378,6 +451,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = mrcoder;
 				TargetAttributes = {
+					CDD8E4B31922E9E60095247B = {
+						DevelopmentTeam = GAE37QQXXQ;
+					};
 					CDD8E4D71922E9E60095247B = {
 						TestTargetID = CDD8E4B31922E9E60095247B;
 					};
@@ -409,18 +485,31 @@
 			files = (
 				CD4B5C05192B249400F4CE33 /* 冬青黑体W3.otf in Resources */,
 				CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */,
+				CD8031A6192C3C2D00AC7D4D /* signinBG@2x.png in Resources */,
 				CD4B5C09192B2A6B00F4CE33 /* tmp_package.png in Resources */,
 				CD4B5C0B192B307200F4CE33 /* shopcart.png in Resources */,
 				CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */,
+				CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */,
+				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
 				CDE79082192467E3007996AB /* reservation.html in Resources */,
 				CDD8E4CE1922E9E60095247B /* Main_iPad.storyboard in Resources */,
+				CD8031B1192C482400AC7D4D /* loginBtn.png in Resources */,
+				CD803199192BA86400AC7D4D /* Default.png in Resources */,
+				CD8031A9192C3D5100AC7D4D /* tmp_login.png in Resources */,
+				CD8031A5192C3C2D00AC7D4D /* signinBG.png in Resources */,
 				CD4B5BFB192B1E9F00F4CE33 /* iconCookbook.png in Resources */,
 				CDD0FE74192AE883000B7B26 /* cookbook-detail.html in Resources */,
 				CDD8E4D31922E9E60095247B /* Images.xcassets in Resources */,
+				CD80319F192C353B00AC7D4D /* splash@2x.png in Resources */,
 				CDD8E4CB1922E9E60095247B /* Main_iPhone.storyboard in Resources */,
+				CD80319B192BA8E000AC7D4D /* Default@2x.png in Resources */,
 				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
 				CD4B5BFE192B1E9F00F4CE33 /* iconReservation.png in Resources */,
 				CDE7907B19245AA1007996AB /* www in Resources */,
+				CD80319E192C353B00AC7D4D /* splash.png in Resources */,
+				CD8031B2192C482400AC7D4D /* loginBtn@2x.png in Resources */,
+				CD8031B5192C5FA100AC7D4D /* addressBtn.png in Resources */,
+				CD803196192B7AEC00AC7D4D /* backButton.png in Resources */,
 				CD4B5BE9192B0B0600F4CE33 /* whiteBg.png in Resources */,
 				CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */,
 				CD4B5BF1192B0E5800F4CE33 /* sidemenuBg@2x.png in Resources */,
@@ -428,12 +517,14 @@
 				CD52AA7F1928624A00367197 /* myfarm.html in Resources */,
 				CD52AA781928264300367197 /* order-background.png in Resources */,
 				CD4B5BFD192B1E9F00F4CE33 /* iconMyfarm.png in Resources */,
+				CD8031AA192C3D5100AC7D4D /* tmp_login@2x.png in Resources */,
 				CD4B5BEA192B0B0600F4CE33 /* whiteBg@2x.png in Resources */,
 				CD4B5BFC192B1E9F00F4CE33 /* iconHome.png in Resources */,
 				CD4B5BF5192B106500F4CE33 /* navbar@2x.png in Resources */,
 				CD52AA75192822A200367197 /* viewBackground.png in Resources */,
 				CD4B5BF4192B106500F4CE33 /* navbar.png in Resources */,
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
+				CD803197192B7AEC00AC7D4D /* backButton@2x.png in Resources */,
 				CDE79080192466BB007996AB /* todos.html in Resources */,
 				CD4B5BF0192B0E5800F4CE33 /* sidemenuBg.png in Resources */,
 				CD52AA7A192827D300367197 /* toPayBtn.png in Resources */,
@@ -460,6 +551,7 @@
 				CDD8E4F51922EA580095247B /* SideMenuViewController.m in Sources */,
 				CDD8E4FB1922F3540095247B /* BaseViewController.m in Sources */,
 				CDD8E4D11922E9E60095247B /* ViewController.m in Sources */,
+				CDDF5F15192C76C800D8B9CC /* MyCenterViewController.m in Sources */,
 				CD52AA6F1927660C00367197 /* OrderDetailViewController.m in Sources */,
 				CD52AA7D192829E900367197 /* MyFarmViewController.m in Sources */,
 				CDD8E4FE1922F35D0095247B /* TodosViewController.m in Sources */,
@@ -467,11 +559,14 @@
 				CD52AA821928C3D200367197 /* PeiyushixiangViewController.m in Sources */,
 				CDD8E4C81922E9E60095247B /* AppDelegate.m in Sources */,
 				CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */,
+				CD8031AE192C43B400AC7D4D /* ZTextFiled.m in Sources */,
 				CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */,
+				CD8031B9192C60CB00AC7D4D /* AddressSelectViewController.m in Sources */,
 				CDD8E4C41922E9E60095247B /* main.m in Sources */,
 				CD4B5BE6192B0A3E00F4CE33 /* SettingsViewController.m in Sources */,
 				CDE7908519246928007996AB /* ReservationViewController.m in Sources */,
 				CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */,
+				CD8031A2192C3AB800AC7D4D /* SignInViewController.m in Sources */,
 				CD4B5BED192B0B3100F4CE33 /* WhiteBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,10 +702,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jun liu (9B54MT74CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jun liu (9B54MT74CJ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "farm/farm-Prefix.pch";
 				INFOPLIST_FILE = "farm/farm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00766DA0-374C-4F17-8F9F-322B1AA41B88";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -620,10 +719,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: jun liu (9B54MT74CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "farm/farm-Prefix.pch";
 				INFOPLIST_FILE = "farm/farm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00766DA0-374C-4F17-8F9F-322B1AA41B88";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

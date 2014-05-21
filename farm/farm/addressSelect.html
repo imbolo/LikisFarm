@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+	</head>
+	
+	<link rel="stylesheet" href="www/global.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		padding: 10px;
+	}
+	.item {
+		position: relative;
+		box-sizing: border-box;
+		margin-bottom: 14px;
+		padding-top: 24px;
+		width: 300px;
+		height: 85px;	
+		-webkit-box-shadow: 2px 3px 5px #999;
+		box-shadow: 2px 3px 5px #999;
+		background: #fff;
+		opacity: 0.8;
+	}
+	.check {
+		position: absolute;
+		right: 10px;
+		top: 34px;
+		width: 22px;
+		height: 15px;
+		background: url('www/checkSprite.png') no-repeat;
+	}
+	.item .yes {
+		background-position: 0px -15px;
+	}
+	.item .no {
+		background-position: 0px 0px;
+	}
+	.item .text {
+		margin-left: 14px;
+/*		margin-top: 58px;*/
+	}
+	.mr3 {
+		margin-right: 15px;
+	}
+	.item .topText {
+		font-size: 18px;
+	}
+	.item .bottomText {
+		line-height: 22px;
+		font-size: 15px;
+	}
+	</style>
+	<body>
+		<div class="item">
+			<div class="text">
+				<p class="topText">
+					<span class="mr3">李琦</span>
+					<span>重庆市沙坪坝区</span>
+				</p>
+				<p class="bottomText">
+					<span class="mr3">虎溪镇大学城四川美术学院</span>
+					<span>7号楼</span>
+				</p>
+			</div>
+			<div class="check yes">
+			</div>
+		</div>
+	
+		<div class="item">
+			<div class="text">
+				<p class="topText">
+					<span class="mr3">李琦</span>
+					<span>重庆市沙坪坝区</span>
+				</p>
+				<p class="bottomText">
+					<span class="mr3">虎溪镇大学城四川美术学院</span>
+					<span>7号楼</span>
+				</p>
+			</div>
+			<div class="check no">
+			</div>
+		</div>
+		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$('.item').on('tap', function(ev) {
+			var check = $(this).find('.check');						
+			
+			$('.check').removeClass('no');
+			$('.check').removeClass('yes');
+			check.addClass('yes');
+		});
+		</script>
+	</body>
+</html>

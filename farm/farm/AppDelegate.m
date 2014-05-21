@@ -10,6 +10,8 @@
 
 @implementation AppDelegate
 
+@synthesize splashView;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -18,8 +20,9 @@
     
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
-
-    //    [[UINavigationBar appearance] setBackButtonBackgroundImage:@"iconMenu.png" forState:UIControlStateNormal barMetrics:UIBarMetricsDefault]; // 返回按钮的背景
+    
+    
+//    [[UINavigationBar appearance] setBackButtonBackgroundImage:@"iconMenu.png" forState:UIControlStateNormal barMetrics:UIBarMetricsDefault]; // 返回按钮的背景
 //    NSArray *familyNames = [UIFont familyNames];
 //    for (NSString *familyName in familyNames) {
 //        printf("Family: %s \n",[familyName UTF8String]);
@@ -32,10 +35,12 @@
     [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:21.0]];
     
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil, NSShadowAttributeName,[UIFont fontWithName:@"HiraginoSansGB-W3" size:24.0], NSFontAttributeName, nil]];
-
+    
+//    [self playWelcomeAnimation];
+  
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -61,6 +66,49 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)playWelcomeAnimation
+{
+    //splash view
+    [self.window makeKeyAndVisible];
+    
+    splashView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 1920)];//568)];
+    [splashView setImage:[UIImage imageNamed:@"splash"]];
+    
+    [self.window addSubview:splashView];
+    [self.window bringSubviewToFront:splashView];
+    
+    
+    [UIView animateWithDuration:4.5
+                          delay:0.3
+                        options:UIViewAnimationCurveEaseOut
+                     animations:^
+     {
+         CGRect frame = splashView.frame;
+         frame.origin.y = (-1606);//(-1380);
+         frame.origin.x = 0;
+         splashView.frame = frame;
+     }
+                     completion:^(BOOL finished)
+     {
+         [UIView animateWithDuration:0.6
+                               delay:0.3
+                             options:UIViewAnimationCurveEaseOut
+                          animations:^
+          {
+              splashView.alpha = 0;
+          }
+                          completion:^(BOOL finished)
+          {
+              NSLog(@"Fade out Completed");
+              //              [splashView ];
+          }];
+         
+         
+     }];
+    
+
 }
 
 @end
