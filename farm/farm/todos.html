@@ -45,24 +45,50 @@
         .fr {
             float: right;
         }
+		.tacenter {
+			text-align: center;
+		}
         </style>
     </head>
     <body>
-        <ul class="todo-ul">
+		<script id="listTemplate" type="text/template">
             <li>			
                 <div class="todo-cell">
 					<img src="www/todo-cell.png" />
-					<span class="date">4月16日~18日</span>
-					<span class="text">草莓需要xx</span>
+					<span class="date">{{date}}</span>
+					<span class="text">{{content}}</span>
                 </div>
             </li>
-            <li>
-               <div class="todo-cell">
-					<img src="www/todo-cell.png" />
-					<span class="date">4月16日~18日</span>
-					<span class="text">西瓜需要xx</span>
-               </div>
-            </li>
+		</script>
+        <ul id="todoList" class="todo-ul">                      
+		   <div class="tacenter"><br/><br/>加载中...</div>
         </ul>
+		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		//渲染函数
+		function render(data, tpl) {
+			var str = "";
+			var tmpTpl;
+			$.each(data, function(index, item) {
+				tmpTpl = tpl;
+				for (var key in item) {				
+					tmpTpl = tmpTpl.replace("{{"+ key +"}}", item[key]);
+				}
+				str += tmpTpl;				
+			});			
+			return str;
+		}
+		
+		$(function(){
+			var template = $('#listTemplate').html();	
+			
+			$.getJSON('http://ch.mrcoder.org:3000/todos', function(data) {			
+				console.log(data);
+				$('#todoList').html( render(data, template) );				
+			});		
+			
+		});				
+		
+		</script>
     </body>
 </html>

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD03BE8C192D9D8F000979DF /* tmp_cblist.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BE8A192D9D8F000979DF /* tmp_cblist.png */; };
+		CD03BE8D192D9D8F000979DF /* tmp_cblist@2px.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BE8B192D9D8F000979DF /* tmp_cblist@2px.png */; };
+		CD4956DD192CD09000C9E90F /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CD4956DC192CD09000C9E90F /* reservation.html */; };
+		CD4956E1192CEDF700C9E90F /* ButtonGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */; };
+		CD4956E6192CEEEC00C9E90F /* buttonGroupSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4956E2192CEEEC00C9E90F /* buttonGroupSelected.png */; };
+		CD4956E7192CEEEC00C9E90F /* buttonGroupSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4956E3192CEEEC00C9E90F /* buttonGroupSelected@2x.png */; };
+		CD4956EC192CEF8300C9E90F /* buttonGroupNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4956EA192CEF8300C9E90F /* buttonGroupNormal.png */; };
+		CD4956ED192CEF8300C9E90F /* buttonGroupNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4956EB192CEF8300C9E90F /* buttonGroupNormal@2x.png */; };
+		CD4956F0192CF51D00C9E90F /* ZButtonGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4956EF192CF51D00C9E90F /* ZButtonGroupItem.m */; };
 		CD4B5BE6192B0A3E00F4CE33 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B5BE5192B0A3E00F4CE33 /* SettingsViewController.m */; };
 		CD4B5BE9192B0B0600F4CE33 /* whiteBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BE7192B0B0600F4CE33 /* whiteBg.png */; };
 		CD4B5BEA192B0B0600F4CE33 /* whiteBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4B5BE8192B0B0600F4CE33 /* whiteBg@2x.png */; };
@@ -94,7 +103,6 @@
 		CDDF5F33192CB4BD00D8B9CC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF5F32192CB4BD00D8B9CC /* Config.m */; };
 		CDE7907B19245AA1007996AB /* www in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907A19245AA1007996AB /* www */; };
 		CDE79080192466BB007996AB /* todos.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907F192466BB007996AB /* todos.html */; };
-		CDE79082192467E3007996AB /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE79081192467E3007996AB /* reservation.html */; };
 		CDE7908519246928007996AB /* ReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7908419246928007996AB /* ReservationViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +117,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD03BE8A192D9D8F000979DF /* tmp_cblist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmp_cblist.png; sourceTree = "<group>"; };
+		CD03BE8B192D9D8F000979DF /* tmp_cblist@2px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmp_cblist@2px.png"; sourceTree = "<group>"; };
+		CD4956DC192CD09000C9E90F /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = reservation.html; path = farm/reservation.html; sourceTree = "<group>"; };
+		CD4956DF192CEDF700C9E90F /* ButtonGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGroupViewController.h; sourceTree = "<group>"; };
+		CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGroupViewController.m; sourceTree = "<group>"; };
+		CD4956E2192CEEEC00C9E90F /* buttonGroupSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonGroupSelected.png; sourceTree = "<group>"; };
+		CD4956E3192CEEEC00C9E90F /* buttonGroupSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonGroupSelected@2x.png"; sourceTree = "<group>"; };
+		CD4956EA192CEF8300C9E90F /* buttonGroupNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonGroupNormal.png; sourceTree = "<group>"; };
+		CD4956EB192CEF8300C9E90F /* buttonGroupNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonGroupNormal@2x.png"; sourceTree = "<group>"; };
+		CD4956EE192CF51D00C9E90F /* ZButtonGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZButtonGroupItem.h; sourceTree = "<group>"; };
+		CD4956EF192CF51D00C9E90F /* ZButtonGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZButtonGroupItem.m; sourceTree = "<group>"; };
 		CD4B5BE4192B0A3E00F4CE33 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		CD4B5BE5192B0A3E00F4CE33 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		CD4B5BE7192B0B0600F4CE33 /* whiteBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBg.png; sourceTree = "<group>"; };
@@ -219,7 +238,6 @@
 		CDDF5F32192CB4BD00D8B9CC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		CDE7907A19245AA1007996AB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = farm/www; sourceTree = "<group>"; };
 		CDE7907F192466BB007996AB /* todos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = todos.html; path = farm/todos.html; sourceTree = "<group>"; };
-		CDE79081192467E3007996AB /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reservation.html; sourceTree = "<group>"; };
 		CDE7908319246927007996AB /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
 		CDE7908419246928007996AB /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,9 +266,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD4956DE192CEDE000C9E90F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				CD4956DF192CEDF700C9E90F /* ButtonGroupViewController.h */,
+				CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
 		CD52AA701928219C00367197 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				CD4956E2192CEEEC00C9E90F /* buttonGroupSelected.png */,
+				CD4956E3192CEEEC00C9E90F /* buttonGroupSelected@2x.png */,
+				CD4956EA192CEF8300C9E90F /* buttonGroupNormal.png */,
+				CD4956EB192CEF8300C9E90F /* buttonGroupNormal@2x.png */,
 				CDDF5F22192C82FC00D8B9CC /* 赞.png */,
 				CDDF5F23192C82FC00D8B9CC /* 赞@2x.png */,
 				CDDF5F1A192C82A000D8B9CC /* 关注他.png */,
@@ -292,6 +323,8 @@
 				CD8031A4192C3C2D00AC7D4D /* signinBG@2x.png */,
 				CD8031A7192C3D5100AC7D4D /* tmp_login.png */,
 				CD8031A8192C3D5100AC7D4D /* tmp_login@2x.png */,
+				CD03BE8A192D9D8F000979DF /* tmp_cblist.png */,
+				CD03BE8B192D9D8F000979DF /* tmp_cblist@2px.png */,
 				CD8031B3192C5FA100AC7D4D /* addressBtn.png */,
 				CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */,
 				CDDF5F16192C7D5A00D8B9CC /* centerTopImage.png */,
@@ -308,6 +341,8 @@
 			children = (
 				CD8031AC192C43B400AC7D4D /* ZTextFiled.h */,
 				CD8031AD192C43B400AC7D4D /* ZTextFiled.m */,
+				CD4956EE192CF51D00C9E90F /* ZButtonGroupItem.h */,
+				CD4956EF192CF51D00C9E90F /* ZButtonGroupItem.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -349,6 +384,7 @@
 		CDD8E4BD1922E9E60095247B /* farm */ = {
 			isa = PBXGroup;
 			children = (
+				CD4956DE192CEDE000C9E90F /* test */,
 				CDDF5F30192CB4AC00D8B9CC /* config */,
 				CD8031AB192C439E00AC7D4D /* view */,
 				CDD8E4C61922E9E60095247B /* AppDelegate.h */,
@@ -449,7 +485,7 @@
 				CDE7907F192466BB007996AB /* todos.html */,
 				CD52AA83192A361900367197 /* peiyushixiang.html */,
 				CD52AA7E1928624A00367197 /* myfarm.html */,
-				CDE79081192467E3007996AB /* reservation.html */,
+				CD4956DC192CD09000C9E90F /* reservation.html */,
 				CDD0FE6E192AE755000B7B26 /* cookbook.html */,
 				CDD0FE73192AE883000B7B26 /* cookbook-detail.html */,
 			);
@@ -535,8 +571,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD03BE8D192D9D8F000979DF /* tmp_cblist@2px.png in Resources */,
 				CD4B5C05192B249400F4CE33 /* 冬青黑体W3.otf in Resources */,
 				CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */,
+				CD4956ED192CEF8300C9E90F /* buttonGroupNormal@2x.png in Resources */,
 				CD8031A6192C3C2D00AC7D4D /* signinBG@2x.png in Resources */,
 				CDDF5F2D192C897800D8B9CC /* iconShopcart@2x.png in Resources */,
 				CD4B5C09192B2A6B00F4CE33 /* tmp_package.png in Resources */,
@@ -546,8 +584,8 @@
 				CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */,
 				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
 				CDDF5F1F192C82A000D8B9CC /* 关注他@2x.png in Resources */,
-				CDE79082192467E3007996AB /* reservation.html in Resources */,
 				CDDF5F19192C7D5A00D8B9CC /* centerTopImage@2x.png in Resources */,
+				CD4956E6192CEEEC00C9E90F /* buttonGroupSelected.png in Resources */,
 				CDD8E4CE1922E9E60095247B /* Main_iPad.storyboard in Resources */,
 				CD8031B1192C482400AC7D4D /* loginBtn.png in Resources */,
 				CD803199192BA86400AC7D4D /* Default.png in Resources */,
@@ -579,16 +617,20 @@
 				CD52AA7F1928624A00367197 /* myfarm.html in Resources */,
 				CD52AA781928264300367197 /* order-background.png in Resources */,
 				CD4B5BFD192B1E9F00F4CE33 /* iconMyfarm.png in Resources */,
+				CD4956DD192CD09000C9E90F /* reservation.html in Resources */,
 				CD8031AA192C3D5100AC7D4D /* tmp_login@2x.png in Resources */,
 				CD4B5BEA192B0B0600F4CE33 /* whiteBg@2x.png in Resources */,
 				CD4B5BFC192B1E9F00F4CE33 /* iconHome.png in Resources */,
+				CD4956EC192CEF8300C9E90F /* buttonGroupNormal.png in Resources */,
 				CD4B5BF5192B106500F4CE33 /* navbar@2x.png in Resources */,
 				CD52AA75192822A200367197 /* viewBackground.png in Resources */,
+				CD03BE8C192D9D8F000979DF /* tmp_cblist.png in Resources */,
 				CD4B5BF4192B106500F4CE33 /* navbar.png in Resources */,
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
 				CD803197192B7AEC00AC7D4D /* backButton@2x.png in Resources */,
 				CDE79080192466BB007996AB /* todos.html in Resources */,
 				CD4B5BF0192B0E5800F4CE33 /* sidemenuBg.png in Resources */,
+				CD4956E7192CEEEC00C9E90F /* buttonGroupSelected@2x.png in Resources */,
 				CDDF5F24192C82FC00D8B9CC /* 赞.png in Resources */,
 				CDDF5F18192C7D5A00D8B9CC /* centerTopImage.png in Resources */,
 				CDDF5F2F192C8A5500D8B9CC /* iconMenu@2x.png in Resources */,
@@ -627,9 +669,11 @@
 				CD8031AE192C43B400AC7D4D /* ZTextFiled.m in Sources */,
 				CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */,
 				CD8031B9192C60CB00AC7D4D /* AddressSelectViewController.m in Sources */,
+				CD4956F0192CF51D00C9E90F /* ZButtonGroupItem.m in Sources */,
 				CDD8E4C41922E9E60095247B /* main.m in Sources */,
 				CD4B5BE6192B0A3E00F4CE33 /* SettingsViewController.m in Sources */,
 				CDE7908519246928007996AB /* ReservationViewController.m in Sources */,
+				CD4956E1192CEDF700C9E90F /* ButtonGroupViewController.m in Sources */,
 				CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */,
 				CDDF5F33192CB4BD00D8B9CC /* Config.m in Sources */,
 				CD8031A2192C3AB800AC7D4D /* SignInViewController.m in Sources */,
