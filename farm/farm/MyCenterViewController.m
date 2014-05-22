@@ -37,7 +37,7 @@ static CGFloat ImageWidth  = 320.0;
     self.bottomContainer.backgroundColor = [UIColor purpleColor];
     [self.bottomScrollView addSubview:self.bottomContainer];
     
-    self.fixedContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 64, 320, 50)];
+    self.fixedContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];//ios 7.0 44
     self.fixedContainer.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.fixedContainer];
     [self.fixedContainer setHidden:YES];
@@ -134,7 +134,9 @@ static CGFloat ImageWidth  = 320.0;
     
     
     //fixed button group
-    if (yOffset < 176.0) {
+    //ios 7.1 240
+    //ios 7.0 196
+    if (yOffset < 240.0) {
         [self.fixedContainer setHidden:YES];
         [self.bottomScrollView addSubview:self.bottomContainer];
         self.bottomContainer.frame = CGRectMake(0, 240, self.bottomContainer.frame.size.width, self.bottomContainer.frame.size.height);

@@ -31,6 +31,13 @@
     _menuItems = @[@"smcHome", @"smcReservation", @"smcMyfarm", @"smcCookbook", @"smcSettings"];
     
     _menuList.backgroundColor = [UIColor clearColor];
+    
+    double version = [[UIDevice currentDevice].systemVersion doubleValue];
+    if (version >= 7.0) {
+        UIView* topBlackbar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
+        topBlackbar.backgroundColor = [UIColor blackColor];
+        [self.view addSubview: topBlackbar];
+    }
 }
 
 - (void)didReceiveMemoryWarning

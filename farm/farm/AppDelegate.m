@@ -33,9 +33,16 @@
 //        }
 //    }
 
-    [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:21.0]];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor whiteColor];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"HiraginoSansGB-W3" size:18.0], NSFontAttributeName, nil]];
+    [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:18.0]];
     
-    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil, NSShadowAttributeName,[UIFont fontWithName:@"HiraginoSansGB-W3" size:24.0], NSFontAttributeName, nil]];
+//    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil, NSShadowAttributeName,[UIFont fontWithName:@"HiraKakuProN-W3" size:36.0], NSFontAttributeName, nil]];
     
 //    [self playWelcomeAnimation];
   
@@ -87,7 +94,7 @@
                      animations:^
      {
          CGRect frame = splashView.frame;
-         frame.origin.y = (-1606);//(-1380);
+         frame.origin.y = (-1456);//(-1380);
          frame.origin.x = 0;
          splashView.frame = frame;
      }

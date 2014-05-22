@@ -9,8 +9,12 @@
 #import "ViewController.h"
 #import "WhiteBaseViewController.h"
 
-@interface SettingsViewController : WhiteBaseViewController
+@interface SettingsViewController : WhiteBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButtonItem;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSArray* menuItems;
 
 @end

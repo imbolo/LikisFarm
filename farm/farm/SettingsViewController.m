@@ -34,6 +34,7 @@
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     
+    _menuItems = @[@"itemPersonalCenter", @"itemSwitchShowtips", @"itemSwitchPushMessage"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,5 +53,40 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.menuItems.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *CellIdentifier = [self.menuItems objectAtIndex: [indexPath row]];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    
+    UIColor *color = [[UIColor alloc]initWithRed:98/255.0 green:217/255.0 blue:176/255.0 alpha:0.8];//通过RGB来定义自己的颜色
+    cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+    cell.selectedBackgroundView.backgroundColor = color;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%d", indexPath.row);
+    if (indexPath.row == 0) {
+        ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"personalCenter"];
+        [self.navigationController pushViewController:nextView animated:YES];
+    }
+}
 
 @end

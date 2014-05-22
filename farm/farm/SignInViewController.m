@@ -91,9 +91,24 @@
     }
 }
 
+- (IBAction)inputOnFocus:(id)sender {
+    NSLog(@"focus");
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseOut
+                     animations:^
+     {
+         CGRect frame = self.view.frame;
+         //         frame.origin.y = 0;
+         frame.origin.y = -150;
+         self.view.frame = frame;
+         
+     }
+                     completion:^(BOOL finished)
+     {
+         NSLog(@"Fade out Completed");
+         //              [splashView ];
+     }];
 
-- (IBAction)login:(id)sender {
-    NSLog(@"login button clicked");
 }
-
 @end

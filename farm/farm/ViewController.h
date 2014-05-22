@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "WhiteBaseViewController.h"
 
-@interface ViewController : BaseViewController
+@interface ViewController : UIViewController
 
 @end

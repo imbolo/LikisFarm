@@ -47,6 +47,7 @@
     [_webView loadHTMLString:htmlString baseURL:baseURL];
 //    _webView.scrollView.scrollEnabled = NO;
 //    _webView.scrollView.bounces = NO;
+    
 }
 
 - (void)didReceiveMemoryWarning

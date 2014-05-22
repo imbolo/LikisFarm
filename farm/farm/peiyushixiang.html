@@ -30,6 +30,12 @@
 			height: 100px;
 			-webkit-transition: all .3s;
 			transition: all .3s;
+/*			text-align: left;*/
+		}
+		.item .text {
+			position: absolute;
+			top: 30px;
+			left: 10px;
 		}
 		.back {
 /*			top: 20px;*/
@@ -39,9 +45,9 @@
 		.front {	
 			top:-6px;
 			left: 10px;		
-			width: 90%;
-			background: url('www/tip-unclick.png') no-repeat;
-			
+			width: 94%;
+			text-align: center;
+/*			background: url('www/tip-unclick.png') no-repeat;*/			
 		}
 		.top-60 {
 			top: -66px;
@@ -75,19 +81,56 @@
 					<span style="font-size: 18px; color:#65dfb5">请选择</span>
 				</div>
 			</div>
-			<div class="item front">				
+			<div class="item front">	
+				<img id="frontImg" src="www/tip-unclick.png" width="100%" height="90" alt="Tip Unclick">	
+				<span class="text">几天后草莓需要您</span>
 			</div>
 		</div>
+		<!-- // <script src="www/curl.js" type="text/javascript" charset="utf-8"></script> -->
+		<!-- // <script src="www/cvi_curl_lib.js" type="text/javascript" charset="utf-8"></script> -->
+		<script type="text/javascript">
+		var frontImg = document.getElementById('frontImg');
+		var max = 380;
+		var size = 0;
+		window.onload = function() {
+			// cvi_curl.add(frontImg, {size: 0});			
+		};
+		
+		function open() {
+			var interval = setInterval(function() {
+				console.log(size);
+				size = size < max ? (size + 60) : size;
+				if (size > max) {
+					clearInterval(interval);
+				}
+				cvi_curl.modify(document.getElementById('frontImg'), {size: size });
+			}, 50)
+		}
+		function close() {
+			var interval = setInterval(function() {
+				console.log(size);
+				size = size > 0 ? (size - 60) : size;
+				if (size < 0) {
+					clearInterval(interval);
+				}
+				cvi_curl.modify(document.getElementById('frontImg'), {size: size });
+			}, 50)
+		}
+		
+		// cvi_curl.modify(frontImg, {size: 150});
+		</script>
 		
 		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>		
 		<script type="text/javascript">
 		$('.front').on('tap', function(ev) {
 			$('.front').addClass('top-60');
+			// open();
 			$('.J_backContent').css('visibility', 'visible');
 			$('.J_selectTip').hide();
 		});
 		$('.back').on('tap', function(ev) {
 			$('.front').removeClass('top-60');
+			// close();
 			$('.J_backContent').css('visibility', 'hidden');
 			$('.J_selectTip').show();
 		});
