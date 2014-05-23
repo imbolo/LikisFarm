@@ -175,6 +175,7 @@ static CGFloat ImageWidth  = 320.0;
     CGRect bounds = self.view.bounds;
     self.bottomScrollView.frame = bounds;
     //    self.bottomScrollView.contentSize = CGSizeMake(320, 960+ImageHeight);
+    self.bottomScrollView.contentSize = self.bottomScrollView.bounds.size;
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -247,7 +248,6 @@ static CGFloat ImageWidth  = 320.0;
     }
     
     //slide view
-    
     [UIView animateWithDuration:0.3
                           delay:0
                         options:UIViewAnimationCurveEaseOut
@@ -264,8 +264,14 @@ static CGFloat ImageWidth  = 320.0;
          NSLog(@"Fade out Completed");
          //              [splashView ];
      }];
+}
 
-
+- (IBAction)addCookbook:(id)sender {
+    
+    ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"addcookbook"];
+    
+    [self.navigationController pushViewController:nextView animated:YES];
+   
 }
 
 @end

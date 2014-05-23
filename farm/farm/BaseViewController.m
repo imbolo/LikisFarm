@@ -43,8 +43,23 @@
         self.navigationController.navigationBar.backIndicatorImage = [UIImage imageNamed:@"backButton.png"];
         self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"backButton.png"];
         
-        
     }
+    if (version < 7.0) {
+        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[[UIImage imageNamed:@"backButtonIOS6.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 12, 0, 0)]
+                                                          forState:UIControlStateNormal
+                                                        barMetrics:UIBarMetricsDefault];
+
+        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(5, 0)
+                                                             forBarMetrics:UIBarMetricsDefault];
+
+        [[UIBarButtonItem appearance] setTitleTextAttributes:
+         @{ UITextAttributeFont: [UIFont systemFontOfSize:16],
+            UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero]} forState:UIControlStateNormal];
+        
+
+    }
+    
+    self.navigationController.navigationBar.layer.backgroundColor = [[UIColor clearColor] CGColor];
     
     [self setShadowForNavigationBar];
     

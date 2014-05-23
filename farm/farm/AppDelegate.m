@@ -33,7 +33,14 @@
 //            printf("\tFont: %s \n",[fontName UTF8String]);
 //        }
 //    }
-
+    
+    //for ios 6
+    if ([[UIDevice currentDevice].systemVersion doubleValue] < 7.0) {
+        [[UIBarButtonItem appearance] setBackgroundImage:[UIImage new]
+                                                forState:UIControlStateNormal
+                                              barMetrics:UIBarMetricsDefault];
+    }
+    
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor whiteColor];
     shadow.shadowOffset = CGSizeMake(0, 0);
