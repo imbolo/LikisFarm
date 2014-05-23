@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CDD8E4B31922E9E60095247B"
-               BuildableName = "farm.app"
+               BuildableName = "&#x7406;&#x60f3;&#x57f9;&#x80b2;&#x56ed;.app"
                BlueprintName = "farm"
                ReferencedContainer = "container:farm.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDD8E4B31922E9E60095247B"
-            BuildableName = "farm.app"
+            BuildableName = "&#x7406;&#x60f3;&#x57f9;&#x80b2;&#x56ed;.app"
             BlueprintName = "farm"
             ReferencedContainer = "container:farm.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDD8E4B31922E9E60095247B"
-            BuildableName = "farm.app"
+            BuildableName = "&#x7406;&#x60f3;&#x57f9;&#x80b2;&#x56ed;.app"
             BlueprintName = "farm"
             ReferencedContainer = "container:farm.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDD8E4B31922E9E60095247B"
-            BuildableName = "farm.app"
+            BuildableName = "&#x7406;&#x60f3;&#x57f9;&#x80b2;&#x56ed;.app"
             BlueprintName = "farm"
             ReferencedContainer = "container:farm.xcodeproj">
          </BuildableReference>

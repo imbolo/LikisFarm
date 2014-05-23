@@ -3,20 +3,25 @@
     <head>
         <meta charset="utf8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+		<link rel="stylesheet" href="www/global.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		
         <style type="text/css">
 		ul {
 			padding: 0;
 		}
-        .todo-ul {
+        .todo-ul {			
             list-style: none;
+			width: 294px;
+			text-align: center;
         }
-		.todo-ul li{			
+		.todo-ul li{					
 			margin-bottom: 10px;
 			height: 100px;
 		}
         .todo-cell {
 			position: relative;
-			height: 98px;
+			left: 4px;
+			height: 98px;			
 			-moz-box-shadow: 2px 3px 5px #000000;
 			-webkit-box-shadow: 2px 3px 5px #000000;
 			box-shadow: 2px 3px 5px #000000;
@@ -24,15 +29,17 @@
 		.todo-cell img {
 			position: absolute;
 			top: 0;
+			left: 0;
 			width: 100%;
 			height: 100px;
 		}
 		.todo-cell .date {
 			position: absolute;
-			top: 8px;
+			top: 4px;
 			left: 50px;
 			color: #65dfb5;			
 			font-size: 14px;
+			font-weight: bold;
 		}
 		.todo-cell .text {
 			position: absolute;

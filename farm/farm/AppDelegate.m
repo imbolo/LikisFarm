@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Config.h"
+#import "ZSlider.h"
 
 @implementation AppDelegate
 
@@ -21,7 +22,7 @@
     
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    
+//    [self setSliderAppearance];
     
 //    [[UINavigationBar appearance] setBackButtonBackgroundImage:@"iconMenu.png" forState:UIControlStateNormal barMetrics:UIBarMetricsDefault]; // 返回按钮的背景
 //    NSArray *familyNames = [UIFont familyNames];
@@ -40,7 +41,7 @@
                                                            [UIColor whiteColor], NSForegroundColorAttributeName,
                                                            shadow, NSShadowAttributeName,
                                                            [UIFont fontWithName:@"HiraginoSansGB-W3" size:18.0], NSFontAttributeName, nil]];
-    [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:18.0]];
+//    [[UILabel appearance] setFont:[UIFont fontWithName:@"HiraginoSansGB-W3" size:18.0]];
     
 //    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil, NSShadowAttributeName,[UIFont fontWithName:@"HiraKakuProN-W3" size:36.0], NSFontAttributeName, nil]];
     
@@ -123,6 +124,21 @@
 {
     double version = [[UIDevice currentDevice].systemVersion doubleValue];
 //    [Config getInstance]
+}
+
+- (void) setSliderAppearance
+{
+    UIImage *minImage = [[UIImage imageNamed:@"slider-track-fill.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)];
+    UIImage *maxImage = [UIImage imageNamed:@"slider-track.png"];
+    UIImage *thumbImage = [UIImage imageNamed:@"slider-cap.png"];
+    
+    
+    [[UISlider appearance] setMaximumTrackImage:maxImage forState:UIControlStateNormal];
+    [[UISlider appearance] setMinimumTrackImage:minImage forState:UIControlStateNormal];
+    [[UISlider appearance] setThumbImage:thumbImage forState:UIControlStateNormal];
+    [[UISlider appearance] setThumbImage:thumbImage forState:UIControlStateHighlighted];
+    
+
 }
 
 @end

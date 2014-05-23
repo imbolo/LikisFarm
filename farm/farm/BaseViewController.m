@@ -43,6 +43,7 @@
         self.navigationController.navigationBar.backIndicatorImage = [UIImage imageNamed:@"backButton.png"];
         self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"backButton.png"];
         
+        
     }
     
     [self setShadowForNavigationBar];
@@ -51,8 +52,8 @@
 
 - (void) setShadowForNavigationBar
 {
-    self.navigationController.navigationBar.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(0.0, 3.0);
+    self.navigationController.navigationBar.layer.shadowColor = [[UIColor darkGrayColor] CGColor];
+    self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(0.0, 2.4);
     self.navigationController.navigationBar.layer.shadowOpacity = 0.5;
     self.navigationController.navigationBar.layer.shouldRasterize = YES;
     self.navigationController.navigationBar.layer.masksToBounds = NO;

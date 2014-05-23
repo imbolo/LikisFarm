@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface OrderDetailViewController : ViewController
+@interface OrderDetailViewController : BaseViewController
 
 @end

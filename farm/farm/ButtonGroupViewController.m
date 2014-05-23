@@ -39,6 +39,25 @@
     
     _selectedButton = self.button1;
     [self.button1 setSelected:YES];
+    
+    UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(10, 200, 200, 80)];
+
+    CGRect rect = slider.frame;
+    rect.size.height = 40;
+    [slider setFrame: rect];
+    
+    [self.view addSubview:slider];
+    
+    
+    UIImage *minImage = [[UIImage imageNamed:@"slider-track-fill.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)];
+    UIImage *maxImage = [UIImage imageNamed:@"slider-track.png"];
+    UIImage *thumbImage = [UIImage imageNamed:@"slider-cap.png"];
+    
+    
+    [slider setMaximumTrackImage:maxImage forState:UIControlStateNormal];
+    [slider setMinimumTrackImage:minImage forState:UIControlStateNormal];
+    [slider setThumbImage:thumbImage forState:UIControlStateNormal];
+    [slider setThumbImage:thumbImage forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
