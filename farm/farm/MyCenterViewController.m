@@ -33,11 +33,11 @@ static CGFloat ImageWidth  = 320.0;
     //    self.bottomScrollView.delegate = self;
     //    self.bottomScrollView.contentSize = CGSizeMake(320, 480);
     //    [self.view addSubview:self.bottomScrollView];
-    self.bottomContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 240, 320, 50)];
+    self.bottomContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 240, 320, 40)];
     self.bottomContainer.backgroundColor = [UIColor purpleColor];
     [self.bottomScrollView addSubview:self.bottomContainer];
     
-    self.fixedContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];//ios 7.0 44
+    self.fixedContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];//ios 7.0 44
     self.fixedContainer.backgroundColor = [UIColor grayColor];
     [self.view addSubview:self.fixedContainer];
     [self.fixedContainer setHidden:YES];
@@ -56,7 +56,7 @@ static CGFloat ImageWidth  = 320.0;
 - (void) initTab
 {
     //tab1
-    self.tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 106, 64)];
+    self.tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 106, 50)];
     [self.tab1 setBackgroundImage:[UIImage imageNamed:@"buttonGroupNormal.png"] forState:UIControlStateNormal];
     [self.tab1 setBackgroundImage:[UIImage imageNamed:@"buttonGroupSelected.png"] forState:UIControlStateSelected];
     [self.tab1 setTitle:@"食谱" forState:UIControlStateNormal];
@@ -66,8 +66,18 @@ static CGFloat ImageWidth  = 320.0;
     [self.bottomContainer addSubview:self.tab1];
     [self.tab1 setSelected:YES];
     
+    UIImageView* dashedLine1 = [[UIImageView alloc] initWithFrame:CGRectMake(106, 0, 1, 40)];
+    [dashedLine1 setImage:[UIImage imageNamed:@"dashedLine.png"]];
+    [self.bottomContainer addSubview: dashedLine1];
+    dashedLine1.layer.zPosition = 100;
+    
+    UIImageView* dashedLine2 = [[UIImageView alloc] initWithFrame:CGRectMake(106*2, 0, 1, 40)];
+    [dashedLine2 setImage:[UIImage imageNamed:@"dashedLine.png"]];
+    [self.bottomContainer addSubview: dashedLine2];
+    dashedLine2.layer.zPosition = 100;
+    
     //tab2
-    self.tab2 = [[UIButton alloc] initWithFrame:CGRectMake(106, 0, 106, 64)];
+    self.tab2 = [[UIButton alloc] initWithFrame:CGRectMake(106, 0, 106, 50)];
     [self.tab2 setBackgroundImage:[UIImage imageNamed:@"buttonGroupNormal.png"] forState:UIControlStateNormal];
     [self.tab2 setBackgroundImage:[UIImage imageNamed:@"buttonGroupSelected.png"] forState:UIControlStateSelected];
     [self.tab2 setTitle:@"粉丝" forState:UIControlStateNormal];
@@ -77,7 +87,7 @@ static CGFloat ImageWidth  = 320.0;
     [self.bottomContainer addSubview:self.tab2];
     
     //tab3
-    self.tab3 = [[UIButton alloc] initWithFrame:CGRectMake(212, 0, 108, 64)];
+    self.tab3 = [[UIButton alloc] initWithFrame:CGRectMake(212, 0, 108, 50)];
     [self.tab3 setBackgroundImage:[UIImage imageNamed:@"buttonGroupNormal.png"] forState:UIControlStateNormal];
     [self.tab3 setBackgroundImage:[UIImage imageNamed:@"buttonGroupSelected.png"] forState:UIControlStateSelected];
     [self.tab3 setTitle:@"关注" forState:UIControlStateNormal];

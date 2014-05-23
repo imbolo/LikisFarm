@@ -83,6 +83,8 @@
 		CD8031B5192C5FA100AC7D4D /* addressBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031B3192C5FA100AC7D4D /* addressBtn.png */; };
 		CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */; };
 		CD8031B9192C60CB00AC7D4D /* AddressSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8031B8192C60CB00AC7D4D /* AddressSelectViewController.m */; };
+		CD8EA939192EEC5F003133DA /* dashedLine.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8EA937192EEC5F003133DA /* dashedLine.png */; };
+		CD8EA93A192EEC5F003133DA /* dashedLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8EA938192EEC5F003133DA /* dashedLine@2x.png */; };
 		CDD0FE6D192AE507000B7B26 /* CookbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */; };
 		CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */ = {isa = PBXBuildFile; fileRef = CDD0FE6E192AE755000B7B26 /* cookbook.html */; };
 		CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0FE71192AE831000B7B26 /* CookbookDetailViewController.m */; };
@@ -239,6 +241,8 @@
 		CD8031B4192C5FA100AC7D4D /* addressBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addressBtn@2x.png"; sourceTree = "<group>"; };
 		CD8031B7192C60CB00AC7D4D /* AddressSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSelectViewController.h; sourceTree = "<group>"; };
 		CD8031B8192C60CB00AC7D4D /* AddressSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSelectViewController.m; sourceTree = "<group>"; };
+		CD8EA937192EEC5F003133DA /* dashedLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashedLine.png; sourceTree = "<group>"; };
+		CD8EA938192EEC5F003133DA /* dashedLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dashedLine@2x.png"; sourceTree = "<group>"; };
 		CDD0FE6B192AE507000B7B26 /* CookbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookbookViewController.h; sourceTree = "<group>"; };
 		CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookbookViewController.m; sourceTree = "<group>"; };
 		CDD0FE6E192AE755000B7B26 /* cookbook.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = cookbook.html; path = farm/cookbook.html; sourceTree = "<group>"; };
@@ -385,6 +389,8 @@
 				CD4956E3192CEEEC00C9E90F /* buttonGroupSelected@2x.png */,
 				CD4956EA192CEF8300C9E90F /* buttonGroupNormal.png */,
 				CD4956EB192CEF8300C9E90F /* buttonGroupNormal@2x.png */,
+				CD8EA937192EEC5F003133DA /* dashedLine.png */,
+				CD8EA938192EEC5F003133DA /* dashedLine@2x.png */,
 				CDDF5F22192C82FC00D8B9CC /* 赞.png */,
 				CDDF5F23192C82FC00D8B9CC /* 赞@2x.png */,
 				CDDF5F1A192C82A000D8B9CC /* 关注他.png */,
@@ -703,6 +709,7 @@
 				CD03BE8D192D9D8F000979DF /* tmp_cblist@2px.png in Resources */,
 				CD4B5C05192B249400F4CE33 /* 冬青黑体W3.otf in Resources */,
 				CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */,
+				CD8EA93A192EEC5F003133DA /* dashedLine@2x.png in Resources */,
 				CD4956ED192CEF8300C9E90F /* buttonGroupNormal@2x.png in Resources */,
 				CDDBAE7F192E2FEC00063D66 /* slider-track.png in Resources */,
 				CD8031A6192C3C2D00AC7D4D /* signinBG@2x.png in Resources */,
@@ -718,6 +725,7 @@
 				CD03BEAE192DD13E000979DF /* tmp_modifypwd.png in Resources */,
 				CD03BEA6192DCF8F000979DF /* tmp_personalcenterTable.png in Resources */,
 				CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */,
+				CD8EA939192EEC5F003133DA /* dashedLine.png in Resources */,
 				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
 				CD03BE96192DC99F000979DF /* iconAlarm.png in Resources */,
 				CDDF5F1F192C82A000D8B9CC /* 关注他@2x.png in Resources */,
