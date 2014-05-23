@@ -527,7 +527,7 @@
                                                     <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" offImage="buttonGroupNormal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hkl-sn-fs8">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hkl-sn-fs8">
                                                     <rect key="frame" x="251" y="6" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="onTintColor" red="0.36862745881080627" green="0.80784320831298828" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
@@ -770,6 +770,10 @@
                                                 <state key="normal" image="在关注.png">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <state key="selected" image="关注他.png"/>
+                                                <connections>
+                                                    <action selector="followButtonClicked:" destination="nue-bh-602" eventType="touchUpInside" id="A1n-ml-Tsd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBR-G9-6V9">
                                                 <rect key="frame" x="112" y="17" width="105" height="22"/>
@@ -997,7 +1001,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZK-X4-n3k">
-                                <rect key="frame" x="72" y="32" width="101" height="92"/>
+                                <rect key="frame" x="86" y="32" width="99" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal">
@@ -1149,6 +1153,7 @@
         <image name="tmp_personalcenterTable.png" width="320" height="213"/>
         <image name="tmp_配送地址.png" width="308" height="46"/>
         <image name="toPayBtn.png" width="568" height="134"/>
+        <image name="关注他.png" width="88" height="30"/>
         <image name="在关注.png" width="88" height="30"/>
         <image name="赞.png" width="26" height="19"/>
     </resources>

@@ -273,5 +273,9 @@ static CGFloat ImageWidth  = 320.0;
     [self.navigationController pushViewController:nextView animated:YES];
    
 }
+- (IBAction)followButtonClicked:(id)sender {
+    UIButton* btn = (UIButton*) sender;
+    [btn setSelected: !btn.selected];
+}
 
 @end
