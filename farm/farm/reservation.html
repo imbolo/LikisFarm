@@ -130,6 +130,9 @@
 			width: 10%;
 			text-align: center; 
 		}
+		#opMinus:active, #opPlus:active {
+			opacity: 0.7;
+		}
 		
         </style>
     </head>
@@ -203,11 +206,12 @@
 			});
 		
 			$('#opMinus').on('tap', function(ev) {
-				count>=0 && countText.html(count--);
+				count>0 && countText.html(--count);
+				count = count < 0 ? 0 : count; 			
 			});
 		
 			$('#opPlus').on('tap', function(ev) {
-				countText.html(count++);
+				countText.html(++count);
 			});
 		
 			$('.arrow .left').on('tap', function(ev) {

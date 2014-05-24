@@ -23,6 +23,37 @@ static CGFloat ImageWidth  = 320.0;
 
 - (void) initUI
 {
+    self.bottomScrollView = [[UIScrollView alloc] initWithFrame: self.view.bounds];
+    self.bottomScrollView.delegate = self;
+    self.bottomScrollView.backgroundColor = [UIColor clearColor];
+    [self.bottomScrollView setContentSize:CGSizeMake(320, 960)];
+    [self.view addSubview:self.bottomScrollView];
+    
+    
+    //icon
+    UIImageView* icon = [[UIImageView alloc] initWithFrame:CGRectMake(26, 98, 99, 128)];
+    [icon setImage:[UIImage imageNamed:@"sideLogo.png"]];
+    [self.bottomScrollView addSubview:icon];
+    icon.layer.zPosition = 100;
+    
+    //view
+    UIView* horizontalBar = [[UIView alloc] initWithFrame:CGRectMake(0, 180, 320, 60)];
+    horizontalBar.backgroundColor = [UIColor blackColor];
+    [self.bottomScrollView addSubview:horizontalBar];
+    
+    //favour button
+    UIButton* favourButton = [[UIButton alloc] initWithFrame:CGRectMake(112, 17, 105, 22)];
+    [favourButton setImage:[UIImage imageNamed:@"赞.png"] forState:UIControlStateNormal];
+    [favourButton setTitle:@"12" forState:UIControlStateNormal];
+    [horizontalBar addSubview:favourButton];
+    
+    //follow button
+    UIButton* followButton = [[UIButton alloc] initWithFrame:CGRectMake(215, 13, 90, 30)];
+    [followButton setBackgroundImage:[UIImage imageNamed:@"在关注.png"] forState:UIControlStateNormal];
+    [followButton setBackgroundImage:[UIImage imageNamed:@"关注他.png"] forState:UIControlStateSelected];
+    [followButton addTarget:self action:@selector(followButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [horizontalBar addSubview:followButton];
+
     //top scalable image
     //    self.topImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"centerTopImage.png"]];
     //    self.topImageView.frame = CGRectMake(0, 0, ImageWidth, ImageHeight);
@@ -51,7 +82,7 @@ static CGFloat ImageWidth  = 320.0;
     _cookbookList.frame = CGRectMake(0, 20, 320, 480);
     [self.view1 addSubview:_cookbookList];
     
-  }
+}
 
 - (void) initTab
 {
@@ -174,14 +205,17 @@ static CGFloat ImageWidth  = 320.0;
     
     CGRect bounds = self.view.bounds;
     self.bottomScrollView.frame = bounds;
-    //    self.bottomScrollView.contentSize = CGSizeMake(320, 960+ImageHeight);
-    self.bottomScrollView.contentSize = self.bottomScrollView.bounds.size;
+//    self.bottomScrollView.contentSize = CGSizeMake(320, 960);
+//    self.bottomScrollView.contentSize = self.bottomScrollView.bounds.size;
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.bottomScrollView setContentSize:CGSizeMake(320, 960)];
+    NSLog(@"before %f", self.bottomScrollView.contentSize.height);
+    [self.bottomScrollView setContentSize:CGSizeMake(320, 800)];
+    NSLog(@"after  %f", self.bottomScrollView.contentSize.height);
 }
 
 - (void)viewDidLoad
@@ -201,10 +235,6 @@ static CGFloat ImageWidth  = 320.0;
     //    CGRect frame = fakeView.frame;
     //    frame.origin.y = ImageHeight;
     //    fakeView.frame = frame;
-    
-    self.bottomScrollView.delegate = self;
-    self.bottomScrollView.backgroundColor = [UIColor clearColor];
-    
     //    self.bottomScrollView.contentSize = CGSizeMake(320, 960+ImageHeight);
     
     //    [self.bottomScrollView addSubview:fakeView];
@@ -276,6 +306,9 @@ static CGFloat ImageWidth  = 320.0;
 - (IBAction)followButtonClicked:(id)sender {
     UIButton* btn = (UIButton*) sender;
     [btn setSelected: !btn.selected];
+    
+    NSLog(@"click %f", self.bottomScrollView.contentSize.height);
+    
 }
 
 @end

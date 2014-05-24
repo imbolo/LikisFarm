@@ -66,8 +66,8 @@
     _view3 = [[UIView alloc] initWithFrame:CGRectMake(320 * 2, 0, 320, 580)];
     
     _view1.backgroundColor = [UIColor clearColor];
-    _view2.backgroundColor = [UIColor greenColor];
-    _view3.backgroundColor = [UIColor blueColor];
+    _view2.backgroundColor = [UIColor clearColor];
+    _view3.backgroundColor = [UIColor clearColor];
     
     [slideContainer addSubview:_view1];
     [slideContainer addSubview:_view2];
@@ -82,6 +82,29 @@
     UIImageView* tmp1 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tmp_step1.png"]];
     tmp1.frame = CGRectMake(25, 20, 271, 357);
     [self.view1 addSubview:tmp1];
+    
+    //view2
+    UIImageView* tmp2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tmp_step2.png"]];
+    tmp2.frame = CGRectMake(0, 0, 320, 631);
+    UIScrollView* stepScroll = [[UIScrollView alloc] initWithFrame: CGRectMake(0, 0, 320, 360)];
+    [self.view2 addSubview:stepScroll];
+    stepScroll.contentSize = CGSizeMake(320, 631);
+    [stepScroll addSubview:tmp2];
+    
+    //view1
+    UIImageView* tmp3 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tmp_step3.png"]];
+    tmp3.frame = CGRectMake(0, 0, 320, 359);
+    [self.view3 addSubview:tmp3];
+    
+    //dashed line
+    UIImageView* dashedLine1 = [[UIImageView alloc] initWithFrame:CGRectMake(107, 0, 1, 55)];
+    [dashedLine1 setImage:[UIImage imageNamed:@"dashedLine.png"]];
+    [self.view addSubview: dashedLine1];
+    dashedLine1.layer.zPosition = 100;
+    UIImageView* dashedLine2 = [[UIImageView alloc] initWithFrame:CGRectMake(107*2, 0, 1, 55)];
+    [dashedLine2 setImage:[UIImage imageNamed:@"dashedLine.png"]];
+    [self.view addSubview: dashedLine2];
+    dashedLine2.layer.zPosition = 100;
 }
 
 - (void)viewDidLoad
