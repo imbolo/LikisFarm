@@ -111,4 +111,8 @@
      }];
 
 }
+- (IBAction)registBtnClicked:(id)sender {
+    ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"regist"];
+    [self presentViewController:nextView animated:YES completion:nil];
+}
 @end

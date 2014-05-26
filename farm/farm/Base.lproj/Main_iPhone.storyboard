@@ -219,6 +219,16 @@
                                 <rect key="frame" x="33" y="58" width="257" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qga-0N-z9R">
+                                <rect key="frame" x="112" y="407" width="97" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btnRegist.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registBtnClicked:" destination="cpM-Cp-3BB" eventType="touchUpInside" id="ucR-6g-Lgw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -232,6 +242,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uos-rr-Bmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1006" y="723"/>
+        </scene>
+        <!--Regist View Controller-->
+        <scene sceneID="dku-JR-Vhj">
+            <objects>
+                <viewController storyboardIdentifier="regist" id="fYY-qO-qpY" customClass="RegistViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzG-2m-Vwq"/>
+                        <viewControllerLayoutGuide type="bottom" id="mI6-83-VCf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bDA-GP-fCq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tmp_regist_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="sOw-y0-x1b">
+                                <rect key="frame" x="0.0" y="64" width="320" height="204"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XzW-Je-bYz">
+                                <rect key="frame" x="55" y="76" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.007971938776" green="0.007971938776" blue="0.007971938776" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aI9-by-HFZ">
+                                <rect key="frame" x="55" y="122" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.007971938776" green="0.007971938776" blue="0.007971938776" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-qp-uNr">
+                                <rect key="frame" x="55" y="171" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.007971938776" green="0.007971938776" blue="0.007971938776" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="确认密码" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZBe-F8-jeA">
+                                <rect key="frame" x="55" y="217" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.007971938776" green="0.007971938776" blue="0.007971938776" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RU2-XH-iN0">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="用户注册" id="xHb-lX-kvy">
+                                        <barButtonItem key="leftBarButtonItem" image="backButton.png" id="KRs-OS-hGl">
+                                            <connections>
+                                                <action selector="navBack:" destination="fYY-qO-qpY" id="hIa-zu-AIU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHn-Pv-hbr">
+                                <rect key="frame" x="24" y="418" width="274" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btnRegistSubmit.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzX-7z-gul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1194" y="1457"/>
         </scene>
         <!--My Farm View Controller - 我的培育园-->
         <scene sceneID="4FF-yF-0II">
@@ -1171,8 +1255,11 @@
     <resources>
         <image name="addAddress.png" width="320" height="214"/>
         <image name="addressBtn.png" width="281" height="45"/>
+        <image name="backButton.png" width="20" height="19"/>
         <image name="btnMinus.png" width="33" height="33"/>
         <image name="btnPlus.png" width="33" height="33"/>
+        <image name="btnRegist.png" width="42" height="13"/>
+        <image name="btnRegistSubmit.png" width="274" height="54"/>
         <image name="buttonGroupNormal.png" width="107" height="51"/>
         <image name="buttonGroupSelected.png" width="107" height="51"/>
         <image name="centerTopImage.png" width="300" height="200"/>
@@ -1196,6 +1283,7 @@
         <image name="tmp_modifypwdTableBG.png" width="312" height="165"/>
         <image name="tmp_package.png" width="618" height="799"/>
         <image name="tmp_personalcenterTable.png" width="320" height="213"/>
+        <image name="tmp_regist_bg.png" width="320" height="204"/>
         <image name="tmp_配送地址.png" width="308" height="46"/>
         <image name="toPayBtn.png" width="568" height="134"/>
         <image name="主页.png" width="32" height="32"/>

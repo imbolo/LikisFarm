@@ -179,6 +179,13 @@
 		CDFF86D7193320730037CC59 /* btnMinus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D3193320730037CC59 /* btnMinus@2x.png */; };
 		CDFF86D8193320730037CC59 /* btnPlus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D4193320730037CC59 /* btnPlus.png */; };
 		CDFF86D9193320730037CC59 /* btnPlus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D5193320730037CC59 /* btnPlus@2x.png */; };
+		CDFF86DD193341D40037CC59 /* btnRegist.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86DB193341D40037CC59 /* btnRegist.png */; };
+		CDFF86DE193341D40037CC59 /* btnRegist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86DC193341D40037CC59 /* btnRegist@2x.png */; };
+		CDFF86E1193344A90037CC59 /* tmp_regist_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86DF193344A90037CC59 /* tmp_regist_bg.png */; };
+		CDFF86E2193344A90037CC59 /* tmp_regist_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86E0193344A90037CC59 /* tmp_regist_bg@2x.png */; };
+		CDFF86E51933460F0037CC59 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF86E41933460F0037CC59 /* RegistViewController.m */; };
+		CDFF86E8193349E40037CC59 /* btnRegistSubmit.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86E6193349E40037CC59 /* btnRegistSubmit.png */; };
+		CDFF86E9193349E40037CC59 /* btnRegistSubmit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86E7193349E40037CC59 /* btnRegistSubmit@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -397,6 +404,14 @@
 		CDFF86D3193320730037CC59 /* btnMinus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnMinus@2x.png"; sourceTree = "<group>"; };
 		CDFF86D4193320730037CC59 /* btnPlus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPlus.png; sourceTree = "<group>"; };
 		CDFF86D5193320730037CC59 /* btnPlus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPlus@2x.png"; sourceTree = "<group>"; };
+		CDFF86DB193341D40037CC59 /* btnRegist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRegist.png; sourceTree = "<group>"; };
+		CDFF86DC193341D40037CC59 /* btnRegist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnRegist@2x.png"; sourceTree = "<group>"; };
+		CDFF86DF193344A90037CC59 /* tmp_regist_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmp_regist_bg.png; sourceTree = "<group>"; };
+		CDFF86E0193344A90037CC59 /* tmp_regist_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmp_regist_bg@2x.png"; sourceTree = "<group>"; };
+		CDFF86E31933460F0037CC59 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		CDFF86E41933460F0037CC59 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		CDFF86E6193349E40037CC59 /* btnRegistSubmit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRegistSubmit.png; sourceTree = "<group>"; };
+		CDFF86E7193349E40037CC59 /* btnRegistSubmit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnRegistSubmit@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				CD03BEBB192DE939000979DF /* logotext.png */,
+				CDFF86DA193341860037CC59 /* regist */,
 				CD8EA9BE1930C0E1003133DA /* settings */,
 				CD8EA9B619306B88003133DA /* 配送地址 */,
 				CD8EA9A9192F9ADD003133DA /* 我的小厨 */,
@@ -721,6 +737,8 @@
 				CD8EA980192F0CFA003133DA /* NPeiyushixiangViewController.m */,
 				CD8EA992192F5D7C003133DA /* AddCookbookViewController.h */,
 				CD8EA993192F5D7C003133DA /* AddCookbookViewController.m */,
+				CDFF86E31933460F0037CC59 /* RegistViewController.h */,
+				CDFF86E41933460F0037CC59 /* RegistViewController.m */,
 			);
 			path = farm;
 			sourceTree = "<group>";
@@ -801,6 +819,19 @@
 				CDD0FE73192AE883000B7B26 /* cookbook-detail.html */,
 			);
 			name = pages;
+			sourceTree = "<group>";
+		};
+		CDFF86DA193341860037CC59 /* regist */ = {
+			isa = PBXGroup;
+			children = (
+				CDFF86DB193341D40037CC59 /* btnRegist.png */,
+				CDFF86DC193341D40037CC59 /* btnRegist@2x.png */,
+				CDFF86DF193344A90037CC59 /* tmp_regist_bg.png */,
+				CDFF86E0193344A90037CC59 /* tmp_regist_bg@2x.png */,
+				CDFF86E6193349E40037CC59 /* btnRegistSubmit.png */,
+				CDFF86E7193349E40037CC59 /* btnRegistSubmit@2x.png */,
+			);
+			name = regist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -886,6 +917,7 @@
 				CD4B5C01192B207200F4CE33 /* iconMenu.png in Resources */,
 				CD8EA9B919306B94003133DA /* addAddress.png in Resources */,
 				CD8EA93A192EEC5F003133DA /* dashedLine@2x.png in Resources */,
+				CDFF86DE193341D40037CC59 /* btnRegist@2x.png in Resources */,
 				CD4956ED192CEF8300C9E90F /* buttonGroupNormal@2x.png in Resources */,
 				CD8EAA761932DEEC003133DA /* 流行食谱@2x.png in Resources */,
 				CDDBAE7F192E2FEC00063D66 /* slider-track.png in Resources */,
@@ -947,11 +979,13 @@
 				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
 				CDFF86D8193320730037CC59 /* btnPlus.png in Resources */,
 				CD8EA9A3192F60A6003133DA /* addStep3Selected.png in Resources */,
+				CDFF86E1193344A90037CC59 /* tmp_regist_bg.png in Resources */,
 				CDDF5F25192C82FC00D8B9CC /* 赞@2x.png in Resources */,
 				CDDBAE80192E2FEC00063D66 /* slider-track@2x.png in Resources */,
 				CD03BEAC192DD13E000979DF /* tmp_配送地址.png in Resources */,
 				CDFF86D6193320730037CC59 /* btnMinus.png in Resources */,
 				CD8EA99E192F60A6003133DA /* addStep2Normal@2x.png in Resources */,
+				CDFF86E9193349E40037CC59 /* btnRegistSubmit@2x.png in Resources */,
 				CDE7907B19245AA1007996AB /* www in Resources */,
 				CDDF5F29192C882100D8B9CC /* tmp_小厨选项@2x.png in Resources */,
 				CDDBAE86192E37AE00063D66 /* slider-cap-green@2x.png in Resources */,
@@ -974,6 +1008,7 @@
 				CD8EA9B419304510003133DA /* tmp_step3.png in Resources */,
 				CDDF5F2C192C897800D8B9CC /* iconShopcart.png in Resources */,
 				CD03BEAD192DD13E000979DF /* tmp_配送地址@2x.png in Resources */,
+				CDFF86E8193349E40037CC59 /* btnRegistSubmit.png in Resources */,
 				CD52AA7F1928624A00367197 /* myfarm.html in Resources */,
 				CD8EA99F192F60A6003133DA /* addStep2Selected.png in Resources */,
 				CD52AA781928264300367197 /* order-background.png in Resources */,
@@ -1000,8 +1035,10 @@
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
 				CD803197192B7AEC00AC7D4D /* backButton@2x.png in Resources */,
 				CDE79080192466BB007996AB /* todos.html in Resources */,
+				CDFF86E2193344A90037CC59 /* tmp_regist_bg@2x.png in Resources */,
 				CD4B5BF0192B0E5800F4CE33 /* sidemenuBg.png in Resources */,
 				CD4956E7192CEEEC00C9E90F /* buttonGroupSelected@2x.png in Resources */,
+				CDFF86DD193341D40037CC59 /* btnRegist.png in Resources */,
 				CD8EAA7A1932DEEC003133DA /* 我的培育园@2x.png in Resources */,
 				CD8EA9B519304510003133DA /* tmp_step3@2x.png in Resources */,
 				CDDF5F24192C82FC00D8B9CC /* 赞.png in Resources */,
@@ -1063,6 +1100,7 @@
 				CDD0FE77192AF55E000B7B26 /* PackageViewController.m in Sources */,
 				CDDF5F33192CB4BD00D8B9CC /* Config.m in Sources */,
 				CD8031A2192C3AB800AC7D4D /* SignInViewController.m in Sources */,
+				CDFF86E51933460F0037CC59 /* RegistViewController.m in Sources */,
 				CD4B5BED192B0B3100F4CE33 /* WhiteBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
