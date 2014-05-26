@@ -6,45 +6,51 @@
 		<link rel="stylesheet" href="www/global.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		
         <style type="text/css">
+		* {
+			padding: 0; margin: 0;
+		}
+		body {
+			padding: 13px 9px;
+		}
 		ul {
 			padding: 0;
 		}
         .todo-ul {			
             list-style: none;
-			width: 294px;
+			width: 292px;
 			text-align: center;
         }
 		.todo-ul li{					
 			margin-bottom: 10px;
-			height: 100px;
+			height: 112px;
 		}
         .todo-cell {
 			position: relative;
 			left: 4px;
-			height: 98px;			
-			-moz-box-shadow: 2px 3px 5px #000000;
-			-webkit-box-shadow: 2px 3px 5px #000000;
-			box-shadow: 2px 3px 5px #000000;
+			height: 111px;			
+/*			-moz-box-shadow: 2px 3px 5px gray;*/
+			-webkit-box-shadow: 2px 3px 5px #777;
+			box-shadow: 2px 3px 5px #777;
         }
 		.todo-cell img {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100px;
+			height: 112px;
 		}
 		.todo-cell .date {
 			position: absolute;
-			top: 4px;
-			left: 50px;
+			top: 6px;
+			left: 44px;
 			color: #65dfb5;			
 			font-size: 14px;
 			font-weight: bold;
 		}
 		.todo-cell .text {
 			position: absolute;
-			top: 46px;
-			left: 28px;
+			top: 54px;
+			left: 30px;
 		}
         .fl {
             float: left;
