@@ -15,4 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *percentPackageGift;
 @property (weak, nonatomic) IBOutlet UILabel *percentPackageNormal;
 
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
+
+@property NSInteger count;
+
 @end

@@ -175,6 +175,10 @@
 		CDE7907B19245AA1007996AB /* www in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907A19245AA1007996AB /* www */; };
 		CDE79080192466BB007996AB /* todos.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907F192466BB007996AB /* todos.html */; };
 		CDE7908519246928007996AB /* ReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7908419246928007996AB /* ReservationViewController.m */; };
+		CDFF86D6193320730037CC59 /* btnMinus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D2193320730037CC59 /* btnMinus.png */; };
+		CDFF86D7193320730037CC59 /* btnMinus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D3193320730037CC59 /* btnMinus@2x.png */; };
+		CDFF86D8193320730037CC59 /* btnPlus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D4193320730037CC59 /* btnPlus.png */; };
+		CDFF86D9193320730037CC59 /* btnPlus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86D5193320730037CC59 /* btnPlus@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -389,6 +393,10 @@
 		CDE7907F192466BB007996AB /* todos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = todos.html; path = farm/todos.html; sourceTree = "<group>"; };
 		CDE7908319246927007996AB /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
 		CDE7908419246928007996AB /* ReservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReservationViewController.m; sourceTree = "<group>"; };
+		CDFF86D2193320730037CC59 /* btnMinus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMinus.png; sourceTree = "<group>"; };
+		CDFF86D3193320730037CC59 /* btnMinus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnMinus@2x.png"; sourceTree = "<group>"; };
+		CDFF86D4193320730037CC59 /* btnPlus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPlus.png; sourceTree = "<group>"; };
+		CDFF86D5193320730037CC59 /* btnPlus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPlus@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +553,10 @@
 		CD8EA982192F0D6D003133DA /* 培育事项 */ = {
 			isa = PBXGroup;
 			children = (
+				CDFF86D2193320730037CC59 /* btnMinus.png */,
+				CDFF86D3193320730037CC59 /* btnMinus@2x.png */,
+				CDFF86D4193320730037CC59 /* btnPlus.png */,
+				CDFF86D5193320730037CC59 /* btnPlus@2x.png */,
 				CD8EA983192F0D78003133DA /* tip-unclick.png */,
 			);
 			name = "培育事项";
@@ -891,6 +903,7 @@
 				CD8EA9A8192F6ECA003133DA /* tmp_step1@2x.png in Resources */,
 				CD4B5C0B192B307200F4CE33 /* shopcart.png in Resources */,
 				CD52AA76192822A200367197 /* viewBackground@2x.png in Resources */,
+				CDFF86D7193320730037CC59 /* btnMinus@2x.png in Resources */,
 				CD03BEAE192DD13E000979DF /* tmp_modifypwd.png in Resources */,
 				CD03BEA6192DCF8F000979DF /* tmp_personalcenterTable.png in Resources */,
 				CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */,
@@ -911,6 +924,7 @@
 				CD8EAA751932DEEC003133DA /* 流行食谱.png in Resources */,
 				CD803199192BA86400AC7D4D /* Default.png in Resources */,
 				CD03BE99192DC99F000979DF /* iconInfo@2x.png in Resources */,
+				CDFF86D9193320730037CC59 /* btnPlus@2x.png in Resources */,
 				CDDF5F21192C82A000D8B9CC /* 在关注@2x.png in Resources */,
 				CD8EAA781932DEEC003133DA /* 设置@2x.png in Resources */,
 				CD8031A9192C3D5100AC7D4D /* tmp_login.png in Resources */,
@@ -931,10 +945,12 @@
 				CD80319B192BA8E000AC7D4D /* Default@2x.png in Resources */,
 				CD8EA9BA19306B94003133DA /* addAddress@2x.png in Resources */,
 				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
+				CDFF86D8193320730037CC59 /* btnPlus.png in Resources */,
 				CD8EA9A3192F60A6003133DA /* addStep3Selected.png in Resources */,
 				CDDF5F25192C82FC00D8B9CC /* 赞@2x.png in Resources */,
 				CDDBAE80192E2FEC00063D66 /* slider-track@2x.png in Resources */,
 				CD03BEAC192DD13E000979DF /* tmp_配送地址.png in Resources */,
+				CDFF86D6193320730037CC59 /* btnMinus.png in Resources */,
 				CD8EA99E192F60A6003133DA /* addStep2Normal@2x.png in Resources */,
 				CDE7907B19245AA1007996AB /* www in Resources */,
 				CDDF5F29192C882100D8B9CC /* tmp_小厨选项@2x.png in Resources */,

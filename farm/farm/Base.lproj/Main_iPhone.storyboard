@@ -319,6 +319,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-bl-MV5">
+                                <rect key="frame" x="170" y="296" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btnMinus.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusTouchUpInside:" destination="mRx-Ug-GzS" eventType="touchUpInside" id="vj8-yQ-f8r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-6x-OX9">
+                                <rect key="frame" x="250" y="296" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btnPlus.png"/>
+                                <connections>
+                                    <action selector="plusTouchUpInside:" destination="mRx-Ug-GzS" eventType="touchUpInside" id="iAK-iH-bpC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7Q-ej-0wF">
+                                <rect key="frame" x="209" y="301" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -331,6 +356,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="countLabel" destination="u7Q-ej-0wF" id="ghC-rR-p2y"/>
                         <outlet property="percentPackageGift" destination="fhX-3V-amV" id="ZIN-gg-TwZ"/>
                         <outlet property="percentPackageNormal" destination="1fC-d4-fHI" id="1rq-dy-Jwt"/>
                         <outlet property="percentSelf" destination="71b-Tg-Elh" id="StQ-ae-Q1r"/>
@@ -1145,6 +1171,8 @@
     <resources>
         <image name="addAddress.png" width="320" height="214"/>
         <image name="addressBtn.png" width="281" height="45"/>
+        <image name="btnMinus.png" width="33" height="33"/>
+        <image name="btnPlus.png" width="33" height="33"/>
         <image name="buttonGroupNormal.png" width="107" height="51"/>
         <image name="buttonGroupSelected.png" width="107" height="51"/>
         <image name="centerTopImage.png" width="300" height="200"/>

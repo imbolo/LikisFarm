@@ -74,6 +74,9 @@
     // Do any additional setup after loading the view.
     
     [self initUI];
+    
+    self.count = 0;
+    [self.countLabel setText:[NSString stringWithFormat:@"%d", _count]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,6 +101,20 @@
     ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"shopcart"];
     
     [self.navigationController pushViewController:nextView animated:YES];
+}
+- (IBAction)minusTouchUpInside:(id)sender {
+    self.count --;
+    if (self.count < 0) {
+        self.count = 0;
+    }
+    [self.countLabel setText:[NSString stringWithFormat:@"%d", _count]];
+}
+
+- (IBAction)plusTouchUpInside:(id)sender {
+    self.count ++;
+    
+    [self.countLabel setText:[NSString stringWithFormat:@"%d", _count]];
+
 }
 
 @end
