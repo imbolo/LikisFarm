@@ -87,6 +87,8 @@
 		.topMenu {			
 			position: absolute;
 			top: 0;
+			margin-left: 5px;
+			margin-right: -5px;
 /*			left: 10px;*/
 			height: 32px;			
 			overflow-x: scroll;
@@ -116,6 +118,9 @@
 			font-weight: bold;
 			border-right: 1px dashed white;
 		}
+		.topMenu ul li:last-child {
+			border-right: none;
+		}
 		.topMenu ul li.current {
 			background: #4fbd97;
 			color: white;
@@ -143,7 +148,7 @@
 				<li>番茄</li>
 				<li>紫甘蓝</li>
 				<li>草莓</li>
-				<li>苹果</li>
+				<li>芦笋</li>
 			</ul>
 		</div>
 		<div id="food-list" class="food-list">
@@ -240,9 +245,18 @@
 					right = item.offset().left + menuWidth;
 				if(left > des) {
 					$('.topMenu').scrollLeft(left);
+					$('.topMenu').css({
+						'margin-left': '-5px',
+						'margin-right': '5px'
+					});
 				}
 				if(right < menuWidth + menuMarginLeft) {
+					console.log('moving right');
 					$('.topMenu').scrollLeft(left);
+					$('.topMenu').css({
+						'margin-left': '5px',
+						'margin-right': '-5px'
+					});
 				}
 			}
 		// })(Zepto);
