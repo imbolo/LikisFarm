@@ -52,7 +52,7 @@
     
 //    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil, NSShadowAttributeName,[UIFont fontWithName:@"HiraKakuProN-W3" size:36.0], NSFontAttributeName, nil]];
     
-//    [self playWelcomeAnimation];
+    [self playWelcomeAnimation];
   
     return YES;
 }
