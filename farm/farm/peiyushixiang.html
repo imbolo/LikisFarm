@@ -10,12 +10,12 @@
 			margin: 0; padding: 0;			
 		}
 		body {
-			padding: 14px;
+			padding: 16px;
 		}
 		.container {	
 			position: relative;
-			width: 100%;	
-			height: 100px;
+			width: 292px;	
+			height: 120px;
 			overflow: hidden;
 			text-align: center;
 /*			padding: 20px;*/
@@ -29,25 +29,26 @@
 		.item {		
 			position: absolute;	
 			width: 100%;
-			height: 100px;
+			height: 112px;
 			-webkit-transition: all .3s;
 			transition: all .3s;
 /*			text-align: left;*/
 		}
 		.item .text {
 			position: absolute;
-			top: 30px;
-			left: 10px;
+			top: 23px;
+			left: 22px;
+			text-align: left;
+			line-height: 20px;
 		}
 		.back {
-/*			top: 20px;*/
-			background: url('www/peiyushixiang-bottom.png') no-repeat;
+/*			background: url() no-repeat;*/
 			padding-top: 18px;
 		}
 		.front {	
 			top:-6px;
-			left: 10px;		
-			width: 94%;
+			left: 6px;		
+			width: 278px;
 			text-align: center;
 /*			background: url('www/tip-unclick.png') no-repeat;*/			
 		}
@@ -66,14 +67,29 @@
 		.btn:active {
 			background: #45bf95;
 		}
+		.dot {
+			font-size: 40px;
+			line-height: 10px;
+			display: inline-block;
+			height: 18px;
+			width: 29px;
+			vertical-align: bottom;
+		}
+		.backimg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -10;
+		}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div class="item back">				
+			<div class="item back">		
+				<img class="backimg" style="width: 292px; height:120px" src='www/peiyushixiang-bottom.png' />		
 				<!-- <button id="btn">托管</button> -->				
-				<div class="J_backContent">
-					<span style="font-size: 18px; color:#65dfb5; visibility: visible; ">4月16日～18日</span>
+				<div class="J_backContent" style="visibility: hidden">
+					<span style="font-size: 18px; color:#65dfb5; ">4月16日～18日</span>
 					<div>
 						<img src="www/btnNoWill@2x.png" style="width:110px;height:39px;margin-right:15px" />
 						<img src="www/btnWill@2x.png" style="width:110px;height:39px" />
@@ -81,13 +97,16 @@
 						<!-- <button class="btn">我会去</button> -->
 					</div>
 				</div>
-				<div class="J_selectTip" style='margin-top: -13px'>
-					<span style="font-size: 18px; color:#65dfb5">请选择</span>
+				<div class="J_selectTip" style='margin-top: -10px;margin-left:14px;text-align:left;'>
+					<span style="font-size: 16px; color:#65dfb5"><span class="dot">&middot;</span>请选择...</span>
 				</div>
 			</div>
 			<div class="item front">	
 				<img id="frontImg" src="www/tip-unclick.png" width="100%" height="90" alt="Tip Unclick">	
-				<span class="text">几天后草莓需要您</span>
+				<span class="text">
+					<p>预计7~10天后x x</p>
+					<p>4月16日~18日，草莓需要您</p>
+				</span>
 			</div>
 		</div>
 		<!-- // <script src="www/curl.js" type="text/javascript" charset="utf-8"></script> -->

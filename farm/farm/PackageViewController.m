@@ -25,10 +25,10 @@
 
 - (void) initUI
 {
-    UISlider* sliderSell = [[UISlider alloc] initWithFrame:CGRectMake(30, 170, 256, 20)];
+    UISlider* sliderSell = [[UISlider alloc] initWithFrame:CGRectMake(30, 164, 256, 20)];
     [self.view addSubview:sliderSell];
     
-    UISlider* sliderPacakge = [[UISlider alloc] initWithFrame:CGRectMake(30, 258, 256, 20)];
+    UISlider* sliderPacakge = [[UISlider alloc] initWithFrame:CGRectMake(30, 252, 256, 20)];
     [self.view addSubview: sliderPacakge];
     
     UIImage *minImage = [[UIImage imageNamed:@"slider-track-fill.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 4, 0, 4)];
