@@ -642,31 +642,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9ae-De-AJE">
-                                <rect key="frame" x="0.0" y="9" width="320" height="157"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9ae-De-AJE">
+                                <rect key="frame" x="0.0" y="5" width="320" height="167"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemPersonalCenter" id="awC-1d-ZP5">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="awC-1d-ZP5" id="LWa-pt-0qg">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="个人中心" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-8w-oJN">
-                                                    <rect key="frame" x="60" y="11" width="160" height="21"/>
+                                                    <rect key="frame" x="58" y="11" width="160" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="iconPerson.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqS-ed-uG1">
-                                                    <rect key="frame" x="30" y="10" width="19" height="22"/>
+                                                    <rect key="frame" x="18" y="10" width="19" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="iconArrowRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="PXh-yb-HRu">
-                                                    <rect key="frame" x="291" y="15" width="9" height="13"/>
+                                                    <rect key="frame" x="297" y="15" width="9" height="13"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -674,50 +674,50 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemSwitchShowtips" id="cqC-xK-b0O">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="69" width="320" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cqC-xK-b0O" id="CRj-Fg-7NS">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="首页显示提醒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtZ-jq-BZl">
-                                                    <rect key="frame" x="60" y="11" width="160" height="21"/>
+                                                    <rect key="frame" x="58" y="11" width="160" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hkl-sn-fs8">
-                                                    <rect key="frame" x="251" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="257" y="6" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="onTintColor" red="0.36862745881080627" green="0.80784320831298828" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
                                                 </switch>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="iconAlarm.png" translatesAutoresizingMaskIntoConstraints="NO" id="QRA-dM-M96">
-                                                    <rect key="frame" x="30" y="10" width="21" height="22"/>
+                                                    <rect key="frame" x="18" y="10" width="21" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="itemSwitchPushMessage" id="fps-aC-GpM">
-                                        <rect key="frame" x="0.0" y="110" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="116" width="320" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fps-aC-GpM" id="7nT-hz-ymX">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="消息推送" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSC-Pg-F3q">
-                                                    <rect key="frame" x="60" y="11" width="160" height="21"/>
+                                                    <rect key="frame" x="58" y="11" width="160" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQI-73-pu5">
-                                                    <rect key="frame" x="251" y="6" width="51" height="31"/>
+                                                    <rect key="frame" x="257" y="6" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="onTintColor" red="0.36862745881080627" green="0.80784320831298828" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
                                                 </switch>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="iconInfo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ok2-s3-WuG">
-                                                    <rect key="frame" x="30" y="10" width="21" height="21"/>
+                                                    <rect key="frame" x="18" y="10" width="21" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
