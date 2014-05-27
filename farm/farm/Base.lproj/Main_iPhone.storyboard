@@ -433,7 +433,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="果实包装" id="S93-HK-WfT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QfQ-Mz-LGa">
+                        <barButtonItem key="rightBarButtonItem" image="iconShopcart.png" style="plain" id="QfQ-Mz-LGa">
                             <connections>
                                 <action selector="gotoShopCart:" destination="mRx-Ug-GzS" id="gIu-Ak-hWX"/>
                             </connections>
@@ -509,7 +509,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="配送地址" id="cBN-KP-tam">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vhZ-yF-Z9t">
+                        <barButtonItem key="rightBarButtonItem" image="iconCross.png" id="vhZ-yF-Z9t">
                             <connections>
                                 <action selector="addAddress:" destination="5n0-bM-0o1" id="3qc-wY-5nJ"/>
                             </connections>
@@ -921,7 +921,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="我的小厨" id="nce-la-onV">
                         <barButtonItem key="leftBarButtonItem" image="iconMenu.png" id="6p4-hw-Yp1"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="NL5-2m-U5v">
+                        <barButtonItem key="rightBarButtonItem" image="iconCross.png" id="NL5-2m-U5v">
                             <connections>
                                 <action selector="addCookbook:" destination="nue-bh-602" id="QYI-Mt-zJT"/>
                             </connections>
@@ -1279,6 +1279,7 @@
         <image name="checkRight.png" width="22" height="16"/>
         <image name="iconAlarm.png" width="21" height="22"/>
         <image name="iconArrowRight.png" width="9" height="13"/>
+        <image name="iconCross.png" width="22" height="22"/>
         <image name="iconInfo.png" width="21" height="21"/>
         <image name="iconMenu.png" width="20" height="14"/>
         <image name="iconPerson.png" width="19" height="22"/>

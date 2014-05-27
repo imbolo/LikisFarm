@@ -186,6 +186,8 @@
 		CDFF86E51933460F0037CC59 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF86E41933460F0037CC59 /* RegistViewController.m */; };
 		CDFF86E8193349E40037CC59 /* btnRegistSubmit.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86E6193349E40037CC59 /* btnRegistSubmit.png */; };
 		CDFF86E9193349E40037CC59 /* btnRegistSubmit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86E7193349E40037CC59 /* btnRegistSubmit@2x.png */; };
+		CDFF86EC193419B00037CC59 /* iconCross.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86EA193419B00037CC59 /* iconCross.png */; };
+		CDFF86ED193419B00037CC59 /* iconCross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF86EB193419B00037CC59 /* iconCross@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -412,6 +414,8 @@
 		CDFF86E41933460F0037CC59 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		CDFF86E6193349E40037CC59 /* btnRegistSubmit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRegistSubmit.png; sourceTree = "<group>"; };
 		CDFF86E7193349E40037CC59 /* btnRegistSubmit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnRegistSubmit@2x.png"; sourceTree = "<group>"; };
+		CDFF86EA193419B00037CC59 /* iconCross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconCross.png; sourceTree = "<group>"; };
+		CDFF86EB193419B00037CC59 /* iconCross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconCross@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +445,8 @@
 		CD03BE8E192DC983000979DF /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				CDFF86EA193419B00037CC59 /* iconCross.png */,
+				CDFF86EB193419B00037CC59 /* iconCross@2x.png */,
 				CD03BE90192DC99F000979DF /* iconAlarm.png */,
 				CD03BE91192DC99F000979DF /* iconAlarm@2x.png */,
 				CD03BE9C192DCA49000979DF /* iconArrowRight.png */,
@@ -1004,6 +1010,7 @@
 				CD4B5BE9192B0B0600F4CE33 /* whiteBg.png in Resources */,
 				CDD0FE6F192AE755000B7B26 /* cookbook.html in Resources */,
 				CD4B5BF1192B0E5800F4CE33 /* sidemenuBg@2x.png in Resources */,
+				CDFF86EC193419B00037CC59 /* iconCross.png in Resources */,
 				CD4B5C07192B277100F4CE33 /* sideLogo.png in Resources */,
 				CD8EA9B419304510003133DA /* tmp_step3.png in Resources */,
 				CDDF5F2C192C897800D8B9CC /* iconShopcart.png in Resources */,
@@ -1041,6 +1048,7 @@
 				CDFF86DD193341D40037CC59 /* btnRegist.png in Resources */,
 				CD8EAA7A1932DEEC003133DA /* 我的培育园@2x.png in Resources */,
 				CD8EA9B519304510003133DA /* tmp_step3@2x.png in Resources */,
+				CDFF86ED193419B00037CC59 /* iconCross@2x.png in Resources */,
 				CDDF5F24192C82FC00D8B9CC /* 赞.png in Resources */,
 				CDDF5F18192C7D5A00D8B9CC /* centerTopImage.png in Resources */,
 				CD8EA984192F0D78003133DA /* tip-unclick.png in Resources */,
