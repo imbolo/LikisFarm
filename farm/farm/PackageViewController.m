@@ -56,16 +56,18 @@
 
 - (IBAction)sliderSellChanged:(UISlider *)sender {
     NSLog(@"slider value = %f", sender.value);
-
-    [self.percentSelf setText: [NSString stringWithFormat:@"%d%%", (int)(sender.value * 100)]];
-    [self.percentSell setText: [NSString stringWithFormat:@"%d%%", (int)((1 - sender.value) * 100)]];
+    
+    int valueSelf = (int)(sender.value * 100);
+    [self.percentSelf setText: [NSString stringWithFormat:@"%d%%", valueSelf]];
+    [self.percentSell setText: [NSString stringWithFormat:@"%d%%", 100 - valueSelf]];
 }
 
 - (IBAction)sliderPacakgeChanged:(UISlider *)sender {
     NSLog(@"slider value = %f", sender.value);
     
-    [self.percentPackageGift setText: [NSString stringWithFormat:@"%d%%", (int)(sender.value * 100)]];
-    [self.percentPackageNormal setText: [NSString stringWithFormat:@"%d%%", (int)((1 - sender.value) * 100)]];
+    int valueGift = (int)(sender.value * 100);
+    [self.percentPackageGift setText: [NSString stringWithFormat:@"%d%%", valueGift]];
+    [self.percentPackageNormal setText: [NSString stringWithFormat:@"%d%%", 100 - valueGift]];
 }
 
 - (void)viewDidLoad
