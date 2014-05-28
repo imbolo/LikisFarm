@@ -26,8 +26,8 @@
 			box-shadow: 2px 3px 5px #000000;
 			background-color:rgba(255, 255, 255, 0.8);
 			-webkit-overflow-scrolling: touch;
-			-webkit-box-shadow: 5px 5px 28px gray;
-			box-shadow: 5px 5px 28px gray;
+			-webkit-box-shadow: 5px 5px 28px #555;
+			box-shadow: 5px 5px 28px #555;
 		}
 		.addToCart img {			
 			width: 300px;
@@ -95,8 +95,8 @@
 			overflow-x: scroll;
 /*			overflow-y: hidden;*/
 			-webkit-overflow-scrolling: touch;
-			-webkit-box-shadow: 5px 5px 28px #000000;
-			box-shadow: 5px 5px 28px #000000;
+			-webkit-box-shadow: 5px 5px 28px #666;
+			box-shadow: 5px 5px 28px #666;
 			
 		}
 		.topMenu ul {
@@ -131,7 +131,7 @@
 			-webkit-transition: all .3s;
 		}
 		.food-item {			
-			margin-top: 50px;
+			margin-top: 42px;
 			display: inline-block;
 			width: 10%;
 			text-align: center; 
@@ -139,7 +139,9 @@
 		#opMinus:active, #opPlus:active {
 			opacity: 0.7;
 		}
-		
+		.font-yahei {
+		    font-family: Microsoft YaHei;
+		}				
         </style>
     </head>
     <body>
@@ -176,8 +178,13 @@
 		</div>
 		<div class="addToCart">
 			<div class="count">
+				
 				<div class="cost">
-					<span>¥</span><span>27</span><span>/</span><span style="font-size: 16px">株</span>					
+					<img src="www/tmp_price.png" style="width: 94px; margin-top: 14px; margin-left: 8px" />
+					<!-- <span class="font-yahei" style="margin-left: 3px;">¥</span>
+					<span class="font-yahei" style="margin-left: -4px">27</span>
+					<img style="width: 20px;margin-left: -17px;vertical-align: -14px;" src="www/slash.png" />
+					<span style="font-size: 16px;margin-left: -16px;vertical-align: -10px;">株</span>			 -->		
 				</div>
 				<div class="caculator">
 					<img id="opMinus" src="www/btnMinus@2x.png" style="width: 33px;vertical-align:bottom" />	
@@ -185,7 +192,7 @@
 					<img id="opPlus" src="www/btnPlus@2x.png" style="width: 33px;vertical-align:bottom" />				
 				</div>
 			</div>
-			<img class="" src="www/add-to-cart.png" alt="Add To Cart">
+			<img style="margin-left:6px" class="" src="www/add-to-cart.png" alt="Add To Cart">
 		</div>
 		
 		<script type="text/javascript" src="www/zepto.min.js"></script>

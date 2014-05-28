@@ -393,7 +393,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhX-3V-amV">
                                 <rect key="frame" x="57" y="228" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <color key="textColor" red="0.96862751250000001" green="0.52156865600000002" blue="0.44705885649999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1279,7 +1279,7 @@
         <image name="checkRight.png" width="22" height="16"/>
         <image name="iconAlarm.png" width="21" height="22"/>
         <image name="iconArrowRight.png" width="9" height="13"/>
-        <image name="iconCross.png" width="22" height="22"/>
+        <image name="iconCross.png" width="32" height="32"/>
         <image name="iconInfo.png" width="21" height="21"/>
         <image name="iconMenu.png" width="20" height="14"/>
         <image name="iconPerson.png" width="19" height="22"/>
