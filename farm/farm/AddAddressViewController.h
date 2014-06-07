@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
-@interface AddAddressViewController : WhiteBaseViewController
+@interface AddAddressViewController : WhiteBaseViewController 
+@property (weak, nonatomic) IBOutlet UILabel *areaLabel;
 
 @end

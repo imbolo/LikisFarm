@@ -172,6 +172,11 @@
 		CDDF5F2D192C897800D8B9CC /* iconShopcart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F2B192C897800D8B9CC /* iconShopcart@2x.png */; };
 		CDDF5F2F192C8A5500D8B9CC /* iconMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDDF5F2E192C8A5500D8B9CC /* iconMenu@2x.png */; };
 		CDDF5F33192CB4BD00D8B9CC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDF5F32192CB4BD00D8B9CC /* Config.m */; };
+		CDE47EC41942B05900C19955 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE47EBD1942B05900C19955 /* city.plist */; };
+		CDE47EC51942B05900C19955 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDE47EBE1942B05900C19955 /* area.plist */; };
+		CDE47EC61942B05900C19955 /* HZAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE47EC01942B05900C19955 /* HZAreaPickerView.m */; };
+		CDE47EC71942B05900C19955 /* HZAreaPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE47EC11942B05900C19955 /* HZAreaPickerView.xib */; };
+		CDE47EC81942B05900C19955 /* HZLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE47EC31942B05900C19955 /* HZLocation.m */; };
 		CDE7907B19245AA1007996AB /* www in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907A19245AA1007996AB /* www */; };
 		CDE79080192466BB007996AB /* todos.html in Resources */ = {isa = PBXBuildFile; fileRef = CDE7907F192466BB007996AB /* todos.html */; };
 		CDE7908519246928007996AB /* ReservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7908419246928007996AB /* ReservationViewController.m */; };
@@ -398,6 +403,13 @@
 		CDDF5F2E192C8A5500D8B9CC /* iconMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMenu@2x.png"; sourceTree = "<group>"; };
 		CDDF5F31192CB4BD00D8B9CC /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		CDDF5F32192CB4BD00D8B9CC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		CDE47EBD1942B05900C19955 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = city.plist; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/city.plist"; sourceTree = "<group>"; };
+		CDE47EBE1942B05900C19955 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = area.plist; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/area.plist"; sourceTree = "<group>"; };
+		CDE47EBF1942B05900C19955 /* HZAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HZAreaPickerView.h; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/HZAreaPickerView.h"; sourceTree = "<group>"; };
+		CDE47EC01942B05900C19955 /* HZAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HZAreaPickerView.m; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/HZAreaPickerView.m"; sourceTree = "<group>"; };
+		CDE47EC11942B05900C19955 /* HZAreaPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HZAreaPickerView.xib; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/HZAreaPickerView.xib"; sourceTree = "<group>"; };
+		CDE47EC21942B05900C19955 /* HZLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HZLocation.h; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/HZLocation.h"; sourceTree = "<group>"; };
+		CDE47EC31942B05900C19955 /* HZLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HZLocation.m; path = "../../../../../Downloads/cloudorz-areapicker/areapicker/HZLocation.m"; sourceTree = "<group>"; };
 		CDE7907A19245AA1007996AB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = farm/www; sourceTree = "<group>"; };
 		CDE7907F192466BB007996AB /* todos.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = todos.html; path = farm/todos.html; sourceTree = "<group>"; };
 		CDE7908319246927007996AB /* ReservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReservationViewController.h; sourceTree = "<group>"; };
@@ -561,9 +573,9 @@
 			isa = PBXGroup;
 			children = (
 				CD8031AC192C43B400AC7D4D /* ZTextFiled.h */,
+				CD8031AD192C43B400AC7D4D /* ZTextFiled.m */,
 				CD8EAA7D1932E264003133DA /* MenuLabel.h */,
 				CD8EAA7E1932E264003133DA /* MenuLabel.m */,
-				CD8031AD192C43B400AC7D4D /* ZTextFiled.m */,
 				CD4956EE192CF51D00C9E90F /* ZButtonGroupItem.h */,
 				CD4956EF192CF51D00C9E90F /* ZButtonGroupItem.m */,
 				CDDBAE71192E2E7F00063D66 /* ZSlider.h */,
@@ -714,6 +726,7 @@
 				CDD8E4D21922E9E60095247B /* Images.xcassets */,
 				CDD8E4BE1922E9E60095247B /* Supporting Files */,
 				CD52AA801928C3D200367197 /* PeiyushixiangViewController.h */,
+				CDE47EBC1942B04E00C19955 /* areapicker */,
 				CD52AA811928C3D200367197 /* PeiyushixiangViewController.m */,
 				CDD0FE6B192AE507000B7B26 /* CookbookViewController.h */,
 				CDD0FE6C192AE507000B7B26 /* CookbookViewController.m */,
@@ -811,6 +824,20 @@
 				CDDF5F32192CB4BD00D8B9CC /* Config.m */,
 			);
 			name = config;
+			sourceTree = "<group>";
+		};
+		CDE47EBC1942B04E00C19955 /* areapicker */ = {
+			isa = PBXGroup;
+			children = (
+				CDE47EBD1942B05900C19955 /* city.plist */,
+				CDE47EBE1942B05900C19955 /* area.plist */,
+				CDE47EBF1942B05900C19955 /* HZAreaPickerView.h */,
+				CDE47EC01942B05900C19955 /* HZAreaPickerView.m */,
+				CDE47EC11942B05900C19955 /* HZAreaPickerView.xib */,
+				CDE47EC21942B05900C19955 /* HZLocation.h */,
+				CDE47EC31942B05900C19955 /* HZLocation.m */,
+			);
+			name = areapicker;
 			sourceTree = "<group>";
 		};
 		CDE7907C19246671007996AB /* pages */ = {
@@ -928,6 +955,7 @@
 				CD8EAA761932DEEC003133DA /* 流行食谱@2x.png in Resources */,
 				CDDBAE7F192E2FEC00063D66 /* slider-track.png in Resources */,
 				CD8031A6192C3C2D00AC7D4D /* signinBG@2x.png in Resources */,
+				CDE47EC71942B05900C19955 /* HZAreaPickerView.xib in Resources */,
 				CDDF5F2D192C897800D8B9CC /* iconShopcart@2x.png in Resources */,
 				CD8EAA6C1932DD67003133DA /* 主页@2x.png in Resources */,
 				CD4B5C09192B2A6B00F4CE33 /* tmp_package.png in Resources */,
@@ -946,6 +974,7 @@
 				CD03BEA6192DCF8F000979DF /* tmp_personalcenterTable.png in Resources */,
 				CD8031B6192C5FA100AC7D4D /* addressBtn@2x.png in Resources */,
 				CD8EA990192F5BC6003133DA /* addStep1Selected.png in Resources */,
+				CDE47EC41942B05900C19955 /* city.plist in Resources */,
 				CD8EA939192EEC5F003133DA /* dashedLine.png in Resources */,
 				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
 				CD8EAA7B1932DEEC003133DA /* 预约.png in Resources */,
@@ -1040,6 +1069,7 @@
 				CD03BE9A192DC99F000979DF /* iconPerson.png in Resources */,
 				CD8EA9A1192F60A6003133DA /* addStep3Normal.png in Resources */,
 				CDD8E4C21922E9E60095247B /* InfoPlist.strings in Resources */,
+				CDE47EC51942B05900C19955 /* area.plist in Resources */,
 				CD803197192B7AEC00AC7D4D /* backButton@2x.png in Resources */,
 				CDE79080192466BB007996AB /* todos.html in Resources */,
 				CDFF86E2193344A90037CC59 /* tmp_regist_bg@2x.png in Resources */,
@@ -1079,6 +1109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4B5C0E192B309700F4CE33 /* PackageDetailViewController.m in Sources */,
+				CDE47EC61942B05900C19955 /* HZAreaPickerView.m in Sources */,
 				CD8EA9BD19306D37003133DA /* AddAddressViewController.m in Sources */,
 				CDD8E4F51922EA580095247B /* SideMenuViewController.m in Sources */,
 				CDD8E4FB1922F3540095247B /* BaseViewController.m in Sources */,
@@ -1093,6 +1124,7 @@
 				CD52AA821928C3D200367197 /* PeiyushixiangViewController.m in Sources */,
 				CDDBAE73192E2E7F00063D66 /* ZSlider.m in Sources */,
 				CDD8E4C81922E9E60095247B /* AppDelegate.m in Sources */,
+				CDE47EC81942B05900C19955 /* HZLocation.m in Sources */,
 				CD8EAA7F1932E264003133DA /* MenuLabel.m in Sources */,
 				CDD0FE72192AE831000B7B26 /* CookbookDetailViewController.m in Sources */,
 				CD8031AE192C43B400AC7D4D /* ZTextFiled.m in Sources */,
