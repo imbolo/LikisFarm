@@ -30,6 +30,8 @@
 		CD03BEBA192DE184000979DF /* checkRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BEB8192DE184000979DF /* checkRight@2x.png */; };
 		CD03BEBD192DE939000979DF /* logotext.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BEBB192DE939000979DF /* logotext.png */; };
 		CD03BEBE192DE939000979DF /* logotext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BEBC192DE939000979DF /* logotext@2x.png */; };
+		CD16D37B194AAC83003E3680 /* menu_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D379194AAC83003E3680 /* menu_selected.png */; };
+		CD16D37C194AAC83003E3680 /* menu_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D37A194AAC83003E3680 /* menu_selected@2x.png */; };
 		CD4956DD192CD09000C9E90F /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CD4956DC192CD09000C9E90F /* reservation.html */; };
 		CD4956E1192CEDF700C9E90F /* ButtonGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */; };
 		CD4956E6192CEEEC00C9E90F /* buttonGroupSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4956E2192CEEEC00C9E90F /* buttonGroupSelected.png */; };
@@ -235,6 +237,8 @@
 		CD03BEB8192DE184000979DF /* checkRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkRight@2x.png"; sourceTree = "<group>"; };
 		CD03BEBB192DE939000979DF /* logotext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotext.png; sourceTree = "<group>"; };
 		CD03BEBC192DE939000979DF /* logotext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logotext@2x.png"; sourceTree = "<group>"; };
+		CD16D379194AAC83003E3680 /* menu_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_selected.png; path = "../../../../../../Pictures/项目/理想培育园/改的/切图/菜单/menu_selected.png"; sourceTree = "<group>"; };
+		CD16D37A194AAC83003E3680 /* menu_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu_selected@2x.png"; path = "../../../../../../Pictures/项目/理想培育园/改的/切图/菜单/menu_selected@2x.png"; sourceTree = "<group>"; };
 		CD4956DC192CD09000C9E90F /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = reservation.html; path = farm/reservation.html; sourceTree = "<group>"; };
 		CD4956DF192CEDF700C9E90F /* ButtonGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGroupViewController.h; sourceTree = "<group>"; };
 		CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGroupViewController.m; sourceTree = "<group>"; };
@@ -663,6 +667,8 @@
 		CD8EAA541932DA4F003133DA /* sidemenu */ = {
 			isa = PBXGroup;
 			children = (
+				CD16D379194AAC83003E3680 /* menu_selected.png */,
+				CD16D37A194AAC83003E3680 /* menu_selected@2x.png */,
 				CD8EAA691932DD67003133DA /* 主页.png */,
 				CD8EAA6A1932DD67003133DA /* 主页@2x.png */,
 				CD8EAA6D1932DEEC003133DA /* 流行食谱.png */,
@@ -989,6 +995,7 @@
 				CD8EA990192F5BC6003133DA /* addStep1Selected.png in Resources */,
 				CDE47EC41942B05900C19955 /* city.plist in Resources */,
 				CD8EA939192EEC5F003133DA /* dashedLine.png in Resources */,
+				CD16D37B194AAC83003E3680 /* menu_selected.png in Resources */,
 				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
 				CD8EAA7B1932DEEC003133DA /* 预约.png in Resources */,
 				CD03BE96192DC99F000979DF /* iconAlarm.png in Resources */,
@@ -1027,6 +1034,7 @@
 				CD52AA84192A361900367197 /* peiyushixiang.html in Resources */,
 				CDFF86D8193320730037CC59 /* btnPlus.png in Resources */,
 				CD998E3719455523003C101D /* iconNext.png in Resources */,
+				CD16D37C194AAC83003E3680 /* menu_selected@2x.png in Resources */,
 				CD8EA9A3192F60A6003133DA /* addStep3Selected.png in Resources */,
 				CDFF86E1193344A90037CC59 /* tmp_regist_bg.png in Resources */,
 				CDDF5F25192C82FC00D8B9CC /* 赞@2x.png in Resources */,

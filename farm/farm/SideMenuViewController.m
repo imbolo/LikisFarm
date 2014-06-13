@@ -96,7 +96,8 @@
     cell.backgroundColor = [UIColor clearColor];
     cell.contentView.backgroundColor = [UIColor clearColor];
     
-    UIColor *color = [[UIColor alloc]initWithRed:98/255.0 green:217/255.0 blue:176/255.0 alpha:0.8];//通过RGB来定义自己的颜色
+    UIColor* color = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"menu_selected.png"]];
+    //UIColor *color = [[UIColor alloc]initWithRed:98/255.0 green:217/255.0 blue:176/255.0 alpha:0.8];//通过RGB来定义自己的颜色
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = color;
     
