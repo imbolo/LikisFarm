@@ -7,9 +7,11 @@
 //
 
 #import "CookbookViewController.h"
+#import "CookbookDetailViewController.h"
 #import "SWRevealViewController.h"
 
 @interface CookbookViewController ()
+
 
 @end
 
@@ -73,7 +75,12 @@
     NSArray* param = [url componentsSeparatedByString:@"?"];
     
     if ([[param objectAtIndex:0]  isEqual: @"action:goto:cookbook-detail"]) {
-        ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"cookbook-detail"];
+        CookbookDetailViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"cookbook-detail"];
+        
+        self.selectedItem = [param objectAtIndex:1];
+        
+        [nextView getLastController: self];
+        
         [self.navigationController pushViewController:nextView animated:YES];
     }
     

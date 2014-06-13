@@ -12,4 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButtonItem;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+@property NSString* selectedItem;
+
 @end
