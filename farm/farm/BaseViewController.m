@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationController.navigationBar.translucent = NO;
     // Do any additional setup after loading the view.
 //    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"viewBackground.png"]];
     UIImage* image = [UIImage imageNamed:@"viewBackground.png"];

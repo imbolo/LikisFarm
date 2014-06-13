@@ -20,4 +20,10 @@
 @property (retain, nonatomic) UIView* view2;
 @property (retain, nonatomic) UIView* view3;
 
+@property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
+
+@property (retain, nonatomic) UINavigationItem* nextButton;
+
+@property (retain, nonatomic) UINavigationItem* okButton;
+
 @end

@@ -230,6 +230,7 @@ static CGFloat ImageWidth  = 320.0;
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
     
+    //[self.navigationController.navigationBar setTranslucent:NO];
     //    UIImageView *fakeView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default.png"]];
     
     //    CGRect frame = fakeView.frame;
@@ -300,7 +301,8 @@ static CGFloat ImageWidth  = 320.0;
     
     ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"addcookbook"];
     
-    [self.navigationController pushViewController:nextView animated:YES];
+    //[self.navigationController pushViewController:nextView animated:YES];
+    [self presentViewController:nextView animated:YES completion:nil];
    
 }
 - (IBAction)followButtonClicked:(id)sender {

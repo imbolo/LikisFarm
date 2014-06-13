@@ -8,6 +8,10 @@
 
 #import "AddCookbookViewController.h"
 
+static int topDIS = 20 + 44;
+
+int currentIndex = 0;
+
 @interface AddCookbookViewController ()
 
 @property NSArray* tabs;
@@ -27,11 +31,23 @@
     return self;
 }
 
+
+
 - (void)initUI
 {
+    CGRect aScreenRect = [[UIScreen mainScreen] bounds];
+    
+    UIView* statusBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, aScreenRect.size.width, 20)];
+    statusBar.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:statusBar];
+    
+    UINavigationBar *nav = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, aScreenRect.size.width, 44)];
+    UINavigationItem *NavTitle = [[UINavigationItem alloc] initWithTitle:@"详细介绍"];
+    [nav pushNavigationItem:NavTitle animated:YES];
+//    [self.view addSubview:nav];
 
     //step1
-    self.tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, -1, 107, 65)];
+    self.tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, -1 + topDIS, 107, 65)];
     [self.tab1 setBackgroundImage:[UIImage imageNamed:@"addStep1Normal.png"] forState:UIControlStateNormal];
     [self.tab1 setBackgroundImage:[UIImage imageNamed:@"addStep1Selected.png"] forState:UIControlStateSelected];
     [self.tab1 setContentEdgeInsets:(UIEdgeInsetsMake(-8, 0, 0, 0))];
@@ -41,7 +57,7 @@
     [self.tab1 setSelected:YES];
     
     //step2
-    self.tab2 = [[UIButton alloc] initWithFrame:CGRectMake(107, -1, 107, 65)];
+    self.tab2 = [[UIButton alloc] initWithFrame:CGRectMake(107, -1 + topDIS, 107, 65)];
     [self.tab2 setBackgroundImage:[UIImage imageNamed:@"addStep2Normal.png"] forState:UIControlStateNormal];
     [self.tab2 setBackgroundImage:[UIImage imageNamed:@"addStep2Selected.png"] forState:UIControlStateSelected];
     [self.tab2 setContentEdgeInsets:(UIEdgeInsetsMake(-8, 0, 0, 0))];
@@ -50,7 +66,7 @@
     [self.view addSubview:self.tab2];
     
     //step3
-    self.tab3 = [[UIButton alloc] initWithFrame:CGRectMake(107*2, -1, 107, 65)];
+    self.tab3 = [[UIButton alloc] initWithFrame:CGRectMake(107*2, -1 + topDIS, 107, 65)];
     [self.tab3 setBackgroundImage:[UIImage imageNamed:@"addStep3Normal.png"] forState:UIControlStateNormal];
     [self.tab3 setBackgroundImage:[UIImage imageNamed:@"addStep3Selected.png"] forState:UIControlStateSelected];
     [self.tab3 setContentEdgeInsets:(UIEdgeInsetsMake(-8, 0, 0, 0))];
@@ -60,7 +76,7 @@
     
     
     //slider container
-    slideContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 55, 320 * 3, 480)];
+    slideContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 55 + topDIS, 320 * 3, 480)];
     _view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 580)];
     _view2 = [[UIView alloc] initWithFrame:CGRectMake(320, 0, 320, 580)];
     _view3 = [[UIView alloc] initWithFrame:CGRectMake(320 * 2, 0, 320, 580)];
@@ -97,14 +113,25 @@
     [self.view3 addSubview:tmp3];
     
     //dashed line
-    UIImageView* dashedLine1 = [[UIImageView alloc] initWithFrame:CGRectMake(107, 0, 1, 55)];
+    UIImageView* dashedLine1 = [[UIImageView alloc] initWithFrame:CGRectMake(107, 0 + topDIS, 1, 55)];
     [dashedLine1 setImage:[UIImage imageNamed:@"dashedLine.png"]];
     [self.view addSubview: dashedLine1];
     dashedLine1.layer.zPosition = 100;
-    UIImageView* dashedLine2 = [[UIImageView alloc] initWithFrame:CGRectMake(107*2, 0, 1, 55)];
+    UIImageView* dashedLine2 = [[UIImageView alloc] initWithFrame:CGRectMake(107*2, 0 + topDIS, 1, 55)];
     [dashedLine2 setImage:[UIImage imageNamed:@"dashedLine.png"]];
     [self.view addSubview: dashedLine2];
     dashedLine2.layer.zPosition = 100;
+}
+
+- (void)initNavigationBar
+{
+    
+    self.nextButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"iconNext.png"] style:UIBarButtonItemStyleDone target:self action:@selector(next:)];
+    
+    self.navItem.rightBarButtonItem = self.nextButton;
+    
+    
+    self.okButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"checkRight.png"] style:UIBarButtonItemStyleDone target:self action:@selector(cancelAddCookbook:)];
 }
 
 - (void)viewDidLoad
@@ -113,6 +140,7 @@
     // Do any additional setup after loading the view.
     
     [self initUI];
+    [self initNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning
@@ -151,6 +179,7 @@
     else if (btn == self.tab3) {
         index = 2;
     }
+    currentIndex = index;
 
     
     //slide view
@@ -172,4 +201,58 @@
      }];
 
 }
+
+- (IBAction)next:(id)sender
+{
+    currentIndex ++ ;
+    if (currentIndex == 2) {
+
+        self.navItem.rightBarButtonItem = self.okButton;
+//        return;
+    }
+    
+    [self.tab1 setSelected:NO];
+    [self.tab2 setSelected:NO];
+    [self.tab3 setSelected:NO];
+    
+    switch (currentIndex) {
+        case 0:
+            [self.tab1 setSelected:YES];
+            break;
+        case 1:
+            [self.tab2 setSelected:YES];
+            break;
+        case 2:
+            [self.tab3 setSelected:YES];
+            break;
+            
+        default:
+            break;
+    }
+    
+    //slide view
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseOut
+                     animations:^
+     {
+         CGRect frame = slideContainer.frame;
+         //         frame.origin.y = 0;
+         frame.origin.x = -(320 * (currentIndex));
+         slideContainer.frame = frame;
+         
+     }
+                     completion:^(BOOL finished)
+     {
+         NSLog(@"Fade out Completed");
+         //              [splashView ];
+     }];
+}
+
+- (IBAction)cancelAddCookbook:(id)sender
+{
+    currentIndex = 0;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

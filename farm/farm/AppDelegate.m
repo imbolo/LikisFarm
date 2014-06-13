@@ -20,6 +20,8 @@
     
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar.png"] forBarMetrics:UIBarMetricsDefault];
     
+//    [[UINavigationBar appearance] setTranslucent:NO];
+    
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
 //    [self setSliderAppearance];
