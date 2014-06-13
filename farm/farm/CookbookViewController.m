@@ -70,7 +70,9 @@
 {
     NSString* url = [request.URL absoluteString];
     
-    if ([url  isEqual: @"action:goto:cookbook-detail"]) {
+    NSArray* param = [url componentsSeparatedByString:@"?"];
+    
+    if ([[param objectAtIndex:0]  isEqual: @"action:goto:cookbook-detail"]) {
         ViewController* nextView = [self.storyboard instantiateViewControllerWithIdentifier:@"cookbook-detail"];
         [self.navigationController pushViewController:nextView animated:YES];
     }

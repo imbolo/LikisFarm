@@ -1032,18 +1032,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="309" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="主页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOD-tK-WdH" customClass="MenuLabel">
-                                                    <rect key="frame" x="47" y="14" width="121" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="HiraginoSansGB-W3"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="主页.png" translatesAutoresizingMaskIntoConstraints="NO" id="ers-hQ-Qsh">
-                                                    <rect key="frame" x="0.0" y="2" width="44" height="44"/>
+                                                    <rect key="frame" x="20" y="2" width="74" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1060,18 +1050,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="309" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="预约" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O13-jN-pUu" customClass="MenuLabel">
-                                                    <rect key="frame" x="47" y="14" width="105" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="HiraginoSansGB-W3"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="预约.png" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-r4-j4c">
-                                                    <rect key="frame" x="0.0" y="2" width="44" height="44"/>
+                                                    <rect key="frame" x="20" y="2" width="85" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1087,18 +1067,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="309" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的培育园" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-If-cYr" customClass="MenuLabel">
-                                                    <rect key="frame" x="47" y="14" width="117" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="HiraginoSansGB-W3"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="我的培育园.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Jz-3b-XHK">
-                                                    <rect key="frame" x="0.0" y="2" width="44" height="44"/>
+                                                    <rect key="frame" x="20" y="2" width="131" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1114,18 +1084,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="309" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="流行食谱" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-3I-hrq" customClass="MenuLabel">
-                                                    <rect key="frame" x="47" y="14" width="119" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="HiraginoSansGB-W3"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="流行食谱.png" translatesAutoresizingMaskIntoConstraints="NO" id="A6i-kR-ake">
-                                                    <rect key="frame" x="0.0" y="2" width="44" height="44"/>
+                                                    <rect key="frame" x="20" y="2" width="121" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1141,18 +1101,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="309" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enw-I1-qOP" customClass="MenuLabel">
-                                                    <rect key="frame" x="47" y="14" width="109" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="HiraginoSansGB-W3"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="设置.png" translatesAutoresizingMaskIntoConstraints="NO" id="dIj-5X-Yve">
-                                                    <rect key="frame" x="0.0" y="2" width="44" height="44"/>
+                                                    <rect key="frame" x="20" y="2" width="82" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -1306,35 +1256,35 @@
         <image name="buttonGroupSelected.png" width="107" height="51"/>
         <image name="centerTopImage.png" width="300" height="200"/>
         <image name="checkRight.png" width="22" height="16"/>
-        <image name="iconAlarm.png" width="21" height="21"/>
-        <image name="iconArrowRight.png" width="8" height="13"/>
+        <image name="iconAlarm.png" width="21" height="22"/>
+        <image name="iconArrowRight.png" width="9" height="13"/>
         <image name="iconCancel.png" width="32" height="32"/>
         <image name="iconCross.png" width="32" height="32"/>
         <image name="iconInfo.png" width="21" height="21"/>
         <image name="iconMenu.png" width="20" height="14"/>
-        <image name="iconPerson.png" width="19" height="21"/>
+        <image name="iconPerson.png" width="19" height="22"/>
         <image name="iconShopcart.png" width="22" height="19"/>
         <image name="loginBtn.png" width="269" height="50"/>
         <image name="logotext.png" width="257" height="93"/>
-        <image name="order-background.png" width="312" height="369"/>
-        <image name="shopcart.png" width="305" height="407"/>
-        <image name="sideLogo.png" width="87" height="120"/>
+        <image name="order-background.png" width="624" height="738"/>
+        <image name="shopcart.png" width="611" height="815"/>
+        <image name="sideLogo.png" width="175" height="240"/>
         <image name="sidemenuBg.png" width="246" height="443"/>
         <image name="slider-track-fill.png" width="74" height="8"/>
         <image name="slider-track.png" width="257" height="8"/>
         <image name="tmp_login.png" width="271" height="247"/>
-        <image name="tmp_modifypwd.png" width="307" height="46"/>
-        <image name="tmp_modifypwdTableBG.png" width="156" height="82"/>
-        <image name="tmp_package.png" width="309" height="399"/>
+        <image name="tmp_modifypwd.png" width="308" height="46"/>
+        <image name="tmp_modifypwdTableBG.png" width="312" height="165"/>
+        <image name="tmp_package.png" width="618" height="799"/>
         <image name="tmp_personalcenterTable.png" width="320" height="213"/>
         <image name="tmp_regist_bg.png" width="320" height="204"/>
-        <image name="tmp_配送地址.png" width="307" height="46"/>
-        <image name="toPayBtn.png" width="284" height="67"/>
-        <image name="主页.png" width="32" height="32"/>
-        <image name="我的培育园.png" width="32" height="32"/>
-        <image name="流行食谱.png" width="32" height="32"/>
-        <image name="设置.png" width="32" height="32"/>
-        <image name="预约.png" width="32" height="32"/>
+        <image name="tmp_配送地址.png" width="308" height="46"/>
+        <image name="toPayBtn.png" width="568" height="134"/>
+        <image name="主页.png" width="74" height="24"/>
+        <image name="我的培育园.png" width="131" height="22"/>
+        <image name="流行食谱.png" width="121" height="26"/>
+        <image name="设置.png" width="82" height="27"/>
+        <image name="预约.png" width="85" height="25"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
