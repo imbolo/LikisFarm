@@ -141,7 +141,33 @@
 		}
 		.font-yahei {
 		    font-family: Microsoft YaHei;
-		}				
+		}			
+		.about {
+			position: relative;
+		}	
+		.about .title {
+			position: absolute;
+			top: 10px;
+			left: 160px;
+		}
+		.about .content {
+			position: absolute;
+			top: 60px;
+			left: 80px;
+			height: 140px;
+			width: 160px;
+			text-align: left;
+			overflow: scroll;
+			-webkit-overflow-scrolling: touch;
+		}
+		.about .icon {
+			position: absolute;
+			top: 10px;
+			left: 80px;
+			height: 30px;
+			width: 30px;
+			background: #faa;
+		}
         </style>
     </head>
     <body>
@@ -156,19 +182,38 @@
 		</div>
 		<div id="food-list" class="food-list">
 			<div class="food-item">
-				<img src="www/reservation/foods/xilanhua.png" width="240px" />
+				<img class='foodImg' src="www/reservation/foods/xilanhua.png" width="240px" />
+				<div class="about" style="display:none">
+					<img class="aboutBg" src="www/reservation/foods/about.png" width="240px" />
+					<div class="icon">
+						
+					</div>
+					<div class="title">
+						title
+					</div>
+					<div class="content">
+						content<br />
+						content<br />
+						content<br />
+						content<br />
+						content<br />
+						content<br />
+						content<br />
+						content<br />
+					</div>
+				</div>
 			</div>
 			<div class="food-item">
-				<img src="www/reservation/foods/fanqie.png" width="240px" />
+				<img class='foodImg' src="www/reservation/foods/fanqie.png" width="240px" />
 			</div>
 			<div class="food-item">
-				<img src="www/reservation/foods/ziganlan.png" width="240px" />
+				<img class='foodImg' src="www/reservation/foods/ziganlan.png" width="240px" />
 			</div>
 			<div class="food-item">
-				<img src="www/reservation/foods/caomei.png" width="240px" />
+				<img class='foodImg' src="www/reservation/foods/caomei.png" width="240px" />
 			</div>
 			<div class="food-item">
-				<img src="www/reservation/foods/lusun.png" width="240px" />
+				<img class='foodImg' src="www/reservation/foods/lusun.png" width="240px" />
 			</div>
 		</div>		
 		
@@ -197,6 +242,16 @@
 		
 		<script type="text/javascript" src="www/zepto.min.js"></script>
 		<script type="text/javascript">
+		
+		$('#food-list').on('tap', '.food-item', function(ev) {
+			$(this).find('.foodImg').hide();
+			$(this).find('.about').show();
+		});
+		
+		$('#food-list').on('tap', '.icon', function(ev) {
+			$(this).parents('.food-item').find('.foodImg').show();
+			$(this).parents('.food-item').find('.about').hide();
+		});
 		// (function($){
 			
 			var count = 0;

@@ -30,8 +30,6 @@
 		CD03BEBA192DE184000979DF /* checkRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BEB8192DE184000979DF /* checkRight@2x.png */; };
 		CD03BEBD192DE939000979DF /* logotext.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BEBB192DE939000979DF /* logotext.png */; };
 		CD03BEBE192DE939000979DF /* logotext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03BEBC192DE939000979DF /* logotext@2x.png */; };
-		CD16D37B194AAC83003E3680 /* menu_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D379194AAC83003E3680 /* menu_selected.png */; };
-		CD16D37C194AAC83003E3680 /* menu_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D37A194AAC83003E3680 /* menu_selected@2x.png */; };
 		CD16D39C194B13A7003E3680 /* 步骤_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D396194B13A7003E3680 /* 步骤_normal.png */; };
 		CD16D39D194B13A7003E3680 /* 步骤_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D397194B13A7003E3680 /* 步骤_selected.png */; };
 		CD16D39E194B13A7003E3680 /* 食材_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D398194B13A7003E3680 /* 食材_normal.png */; };
@@ -120,6 +118,8 @@
 		CD16D4A9194C8F61003E3680 /* list粉丝@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D4A5194C8F61003E3680 /* list粉丝@2x.png */; };
 		CD16D4AA194C8F61003E3680 /* list关注.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D4A6194C8F61003E3680 /* list关注.png */; };
 		CD16D4AB194C8F61003E3680 /* list关注@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D4A7194C8F61003E3680 /* list关注@2x.png */; };
+		CD16D4B2194C99AD003E3680 /* menu_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D4B0194C99AD003E3680 /* menu_selected.png */; };
+		CD16D4B3194C99AD003E3680 /* menu_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD16D4B1194C99AD003E3680 /* menu_selected@2x.png */; };
 		CD4956DD192CD09000C9E90F /* reservation.html in Resources */ = {isa = PBXBuildFile; fileRef = CD4956DC192CD09000C9E90F /* reservation.html */; };
 		CD4956E1192CEDF700C9E90F /* ButtonGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */; };
 		CD4956E6192CEEEC00C9E90F /* buttonGroupSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4956E2192CEEEC00C9E90F /* buttonGroupSelected.png */; };
@@ -325,8 +325,6 @@
 		CD03BEB8192DE184000979DF /* checkRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkRight@2x.png"; sourceTree = "<group>"; };
 		CD03BEBB192DE939000979DF /* logotext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotext.png; sourceTree = "<group>"; };
 		CD03BEBC192DE939000979DF /* logotext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logotext@2x.png"; sourceTree = "<group>"; };
-		CD16D379194AAC83003E3680 /* menu_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_selected.png; path = "../../../../../../Pictures/项目/理想培育园/改的/切图/菜单/menu_selected.png"; sourceTree = "<group>"; };
-		CD16D37A194AAC83003E3680 /* menu_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu_selected@2x.png"; path = "../../../../../../Pictures/项目/理想培育园/改的/切图/菜单/menu_selected@2x.png"; sourceTree = "<group>"; };
 		CD16D396194B13A7003E3680 /* 步骤_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "步骤_normal.png"; sourceTree = "<group>"; };
 		CD16D397194B13A7003E3680 /* 步骤_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "步骤_selected.png"; sourceTree = "<group>"; };
 		CD16D398194B13A7003E3680 /* 食材_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "食材_normal.png"; sourceTree = "<group>"; };
@@ -415,6 +413,8 @@
 		CD16D4A5194C8F61003E3680 /* list粉丝@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list粉丝@2x.png"; sourceTree = "<group>"; };
 		CD16D4A6194C8F61003E3680 /* list关注.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list关注.png"; sourceTree = "<group>"; };
 		CD16D4A7194C8F61003E3680 /* list关注@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list关注@2x.png"; sourceTree = "<group>"; };
+		CD16D4B0194C99AD003E3680 /* menu_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_selected.png; sourceTree = "<group>"; };
+		CD16D4B1194C99AD003E3680 /* menu_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_selected@2x.png"; sourceTree = "<group>"; };
 		CD4956DC192CD09000C9E90F /* reservation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = reservation.html; path = farm/reservation.html; sourceTree = "<group>"; };
 		CD4956DF192CEDF700C9E90F /* ButtonGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGroupViewController.h; sourceTree = "<group>"; };
 		CD4956E0192CEDF700C9E90F /* ButtonGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGroupViewController.m; sourceTree = "<group>"; };
@@ -1011,8 +1011,8 @@
 		CD8EAA541932DA4F003133DA /* sidemenu */ = {
 			isa = PBXGroup;
 			children = (
-				CD16D379194AAC83003E3680 /* menu_selected.png */,
-				CD16D37A194AAC83003E3680 /* menu_selected@2x.png */,
+				CD16D4B0194C99AD003E3680 /* menu_selected.png */,
+				CD16D4B1194C99AD003E3680 /* menu_selected@2x.png */,
 				CD8EAA691932DD67003133DA /* 主页.png */,
 				CD8EAA6A1932DD67003133DA /* 主页@2x.png */,
 				CD8EAA6D1932DEEC003133DA /* 流行食谱.png */,
@@ -1355,7 +1355,6 @@
 				CD8EA990192F5BC6003133DA /* addStep1Selected.png in Resources */,
 				CDE47EC41942B05900C19955 /* city.plist in Resources */,
 				CD8EA939192EEC5F003133DA /* dashedLine.png in Resources */,
-				CD16D37B194AAC83003E3680 /* menu_selected.png in Resources */,
 				CDDF5F12192C697000D8B9CC /* addressSelect.html in Resources */,
 				CD8EAA7B1932DEEC003133DA /* 预约.png in Resources */,
 				CD03BE96192DC99F000979DF /* iconAlarm.png in Resources */,
@@ -1373,12 +1372,14 @@
 				CD8031B1192C482400AC7D4D /* loginBtn.png in Resources */,
 				CD8EAA751932DEEC003133DA /* 流行食谱.png in Resources */,
 				CD803199192BA86400AC7D4D /* Default.png in Resources */,
+				CD16D4B3194C99AD003E3680 /* menu_selected@2x.png in Resources */,
 				CD03BE99192DC99F000979DF /* iconInfo@2x.png in Resources */,
 				CDFF86D9193320730037CC59 /* btnPlus@2x.png in Resources */,
 				CDDF5F21192C82A000D8B9CC /* 在关注@2x.png in Resources */,
 				CD8EAA781932DEEC003133DA /* 设置@2x.png in Resources */,
 				CD8031A9192C3D5100AC7D4D /* tmp_login.png in Resources */,
 				CD8031A5192C3C2D00AC7D4D /* signinBG.png in Resources */,
+				CD16D4B2194C99AD003E3680 /* menu_selected.png in Resources */,
 				CD16D4AB194C8F61003E3680 /* list关注@2x.png in Resources */,
 				CD8EA99D192F60A6003133DA /* addStep2Normal.png in Resources */,
 				CDD0FE74192AE883000B7B26 /* cookbook-detail.html in Resources */,
@@ -1421,7 +1422,6 @@
 				CD16D483194C83B9003E3680 /* cb5图文步骤@2x.png in Resources */,
 				CDFF86D8193320730037CC59 /* btnPlus.png in Resources */,
 				CD998E3719455523003C101D /* iconNext.png in Resources */,
-				CD16D37C194AAC83003E3680 /* menu_selected@2x.png in Resources */,
 				CD8EA9A3192F60A6003133DA /* addStep3Selected.png in Resources */,
 				CD16D495194C83B9003E3680 /* cb7图文步骤@2x.png in Resources */,
 				CDFF86E1193344A90037CC59 /* tmp_regist_bg.png in Resources */,
