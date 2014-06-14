@@ -82,6 +82,17 @@ static CGFloat ImageWidth  = 320.0;
     _cookbookList.frame = CGRectMake(0, 20, 320, 480);
     [self.view1 addSubview:_cookbookList];
     
+    //followers
+    UIImageView *listFollowers = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"list粉丝.png"]];
+    listFollowers.frame = CGRectMake(0, 20, 320, 200);
+    listFollowers.contentMode = UIViewContentModeTop;
+    [self.view2 addSubview:listFollowers];
+    
+    UIImageView *listFollowing = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"list关注.png"]];
+    listFollowing.frame = CGRectMake(0, 20, 320, 200);
+    listFollowing.contentMode = UIViewContentModeTop;
+    [self.view3 addSubview:listFollowing];
+    
 }
 
 - (void) initTab
@@ -135,8 +146,8 @@ static CGFloat ImageWidth  = 320.0;
     _view3 = [[UIView alloc] initWithFrame:CGRectMake(320 * 2, 0, 320, 580)];
     
     _view1.backgroundColor = [UIColor clearColor];
-    _view2.backgroundColor = [UIColor greenColor];
-    _view3.backgroundColor = [UIColor blueColor];
+    _view2.backgroundColor = [UIColor clearColor];
+    _view3.backgroundColor = [UIColor clearColor];
     
     [slideContainer addSubview:_view1];
     [slideContainer addSubview:_view2];
