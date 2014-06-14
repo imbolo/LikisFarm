@@ -883,96 +883,12 @@
                     <view key="view" contentMode="scaleToFill" id="B7C-mO-dHM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJj-CW-6an">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cb3.png" translatesAutoresizingMaskIntoConstraints="NO" id="r5q-sx-riP">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="286" id="7Jt-Jg-n3l"/>
-                                        </constraints>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1V6-hI-Hcm">
-                                        <rect key="frame" x="0.0" y="338" width="320" height="280"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.77079020659999997" blue="0.75216239780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="WF9-Jv-Ydf"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cw-OJ-p0a">
-                                        <rect key="frame" x="0.0" y="297" width="107" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="食材_normal.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="食材_selected.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ol-Y7-rB0">
-                                        <rect key="frame" x="214" y="297" width="106" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="小贴士_normal.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="小贴士_selected.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSa-8V-oPO">
-                                        <rect key="frame" x="107" y="297" width="107" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="步骤_normal.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" image="步骤_selected.png"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="PSa-8V-oPO" firstAttribute="top" secondItem="3cw-OJ-p0a" secondAttribute="top" id="0CF-LI-pyb"/>
-                                    <constraint firstItem="r5q-sx-riP" firstAttribute="leading" secondItem="3cw-OJ-p0a" secondAttribute="leading" id="5xW-OB-Yt3"/>
-                                    <constraint firstItem="1V6-hI-Hcm" firstAttribute="top" secondItem="r5q-sx-riP" secondAttribute="bottom" constant="52" id="JwK-DW-Tg8"/>
-                                    <constraint firstAttribute="bottom" secondItem="1V6-hI-Hcm" secondAttribute="bottom" constant="-50" id="KR0-UB-BSq"/>
-                                    <constraint firstItem="PSa-8V-oPO" firstAttribute="centerX" secondItem="hJj-CW-6an" secondAttribute="centerX" id="PmO-VR-sKD"/>
-                                    <constraint firstItem="r5q-sx-riP" firstAttribute="trailing" secondItem="5ol-Y7-rB0" secondAttribute="trailing" id="QzK-uk-1gp"/>
-                                    <constraint firstItem="1V6-hI-Hcm" firstAttribute="centerX" secondItem="PSa-8V-oPO" secondAttribute="centerX" id="WYx-6h-pVS"/>
-                                    <constraint firstItem="1V6-hI-Hcm" firstAttribute="leading" secondItem="3cw-OJ-p0a" secondAttribute="leading" id="XnB-3l-rI1"/>
-                                    <constraint firstItem="5ol-Y7-rB0" firstAttribute="top" secondItem="PSa-8V-oPO" secondAttribute="top" id="al9-97-ev1"/>
-                                    <constraint firstItem="3cw-OJ-p0a" firstAttribute="top" secondItem="r5q-sx-riP" secondAttribute="bottom" constant="11" id="cCm-RK-XbG"/>
-                                    <constraint firstItem="r5q-sx-riP" firstAttribute="top" secondItem="hJj-CW-6an" secondAttribute="top" id="gux-G7-hvR"/>
-                                    <constraint firstAttribute="trailing" secondItem="r5q-sx-riP" secondAttribute="trailing" id="lV8-Uh-fWT"/>
-                                    <constraint firstItem="5ol-Y7-rB0" firstAttribute="trailing" secondItem="1V6-hI-Hcm" secondAttribute="trailing" id="tvD-8U-M8E"/>
-                                    <constraint firstItem="r5q-sx-riP" firstAttribute="leading" secondItem="hJj-CW-6an" secondAttribute="leading" id="udK-7Y-SxC"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
-                                        <size key="value" width="320" height="1000"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="frame">
-                                        <size key="value" width="320" height="480"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hJj-CW-6an" secondAttribute="bottom" id="92S-VB-M8Z"/>
-                            <constraint firstItem="hJj-CW-6an" firstAttribute="leading" secondItem="B7C-mO-dHM" secondAttribute="leading" id="Dfi-3B-gXY"/>
-                            <constraint firstAttribute="trailing" secondItem="hJj-CW-6an" secondAttribute="trailing" id="bmC-cb-FgP"/>
-                            <constraint firstItem="hJj-CW-6an" firstAttribute="top" secondItem="B7C-mO-dHM" secondAttribute="top" id="ugV-nl-in2"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="草莓乳酪挞" id="H5d-7I-I44"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
-                    <connections>
-                        <outlet property="scrollView" destination="hJj-CW-6an" id="NPx-yX-DQB"/>
-                        <outlet property="tab1" destination="3cw-OJ-p0a" id="BEh-eF-EhR"/>
-                        <outlet property="tab2" destination="PSa-8V-oPO" id="A6I-UO-AqB"/>
-                        <outlet property="tab3" destination="5ol-Y7-rB0" id="RAS-kM-fcD"/>
-                        <outlet property="topImage" destination="r5q-sx-riP" id="b13-Dp-Ek1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MgN-t2-Pfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1341,7 +1257,6 @@
         <image name="btnRegistSubmit.png" width="274" height="54"/>
         <image name="buttonGroupNormal.png" width="107" height="51"/>
         <image name="buttonGroupSelected.png" width="107" height="51"/>
-        <image name="cb3.png" width="640" height="572"/>
         <image name="centerTopImage.png" width="300" height="200"/>
         <image name="checkRight.png" width="22" height="16"/>
         <image name="iconAlarm.png" width="21" height="22"/>
@@ -1369,16 +1284,10 @@
         <image name="tmp_配送地址.png" width="308" height="46"/>
         <image name="toPayBtn.png" width="568" height="134"/>
         <image name="主页.png" width="74" height="24"/>
-        <image name="小贴士_normal.png" width="106" height="51"/>
-        <image name="小贴士_selected.png" width="106" height="51"/>
         <image name="我的培育园.png" width="131" height="22"/>
-        <image name="步骤_normal.png" width="107" height="51"/>
-        <image name="步骤_selected.png" width="107" height="51"/>
         <image name="流行食谱.png" width="121" height="26"/>
         <image name="设置.png" width="82" height="27"/>
         <image name="预约.png" width="85" height="25"/>
-        <image name="食材_normal.png" width="107" height="51"/>
-        <image name="食材_selected.png" width="107" height="51"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

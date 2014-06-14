@@ -14,9 +14,17 @@
 
 @property NSArray* cbNames;
 
+@property CGFloat tabHeight;
+
+@property UIImage* image1;
+@property UIImage* image2;
+@property UIImage* image3;
+
 @end
 
 @implementation CookbookDetailViewController
+
+@synthesize tabHeight;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,21 +43,105 @@
     
 }
 
+- (void) initUI
+{
+    //scroll view
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    [self.view addSubview: _scrollView];
+    
+    //top image
+    self.topImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 286)];
+    [self.scrollView addSubview:_topImage];
+    
+    //tab button
+    _tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 297, 107, 51)];
+    [_tab1 setBackgroundImage:[UIImage imageNamed:@"食材_normal.png"] forState:UIControlStateNormal];
+    [_tab1 setBackgroundImage:[UIImage imageNamed:@"食材_selected.png"] forState:UIControlStateSelected];
+    [_tab1 addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+    [_tab1 setSelected:YES];
+    [self.scrollView addSubview:_tab1];
+    [_tab1.layer setZPosition:100];
+    
+    _tab2 = [[UIButton alloc] initWithFrame:CGRectMake(107, 297, 107, 51)];
+    [_tab2 setBackgroundImage:[UIImage imageNamed:@"步骤_normal.png"] forState:UIControlStateNormal];
+    [_tab2 setBackgroundImage:[UIImage imageNamed:@"步骤_selected.png"] forState:UIControlStateSelected];
+    [_tab2 addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:_tab2];
+    [_tab2.layer setZPosition:100];
+    
+    _tab3 = [[UIButton alloc] initWithFrame:CGRectMake(214, 297, 107, 51)];
+    [_tab3 setBackgroundImage:[UIImage imageNamed:@"小贴士_normal.png"] forState:UIControlStateNormal];
+    [_tab3 setBackgroundImage:[UIImage imageNamed:@"小贴士_selected.png"] forState:UIControlStateSelected];
+    [_tab3 addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.scrollView addSubview:_tab3];
+    [_tab3.layer setZPosition:100];
+    
+    //contents
+    self.contents = [[UIView alloc] initWithFrame:CGRectMake(0, 338, 960, 800)];
+    [_contents setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"whiteBg.png"]]];
+    [self.scrollView addSubview:_contents];
+    
+    //view1
+    self.content1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, 283)];
+    _content1.contentMode = UIViewContentModeTop;
+    [self.contents addSubview:_content1];
+    
+    //view2
+    self.content2 = [[UIImageView alloc] initWithFrame:CGRectMake(320, 20, 320, 283)];
+    _content2.contentMode = UIViewContentModeTop;
+    [self.contents addSubview:_content2];
+    
+    //view3
+    self.content3 = [[UIImageView alloc] initWithFrame:CGRectMake(640, 20, 320, 283)];
+    _content3.contentMode = UIViewContentModeTop;
+    [self.contents addSubview:_content3];
+    
+
+}
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     self.scrollView.frame = self.view.bounds;
-    self.scrollView.contentSize = CGSizeMake(320, 800);
+    self.scrollView.contentSize = CGSizeMake(320, 380 + tabHeight);
+}
+
+- (void) resetContentHeight
+{
+    self.scrollView.contentSize = CGSizeMake(320, 380 + tabHeight);
+    CGFloat x = self.contents.frame.origin.x;
+    CGFloat y = self.contents.frame.origin.y;
+    [self.contents setFrame:CGRectMake(x, y, 960, 64 + tabHeight)];
+    
+}
+
+- (void)setTabContents: (id) index
+{
+    self.image1 = [UIImage imageNamed:[@"" stringByAppendingFormat:@"cb%@食材.png", index]];
+    [self.content1 setImage:self.image1];
+    
+    self.image2 = [UIImage imageNamed:[@"" stringByAppendingFormat:@"cb%@图文步骤.png", index]];
+    [self.content2 setImage:self.image2];
+    
+    self.image3 = [UIImage imageNamed:[@"" stringByAppendingFormat:@"cb%@小贴士.png", index]];
+    [self.content3 setImage:self.image3];
+    
+    tabHeight = self.image1.size.height;
+    [self.contents setFrame:CGRectMake(0, 338, 960, 64 + tabHeight)];
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     
     _cbNames = @[@"草莓酥", @"甘蓝沙拉", @"番茄通心粉", @"乳清牙酥", @"茄汁意大利面", @"可可蛋糕", @"玉米芝士挞", @"核桃迷迭燕麦"];
     
     NSLog(@"start load cookbook-detail");
+    
+    
     
     NSString* index = self.selectedIndex;
     NSString* topImageName = [@"" stringByAppendingFormat:@"cb%@.png", index];
@@ -62,9 +154,14 @@
     NSLog([_cbNames objectAtIndex:idx]);
     
     
+    [self initUI];
+    
+    
     [self.topImage setImage:[UIImage imageNamed:topImageName]];
     
-    [self initTab];
+    [self setTabContents:index];
+    
+    
     
     //load html
 //    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"cookbook-detail" ofType:@"html"];
@@ -115,29 +212,37 @@
     int index = 0;
     if (button == self.tab1) {
         index = 0;
+        tabHeight = self.image1.size.height;
     }
     else if (button == self.tab2) {
         index = 1;
+        tabHeight = self.image2.size.height;
     }
     else if (button == self.tab3) {
         index = 2;
+        tabHeight = self.image3.size.height;
     }
-    //    [UIView animateWithDuration:0.3
-    //                          delay:0
-    //                        options:UIViewAnimationCurveEaseOut
-    //                     animations:^
-    //     {
-    //         CGRect frame = _containerView.frame;
-    //         //         frame.origin.y = 0;
-    //         frame.origin.x = -(320 * (index));
-    //         _containerView.frame = frame;
-    //
-    //     }
-    //                     completion:^(BOOL finished)
-    //     {
-    //         NSLog(@"Fade out Completed");
-    //         //              [splashView ];
-    //     }];
+    
+    tabHeight = tabHeight < 100 ? 290 : tabHeight;
+    
+    [self resetContentHeight];
+    
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseOut
+                     animations:^
+     {
+         CGRect frame = _contents.frame;
+         //         frame.origin.y = 0;
+         frame.origin.x = -(320 * (index));
+         _contents.frame = frame;
+         
+     }
+                     completion:^(BOOL finished)
+     {
+         NSLog(@"Fade out Completed");
+         //              [splashView ];
+     }];
     
     
 }

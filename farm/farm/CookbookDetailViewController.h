@@ -12,13 +12,19 @@
 @interface CookbookDetailViewController : BaseViewController
 
 //@property (strong, nonatomic) IBOutlet UIWebView *webView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 
-@property (weak, nonatomic) IBOutlet UIImageView *topImage;
+@property (retain, nonatomic) IBOutlet UIImageView *topImage;
 
-@property (weak, nonatomic) IBOutlet UIButton *tab1;
-@property (weak, nonatomic) IBOutlet UIButton *tab2;
-@property (weak, nonatomic) IBOutlet UIButton *tab3;
+@property (retain, nonatomic) IBOutlet UIButton *tab1;
+@property (retain, nonatomic) IBOutlet UIButton *tab2;
+@property (retain, nonatomic) IBOutlet UIButton *tab3;
+
+@property (retain, nonatomic) IBOutlet UIView *contents;
+@property (retain, nonatomic) IBOutlet UIImageView *content1;
+@property (retain, nonatomic) IBOutlet UIImageView *content2;
+@property (retain, nonatomic) IBOutlet UIImageView *content3;
+
 
 
 - (void)getLastController:(CookbookViewController *) lastViewController;
