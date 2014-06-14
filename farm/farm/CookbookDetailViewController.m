@@ -12,6 +12,8 @@
 
 @property NSString* selectedIndex;
 
+@property NSArray* cbNames;
+
 @end
 
 @implementation CookbookDetailViewController
@@ -44,14 +46,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
+    _cbNames = @[@"草莓酥", @"甘蓝沙拉", @"番茄通心粉", @"乳清牙酥", @"茄汁意大利面", @"可可蛋糕", @"玉米芝士挞", @"核桃迷迭燕麦"];
     
     NSLog(@"start load cookbook-detail");
     
-    NSString* topImageName = self.selectedIndex;
-    topImageName = [@"" stringByAppendingFormat:@"cb%@.png", topImageName];
+    NSString* index = self.selectedIndex;
+    NSString* topImageName = [@"" stringByAppendingFormat:@"cb%@.png", index];
     
-    NSLog(topImageName);
+    NSUInteger* idx = [index integerValue] - 1;
+    
+    self.navigationItem.title = [_cbNames objectAtIndex:idx];
+    
+    
+    NSLog([_cbNames objectAtIndex:idx]);
+    
     
     [self.topImage setImage:[UIImage imageNamed:topImageName]];
     

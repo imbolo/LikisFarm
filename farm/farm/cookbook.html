@@ -21,26 +21,26 @@
 		.item {
 			width: 150px;
 			height: 160px;
+			margin-top: 12px;
 /*			background: #afa;*/
+/*			opacity: 0.5;*/
 		}
 		</style>
 	</head>
 	<body>
 		<img id="list" src="www/cookbook-list.png" width="320" alt="Cookbook List">
 		<ul class="clickArea">
-			<li>
-				<div class="item" data-val="1"> </div>
-			</li>
-			<li>
-				<div class="item" data-val="2"> </div>
-			</li>
-			<li>
-				<div class="item" data-val="3"> </div>
-			</li>
+			
 		</ul>
 		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>		
 		<script type="text/javascript">
-		$('.clickArea .item').on('tap', function(ev) {
+		var markUp = "";
+		for (var i=0; i<8; i++) {
+			markUp += "<li><div class='item' data-val='"+ (i+1) +"'></div></li>";
+		}
+		$('.clickArea').html(markUp);
+		
+		$('.clickArea').on('tap', '.item',function(ev) {
 			window.location.href = "action:goto:cookbook-detail?" + $(this).attr('data-val');
 			// alert($(this).html());
 		});
