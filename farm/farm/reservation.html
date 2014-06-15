@@ -147,30 +147,53 @@
 		}	
 		.about .title {
 			position: absolute;
-			top: 10px;
-			left: 160px;
+			top: 16px;
+			left: 130px;
+			font-size: 14px;
+			text-align: left;
 		}
 		.about .content {
 			position: absolute;
-			top: 60px;
-			left: 80px;
-			height: 140px;
-			width: 160px;
+			top: 70px;
+			left: 70px;
+			padding-top: 8px;
+			height: 124px;
+			width: 184px;
 			text-align: left;
 			overflow: scroll;
 			-webkit-overflow-scrolling: touch;
+			border-top: 1px #fff dashed;
+			font-size: 12px;
 		}
 		.about .icon {
 			position: absolute;
-			top: 10px;
-			left: 80px;
+			top: 16px;
+			left: 66px;
 			height: 30px;
 			width: 30px;
-			background: #faa;
+/*			background: #faa;*/
 		}
         </style>
     </head>
     <body>
+		<script id="foodItemTpl" type="text/template">
+			<div class="food-item">
+				<img class='foodImg' src="{{foodImg}}" width="240px" />
+				<div class="about" style="display:none">
+					<img class="aboutBg" src="www/reservation/foods/about.png" width="240px" />
+					<div class="icon">
+						<img src="{{aboutIcon}}" width="50" alt="印章">
+					</div>
+					<div class="title">
+						{{title}}
+					</div>
+					
+					<div class="content">
+						{{content}}
+					</div>
+				</div>
+			</div>
+		</script>
 		<div class="topMenu">
 			<ul id="listMenu">
 				<li class="current">西兰花</li>
@@ -186,20 +209,15 @@
 				<div class="about" style="display:none">
 					<img class="aboutBg" src="www/reservation/foods/about.png" width="240px" />
 					<div class="icon">
-						
+						<img src="www/reservation/foods/关于西兰花-印章.png" width="50" alt="关于西兰花 印章">
 					</div>
 					<div class="title">
-						title
+						栽培到收获：10周<br>
+						栽培季节：夏季
 					</div>
+					
 					<div class="content">
-						content<br />
-						content<br />
-						content<br />
-						content<br />
-						content<br />
-						content<br />
-						content<br />
-						content<br />
+						番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。
 					</div>
 				</div>
 			</div>
@@ -242,6 +260,60 @@
 		
 		<script type="text/javascript" src="www/zepto.min.js"></script>
 		<script type="text/javascript">
+		
+		//渲染函数
+		function render(data, tpl) {
+			var str = "";
+			var tmpTpl;
+			$.each(data, function(index, item) {
+				tmpTpl = tpl;
+				for (var key in item) {				
+					tmpTpl = tmpTpl.replace("{{"+ key +"}}", item[key]);
+				}
+				str += tmpTpl;				
+			});			
+			return str;
+		}
+		
+		var data = [
+		{
+			foodImg: 'www/reservation/foods/xilanhua.png',
+			aboutIcon: 'www/reservation/foods/关于西兰花-印章.png',
+			title: '栽培到收获：13周<br>栽培季节：秋季',
+			content: '西兰花，富含丰富维生素C和膳食纤维，还含有具强效抗癌性能的多种营养成分, 如二吲哚甲烷和少量硒。每一百克西兰花就含有89.2毫克的维他命C。当中发现一种叫做3,3\'-二吲哚甲烷的物质，对人的先天免疫系统好比一个有效的调制器，具有抗病毒，抗细菌和抗肿瘤活性作用。'
+		},
+		{
+			foodImg: 'www/reservation/foods/fanqie.png',
+			aboutIcon: 'www/reservation/foods/关于番茄-印章.png',
+			title: '栽培到收获：10周<br>栽培季节：夏季',
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+		},
+		{
+			foodImg: 'www/reservation/foods/ziganlan.png',
+			aboutIcon: 'www/reservation/foods/关于紫甘蓝-印章.png',
+			title: '栽培到收获：10周<br>栽培季节：夏季',
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+		},
+		{
+			foodImg: 'www/reservation/foods/caomei.png',
+			aboutIcon: 'www/reservation/foods/关于草莓-印章.png',
+			title: '栽培到收获：10周<br>栽培季节：夏季',
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+		},
+		{
+			foodImg: 'www/reservation/foods/lusun.png',
+			aboutIcon: 'www/reservation/foods/关于芦笋-印章.png',
+			title: '栽培到收获：10周<br>栽培季节：夏季',
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+		}
+		];
+		
+		$(function(){
+			var template = $('#foodItemTpl').html();	
+								
+			$('#food-list').html( render(data, template) );				
+							
+		});		
 		
 		$('#food-list').on('tap', '.food-item', function(ev) {
 			$(this).find('.foodImg').hide();
