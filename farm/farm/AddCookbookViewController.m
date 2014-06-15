@@ -139,6 +139,8 @@ int currentIndex = 0;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title添加食谱"]];
+    
     [self initUI];
     [self initNavigationBar];
 }

@@ -29,6 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title设置"]];
+    
     //side menu
     [self.revealButtonItem setTarget: self.revealViewController];
     [self.revealButtonItem setAction: @selector( revealToggle: )];

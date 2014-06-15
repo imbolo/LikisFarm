@@ -28,6 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title培育事项"]];
+    
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"peiyushixiang" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     

@@ -234,6 +234,8 @@ static CGFloat ImageWidth  = 320.0;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title我的小厨"]];
+    
     [self initUI];
     
     //侧边菜单

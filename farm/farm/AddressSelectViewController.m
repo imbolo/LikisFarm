@@ -28,6 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title配送地址"]];
+    
     //load html
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"addressSelect" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];

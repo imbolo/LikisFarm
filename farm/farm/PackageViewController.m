@@ -75,6 +75,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title果实包装"]];
+    
     [self initUI];
     
     self.count = 0;

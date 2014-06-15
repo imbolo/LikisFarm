@@ -29,6 +29,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title我的培育园"]];
+    
     //side menu
     //侧边菜单
     //侧边菜单

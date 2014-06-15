@@ -29,6 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title我的待办"]];
     
     //侧边菜单
     [self.revealButtonItem setTarget: self.revealViewController];
