@@ -346,35 +346,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71b-Tg-Elh">
-                                <rect key="frame" x="82" y="139" width="42" height="21"/>
+                                <rect key="frame" x="83" y="139" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.96862751245498657" green="0.5215686559677124" blue="0.44705885648727417" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58e-HN-fsn">
-                                <rect key="frame" x="210" y="139" width="42" height="21"/>
+                                <rect key="frame" x="211" y="139" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.57647061347961426" green="0.90196084976196289" blue="0.7882353663444519" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhX-3V-amV">
-                                <rect key="frame" x="57" y="228" width="42" height="21"/>
+                                <rect key="frame" x="58" y="227" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <color key="textColor" red="0.96862751250000001" green="0.52156865600000002" blue="0.44705885649999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="70%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fC-d4-fHI">
-                                <rect key="frame" x="207" y="228" width="42" height="21"/>
+                                <rect key="frame" x="208" y="227" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-bl-MV5">
-                                <rect key="frame" x="170" y="296" width="32" height="32"/>
+                                <rect key="frame" x="171" y="295" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="btnMinus.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -384,7 +384,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-6x-OX9">
-                                <rect key="frame" x="250" y="296" width="32" height="32"/>
+                                <rect key="frame" x="252" y="295" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="btnPlus.png"/>
                                 <connections>
@@ -392,7 +392,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7Q-ej-0wF">
-                                <rect key="frame" x="209" y="301" width="35" height="21"/>
+                                <rect key="frame" x="210" y="301" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -438,7 +438,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVY-Tl-jga">
-                                <rect key="frame" x="-39" y="169" width="400" height="53"/>
+                                <rect key="frame" x="-39" y="167" width="400" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="addressBtn.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1251,11 +1251,11 @@
         <image name="addAddress.png" width="320" height="214"/>
         <image name="addressBtn.png" width="281" height="45"/>
         <image name="backButton.png" width="20" height="19"/>
-        <image name="btnMinus.png" width="33" height="33"/>
-        <image name="btnPlus.png" width="33" height="33"/>
+        <image name="btnMinus.png" width="32" height="32"/>
+        <image name="btnPlus.png" width="32" height="32"/>
         <image name="btnRegist.png" width="42" height="13"/>
         <image name="btnRegistSubmit.png" width="274" height="54"/>
-        <image name="buttonGroupNormal.png" width="107" height="51"/>
+        <image name="buttonGroupNormal.png" width="106" height="51"/>
         <image name="buttonGroupSelected.png" width="107" height="51"/>
         <image name="centerTopImage.png" width="300" height="200"/>
         <image name="checkRight.png" width="22" height="16"/>
@@ -1270,7 +1270,7 @@
         <image name="loginBtn.png" width="269" height="50"/>
         <image name="logotext.png" width="257" height="93"/>
         <image name="order-background.png" width="624" height="738"/>
-        <image name="shopcart.png" width="611" height="815"/>
+        <image name="shopcart.png" width="305" height="407"/>
         <image name="sideLogo.png" width="175" height="240"/>
         <image name="sidemenuBg.png" width="246" height="443"/>
         <image name="slider-track-fill.png" width="74" height="8"/>
@@ -1278,11 +1278,11 @@
         <image name="tmp_login.png" width="271" height="247"/>
         <image name="tmp_modifypwd.png" width="308" height="46"/>
         <image name="tmp_modifypwdTableBG.png" width="312" height="165"/>
-        <image name="tmp_package.png" width="618" height="799"/>
+        <image name="tmp_package.png" width="309" height="399"/>
         <image name="tmp_personalcenterTable.png" width="320" height="213"/>
         <image name="tmp_regist_bg.png" width="320" height="204"/>
         <image name="tmp_配送地址.png" width="308" height="46"/>
-        <image name="toPayBtn.png" width="568" height="134"/>
+        <image name="toPayBtn.png" width="284" height="67"/>
         <image name="主页.png" width="74" height="24"/>
         <image name="我的培育园.png" width="131" height="22"/>
         <image name="流行食谱.png" width="121" height="26"/>
