@@ -38,7 +38,7 @@ static CGFloat ImageWidth  = 320.0;
     
     //view
     UIView* horizontalBar = [[UIView alloc] initWithFrame:CGRectMake(0, 180, 320, 60)];
-    horizontalBar.backgroundColor = [UIColor blackColor];
+    horizontalBar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"centerBarBg.png"]];
     [self.bottomScrollView addSubview:horizontalBar];
     
     //favour button

@@ -174,11 +174,11 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oux-SD-bDG">
-                                <rect key="frame" x="26" y="341" width="269" height="50"/>
+                                <rect key="frame" x="26" y="341" width="274" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
-                                <state key="normal" image="loginBtn.png">
+                                <state key="normal" image="登录-按钮.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -190,9 +190,9 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qga-0N-z9R">
-                                <rect key="frame" x="112" y="407" width="97" height="22"/>
+                                <rect key="frame" x="135" y="407" width="51" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btnRegist.png">
+                                <state key="normal" backgroundImage="新用户.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -783,7 +783,7 @@
                                 <rect key="frame" x="27" y="64" width="267" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="-8" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="退出登录" backgroundImage="buttonGroupNormal.png">
+                                <state key="normal" backgroundImage="退出登录-按钮.png">
                                     <color key="titleColor" red="0.36862745879999997" green="0.8078432083" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1202,13 +1202,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="order-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-xw-DNi">
-                                <rect key="frame" x="10" y="0.0" width="300" height="352"/>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="order-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-xw-DNi">
+                                <rect key="frame" x="10" y="10" width="300" height="453"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="toPayBtn.png" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-Uw-Rzg">
-                                <rect key="frame" x="53" y="351" width="255" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1253,7 +1249,6 @@
         <image name="backButton.png" width="20" height="19"/>
         <image name="btnMinus.png" width="32" height="32"/>
         <image name="btnPlus.png" width="32" height="32"/>
-        <image name="btnRegist.png" width="42" height="13"/>
         <image name="btnRegistSubmit.png" width="274" height="54"/>
         <image name="buttonGroupNormal.png" width="106" height="51"/>
         <image name="buttonGroupSelected.png" width="107" height="51"/>
@@ -1267,9 +1262,8 @@
         <image name="iconMenu.png" width="20" height="14"/>
         <image name="iconPerson.png" width="19" height="22"/>
         <image name="iconShopcart.png" width="22" height="19"/>
-        <image name="loginBtn.png" width="269" height="50"/>
         <image name="logotext.png" width="257" height="93"/>
-        <image name="order-background.png" width="624" height="738"/>
+        <image name="order-background.png" width="305" height="407"/>
         <image name="shopcart.png" width="305" height="407"/>
         <image name="sideLogo.png" width="175" height="240"/>
         <image name="sidemenuBg.png" width="246" height="443"/>
@@ -1282,11 +1276,13 @@
         <image name="tmp_personalcenterTable.png" width="320" height="213"/>
         <image name="tmp_regist_bg.png" width="320" height="204"/>
         <image name="tmp_配送地址.png" width="308" height="46"/>
-        <image name="toPayBtn.png" width="284" height="67"/>
         <image name="主页.png" width="74" height="24"/>
         <image name="我的培育园.png" width="131" height="22"/>
+        <image name="新用户.png" width="102" height="45"/>
         <image name="流行食谱.png" width="121" height="26"/>
+        <image name="登录-按钮.png" width="540" height="111"/>
         <image name="设置.png" width="82" height="27"/>
+        <image name="退出登录-按钮.png" width="549" height="108"/>
         <image name="预约.png" width="85" height="25"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
