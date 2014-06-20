@@ -31,7 +31,7 @@ static CGFloat ImageWidth  = 320.0;
     
     
     //icon
-    UIImageView* icon = [[UIImageView alloc] initWithFrame:CGRectMake(26, 98, 99, 128)];
+    UIImageView* icon = [[UIImageView alloc] initWithFrame:CGRectMake(19, 102, 99, 128)];
     [icon setImage:[UIImage imageNamed:@"sideLogo.png"]];
     [self.bottomScrollView addSubview:icon];
     icon.layer.zPosition = 100;
@@ -44,7 +44,7 @@ static CGFloat ImageWidth  = 320.0;
     //favour button
     UIButton* favourButton = [[UIButton alloc] initWithFrame:CGRectMake(112, 17, 105, 22)];
     [favourButton setImage:[UIImage imageNamed:@"赞.png"] forState:UIControlStateNormal];
-    [favourButton setTitle:@"12" forState:UIControlStateNormal];
+    [favourButton setTitle:@"2301" forState:UIControlStateNormal];
     [horizontalBar addSubview:favourButton];
     
     //follow button
@@ -78,18 +78,18 @@ static CGFloat ImageWidth  = 320.0;
     [self initTab];
     
     //add image list for test
-    _cookbookList = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tmp_cblist.png"]];
-    _cookbookList.frame = CGRectMake(0, 20, 320, 480);
+    _cookbookList = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"taining的食谱.png"]];
+    _cookbookList.frame = CGRectMake(0, 0, 320, 1930);
     [self.view1 addSubview:_cookbookList];
     
     //followers
     UIImageView *listFollowers = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"list粉丝.png"]];
-    listFollowers.frame = CGRectMake(0, 20, 320, 200);
+    listFollowers.frame = CGRectMake(0, 0, 320, 200);
     listFollowers.contentMode = UIViewContentModeTop;
     [self.view2 addSubview:listFollowers];
     
     UIImageView *listFollowing = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"list关注.png"]];
-    listFollowing.frame = CGRectMake(0, 20, 320, 200);
+    listFollowing.frame = CGRectMake(0, 0, 320, 200);
     listFollowing.contentMode = UIViewContentModeTop;
     [self.view3 addSubview:listFollowing];
     
@@ -225,7 +225,7 @@ static CGFloat ImageWidth  = 320.0;
 {
     [super viewDidAppear:animated];
     NSLog(@"before %f", self.bottomScrollView.contentSize.height);
-    [self.bottomScrollView setContentSize:CGSizeMake(320, 800)];
+    [self.bottomScrollView setContentSize:CGSizeMake(320, 2240)];
     NSLog(@"after  %f", self.bottomScrollView.contentSize.height);
 }
 

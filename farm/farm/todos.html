@@ -77,6 +77,10 @@
         </ul>
 		<script src="www/zepto.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+		var isTest = false;
+		function addTodoItem() {
+			isTest = true;
+		}
 		//渲染函数
 		function render(data, tpl) {
 			var str = "";
@@ -93,9 +97,26 @@
 		
 		$(function(){
 			var template = $('#listTemplate').html();	
-			
+			window.location.href = "action:event:documentready";
 			$.getJSON('http://ch.mrcoder.org:3000/todos', function(data) {			
 				console.log(data);
+				if (isTest) {
+					data = [
+					{
+						date: '6月27日~29日',
+						content: '番茄需要侧芽'
+					},
+					{
+						date: '7月4日~6日',
+						content: '草莓需要追肥第3次'
+					},
+					{
+						date: '7月11日~13日',
+						content: '胡萝卜可以收获了'
+					}
+					];
+			
+				}
 				$('#todoList').html( render(data, template) );				
 			});		
 			

@@ -54,7 +54,7 @@
     [self.scrollView addSubview:_topImage];
     
     //tab button
-    _tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 297, 107, 51)];
+    _tab1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 287, 107, 51)];
     [_tab1 setBackgroundImage:[UIImage imageNamed:@"食材_normal.png"] forState:UIControlStateNormal];
     [_tab1 setBackgroundImage:[UIImage imageNamed:@"食材_selected.png"] forState:UIControlStateSelected];
     [_tab1 addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -62,24 +62,30 @@
     [self.scrollView addSubview:_tab1];
     [_tab1.layer setZPosition:100];
     
-    _tab2 = [[UIButton alloc] initWithFrame:CGRectMake(107, 297, 107, 51)];
+    _tab2 = [[UIButton alloc] initWithFrame:CGRectMake(107, 287, 107, 51)];
     [_tab2 setBackgroundImage:[UIImage imageNamed:@"步骤_normal.png"] forState:UIControlStateNormal];
     [_tab2 setBackgroundImage:[UIImage imageNamed:@"步骤_selected.png"] forState:UIControlStateSelected];
     [_tab2 addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:_tab2];
     [_tab2.layer setZPosition:100];
     
-    _tab3 = [[UIButton alloc] initWithFrame:CGRectMake(214, 297, 107, 51)];
+    _tab3 = [[UIButton alloc] initWithFrame:CGRectMake(214, 287, 107, 51)];
     [_tab3 setBackgroundImage:[UIImage imageNamed:@"小贴士_normal.png"] forState:UIControlStateNormal];
     [_tab3 setBackgroundImage:[UIImage imageNamed:@"小贴士_selected.png"] forState:UIControlStateSelected];
     [_tab3 addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:_tab3];
     [_tab3.layer setZPosition:100];
     
+    //
+    UIView* vi = [[UIView alloc] initWithFrame:CGRectMake(0, 328, 960, 40)];
+    [vi setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"whiteBg.png"]]];
+    [self.scrollView addSubview:vi];
     //contents
-    self.contents = [[UIView alloc] initWithFrame:CGRectMake(0, 338, 960, 800)];
+    self.contents = [[UIView alloc] initWithFrame:CGRectMake(0, 328, 960, 800)];
     [_contents setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"whiteBg.png"]]];
     [self.scrollView addSubview:_contents];
+    
+    
     
     //view1
     self.content1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, 283)];
@@ -104,6 +110,7 @@
     [super viewDidAppear:animated];
     self.scrollView.frame = self.view.bounds;
     self.scrollView.contentSize = CGSizeMake(320, 380 + tabHeight);
+    
 }
 
 - (void) resetContentHeight
@@ -234,6 +241,7 @@
      {
          CGRect frame = _contents.frame;
          //         frame.origin.y = 0;
+//         frame.origin.y = 328;
          frame.origin.x = -(320 * (index));
          _contents.frame = frame;
          

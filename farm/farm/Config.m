@@ -16,8 +16,11 @@
     
     @synchronized(self)
     {
-        if (!instance)
+        if (!instance) {
             instance = [[Config alloc] init];
+            instance.todoCount = @"2";
+        }
+        
         
         return instance;
     }

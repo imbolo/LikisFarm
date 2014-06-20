@@ -12,4 +12,6 @@
 
 + (Config *) getInstance;
 
+@property NSString* todoCount;
+
 @end

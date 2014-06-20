@@ -8,6 +8,7 @@
 
 #import "TodosViewController.h"
 #import "SWRevealViewController.h"
+#import "Config.h"
 
 @interface TodosViewController ()
 
@@ -43,10 +44,12 @@
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSURL *baseURL = [NSURL fileURLWithPath:path];
 //    _webView
+    _webView.delegate = self;
 //    transparent background
     _webView.backgroundColor = [UIColor clearColor];
     _webView.opaque = NO;
     [_webView loadHTMLString:htmlString baseURL:baseURL];
+    
 //    _webView.scrollView.scrollEnabled = NO;
 //    _webView.scrollView.bounces = NO;
     
@@ -56,6 +59,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSString* url = [request.URL absoluteString];
+    
+    //    NSArray* param = [url componentsSeparatedByString:@"?"];
+    
+    if ([url isEqual: @"action:event:documentready"]) {
+        
+        if ([[Config getInstance].todoCount isEqual:@"3"]) {
+         
+            [_webView stringByEvaluatingJavaScriptFromString:@"addTodoItem();"];
+        }
+    }
+
+    return YES;
 }
 
 /*

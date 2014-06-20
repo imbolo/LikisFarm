@@ -12,4 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textFiledUserName;
 
+
+@property (retain, nonatomic) IBOutlet UIImageView *logoView;
+@property (weak, nonatomic) IBOutlet UIView *formView;
+
 @end

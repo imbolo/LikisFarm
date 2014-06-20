@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XG6-Z6-ZL6"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tpc-1P-mze"/>
+                        <viewControllerLayoutGuide type="top" id="Ui5-sH-MeI"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHW-ab-mEq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -48,8 +48,8 @@
             <objects>
                 <viewController id="YSN-Xk-ypw" customClass="ButtonGroupViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sJf-kq-PzX"/>
-                        <viewControllerLayoutGuide type="bottom" id="KRh-dO-Z2t"/>
+                        <viewControllerLayoutGuide type="top" id="lk1-Tg-F8W"/>
+                        <viewControllerLayoutGuide type="bottom" id="bqh-eq-5bb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BxH-9w-Q88">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -143,62 +143,65 @@
             <objects>
                 <viewController storyboardIdentifier="siginVC" id="cpM-Cp-3BB" customClass="SignInViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6B2-Mn-bvZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="gyC-HG-aog"/>
+                        <viewControllerLayoutGuide type="top" id="LA1-Xj-wzc"/>
+                        <viewControllerLayoutGuide type="bottom" id="rqT-5V-ls2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="inY-ys-NkK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tmp_login.png" translatesAutoresizingMaskIntoConstraints="NO" id="aqS-lk-xze">
-                                <rect key="frame" x="26" y="150" width="269" height="241"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-fL-0zo" customClass="ZTextFiled">
-                                <rect key="frame" x="68" y="257" width="216" height="24"/>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7n8-Ig-BE7">
+                                <rect key="frame" x="0.0" y="242" width="320" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                <connections>
-                                    <action selector="inputOnFocus:" destination="cpM-Cp-3BB" eventType="editingDidBegin" id="hX6-sv-jxK"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="密码" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="B40-Lz-uF4" customClass="ZTextFiled">
-                                <rect key="frame" x="68" y="306" width="216" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
-                                <connections>
-                                    <action selector="inputOnFocus:" destination="cpM-Cp-3BB" eventType="editingDidBegin" id="2Ap-Vx-YV7"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oux-SD-bDG">
-                                <rect key="frame" x="26" y="341" width="274" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inputs.png" translatesAutoresizingMaskIntoConstraints="NO" id="aqS-lk-xze">
+                                        <rect key="frame" x="26" y="0.0" width="269" height="121"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-fL-0zo" customClass="ZTextFiled">
+                                        <rect key="frame" x="67" y="18" width="216" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <connections>
+                                            <action selector="inputOnFocus:" destination="cpM-Cp-3BB" eventType="editingDidBegin" id="hX6-sv-jxK"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="密码" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="B40-Lz-uF4" customClass="ZTextFiled">
+                                        <rect key="frame" x="67" y="79" width="216" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="inputOnFocus:" destination="cpM-Cp-3BB" eventType="editingDidBegin" id="2Ap-Vx-YV7"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oux-SD-bDG">
+                                        <rect key="frame" x="26" y="122" width="274" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                        <state key="normal" image="登录-按钮.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" id="eRZ-dF-ss9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qga-0N-z9R">
+                                        <rect key="frame" x="135" y="188" width="51" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="新用户.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registBtnClicked:" destination="cpM-Cp-3BB" eventType="touchUpInside" id="ucR-6g-Lgw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
-                                <state key="normal" image="登录-按钮.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="loginSegue" id="0ei-Ms-wkt"/>
-                                </connections>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logotext.png" translatesAutoresizingMaskIntoConstraints="NO" id="YKt-EK-k6g">
-                                <rect key="frame" x="33" y="58" width="257" height="93"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qga-0N-z9R">
-                                <rect key="frame" x="135" y="407" width="51" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="新用户.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="registBtnClicked:" destination="cpM-Cp-3BB" eventType="touchUpInside" id="ucR-6g-Lgw"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -206,6 +209,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="formView" destination="7n8-Ig-BE7" id="1F6-hx-8hF"/>
                         <outlet property="textFiledUserName" destination="BWt-fL-0zo" id="kJQ-Nl-fru"/>
                     </connections>
                 </viewController>
@@ -218,8 +222,8 @@
             <objects>
                 <viewController storyboardIdentifier="regist" id="fYY-qO-qpY" customClass="RegistViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KzG-2m-Vwq"/>
-                        <viewControllerLayoutGuide type="bottom" id="mI6-83-VCf"/>
+                        <viewControllerLayoutGuide type="top" id="5E9-Sy-wVZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cHs-a7-3LK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bDA-GP-fCq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -292,14 +296,14 @@
             <objects>
                 <viewController id="17T-Io-0vj" customClass="MyFarmViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ufg-WG-9o1"/>
-                        <viewControllerLayoutGuide type="bottom" id="xkO-JX-qGP"/>
+                        <viewControllerLayoutGuide type="top" id="Jl8-cP-2P0"/>
+                        <viewControllerLayoutGuide type="bottom" id="WA3-b8-f4E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vd2-xH-CUx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYF-Kd-1Yl">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYF-Kd-1Yl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -309,12 +313,6 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="oYF-Kd-1Yl" firstAttribute="leading" secondItem="vd2-xH-CUx" secondAttribute="leading" id="4fP-fP-2tE"/>
-                            <constraint firstAttribute="bottom" secondItem="oYF-Kd-1Yl" secondAttribute="bottom" id="Tqy-Wr-Ws7"/>
-                            <constraint firstItem="oYF-Kd-1Yl" firstAttribute="top" secondItem="vd2-xH-CUx" secondAttribute="top" id="sbF-bt-wBs"/>
-                            <constraint firstAttribute="trailing" secondItem="oYF-Kd-1Yl" secondAttribute="trailing" id="z3o-g4-9gG"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="我的培育园" id="Rxd-yW-JOW">
                         <barButtonItem key="leftBarButtonItem" image="iconMenu.png" id="IoW-Tp-UlO"/>
@@ -334,8 +332,8 @@
             <objects>
                 <viewController storyboardIdentifier="packagefood" id="mRx-Ug-GzS" customClass="PackageViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="50k-Gb-QNn"/>
-                        <viewControllerLayoutGuide type="bottom" id="nvK-DD-AaO"/>
+                        <viewControllerLayoutGuide type="top" id="CYR-wf-guj"/>
+                        <viewControllerLayoutGuide type="bottom" id="pYY-ve-yGA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4U7-by-QSt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -426,8 +424,8 @@
             <objects>
                 <viewController storyboardIdentifier="shopcart" id="Xeh-G4-XgI" customClass="PackageDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rof-Ia-dxV"/>
-                        <viewControllerLayoutGuide type="bottom" id="re2-8c-6f9"/>
+                        <viewControllerLayoutGuide type="top" id="hu5-s0-5sc"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Yl-gL-ua6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3CU-iu-HD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -462,8 +460,8 @@
             <objects>
                 <viewController storyboardIdentifier="addressSelect" id="5n0-bM-0o1" customClass="AddressSelectViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xfY-xE-McM"/>
-                        <viewControllerLayoutGuide type="bottom" id="vdC-M7-ISh"/>
+                        <viewControllerLayoutGuide type="top" id="DaY-Cr-x1S"/>
+                        <viewControllerLayoutGuide type="bottom" id="OZp-sB-rpE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NIQ-Xt-h38">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -498,8 +496,8 @@
             <objects>
                 <viewController storyboardIdentifier="addAddress" id="OH3-Ta-sOH" customClass="AddAddressViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vUt-K5-2lh"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vk0-j5-vy1"/>
+                        <viewControllerLayoutGuide type="top" id="FiA-gU-DIb"/>
+                        <viewControllerLayoutGuide type="bottom" id="VR8-YE-RIO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Ry-V0-h3g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -571,8 +569,8 @@
             <objects>
                 <viewController storyboardIdentifier="peiyushixiang" title="培育事项" id="Yya-i9-0Ik" customClass="PeiyushixiangViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ivS-Ik-eki"/>
-                        <viewControllerLayoutGuide type="bottom" id="joa-0M-3VQ"/>
+                        <viewControllerLayoutGuide type="top" id="jsI-VR-Dez"/>
+                        <viewControllerLayoutGuide type="bottom" id="GQ1-Iu-B8r"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wsI-c3-gaH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -602,8 +600,8 @@
             <objects>
                 <viewController storyboardIdentifier="cookbook" title="流行食谱" id="6pe-vN-okh" customClass="CookbookViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RJ3-ul-OgM"/>
-                        <viewControllerLayoutGuide type="bottom" id="wXy-Ce-TsO"/>
+                        <viewControllerLayoutGuide type="top" id="dBS-Ok-cDu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZJU-im-Nx0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gti-Hl-1oV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -620,10 +618,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="bUw-Iz-UeS" secondAttribute="trailing" id="6ww-nV-u0K"/>
-                            <constraint firstItem="bUw-Iz-UeS" firstAttribute="leading" secondItem="Gti-Hl-1oV" secondAttribute="leading" id="DLe-Ie-Vr1"/>
-                            <constraint firstItem="bUw-Iz-UeS" firstAttribute="top" secondItem="Gti-Hl-1oV" secondAttribute="top" id="OCY-Da-6ga"/>
-                            <constraint firstAttribute="bottom" secondItem="bUw-Iz-UeS" secondAttribute="bottom" id="jyq-Wn-AGE"/>
+                            <constraint firstItem="bUw-Iz-UeS" firstAttribute="leading" secondItem="Gti-Hl-1oV" secondAttribute="leading" id="12Q-zn-aOn"/>
+                            <constraint firstAttribute="trailing" secondItem="bUw-Iz-UeS" secondAttribute="trailing" id="6jK-lI-vIO"/>
+                            <constraint firstAttribute="bottom" secondItem="bUw-Iz-UeS" secondAttribute="bottom" id="c1V-PZ-K80"/>
+                            <constraint firstItem="bUw-Iz-UeS" firstAttribute="top" secondItem="Gti-Hl-1oV" secondAttribute="top" id="uQo-l9-tJ0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="流行食谱" id="Geh-cN-JDX">
@@ -646,8 +644,8 @@
             <objects>
                 <viewController title="Settings" id="wjl-fG-YSh" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bC4-CU-nei"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZVX-h1-4jy"/>
+                        <viewControllerLayoutGuide type="top" id="j0Z-lS-i7Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="gDo-bf-c3H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7Uf-fx-LVE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -762,8 +760,8 @@
             <objects>
                 <viewController storyboardIdentifier="personalCenter" id="SbH-QE-5gS" customClass="PersonalCenterViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XSa-no-3UG"/>
-                        <viewControllerLayoutGuide type="bottom" id="mfW-7V-3vA"/>
+                        <viewControllerLayoutGuide type="top" id="b0i-b0-4vP"/>
+                        <viewControllerLayoutGuide type="bottom" id="cXF-7B-XJa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0qi-OA-mE6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -829,8 +827,8 @@
             <objects>
                 <viewController storyboardIdentifier="modifyPwdView" id="jTy-x9-Cdw" customClass="ModifyPwdViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gwc-FT-OIS"/>
-                        <viewControllerLayoutGuide type="bottom" id="wlo-h1-Kqd"/>
+                        <viewControllerLayoutGuide type="top" id="Ruw-a6-ZRH"/>
+                        <viewControllerLayoutGuide type="bottom" id="zf5-SW-LIe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gay-vX-oZO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -877,8 +875,8 @@
             <objects>
                 <viewController storyboardIdentifier="cookbook-detail" id="Sv4-GN-3Uo" customClass="CookbookDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rGV-7v-VU5"/>
-                        <viewControllerLayoutGuide type="bottom" id="aiR-rV-rrg"/>
+                        <viewControllerLayoutGuide type="top" id="9hv-0q-lvU"/>
+                        <viewControllerLayoutGuide type="bottom" id="WRa-Ff-G7I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B7C-mO-dHM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -899,8 +897,8 @@
             <objects>
                 <viewController storyboardIdentifier="addcookbook" id="Qpx-Sb-Di0" customClass="AddCookbookViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kIe-8D-Idg"/>
-                        <viewControllerLayoutGuide type="bottom" id="Trh-OG-GIk"/>
+                        <viewControllerLayoutGuide type="top" id="ePz-hW-5oX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Td7-nZ-Chx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nZ2-I1-L6M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -937,8 +935,8 @@
             <objects>
                 <viewController title="我的小厨" id="nue-bh-602" customClass="MyCenterViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f2t-Ok-7JO"/>
-                        <viewControllerLayoutGuide type="bottom" id="dAX-kX-x7q"/>
+                        <viewControllerLayoutGuide type="top" id="TI9-NU-8nh"/>
+                        <viewControllerLayoutGuide type="bottom" id="0bz-Xt-LB2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IEY-46-ClE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -975,8 +973,8 @@
             <objects>
                 <viewController id="vad-xq-Vaf" customClass="TodosViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4C7-hp-fXZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="HTQ-sc-qaS"/>
+                        <viewControllerLayoutGuide type="top" id="d42-eo-SWs"/>
+                        <viewControllerLayoutGuide type="bottom" id="DUf-N3-mBf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ccb-oH-uQ0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1008,8 +1006,8 @@
             <objects>
                 <viewController id="c9J-5h-gME" customClass="SideMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cCX-fL-hly"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xlx-Xe-iMl"/>
+                        <viewControllerLayoutGuide type="top" id="xK2-jk-suK"/>
+                        <viewControllerLayoutGuide type="bottom" id="pya-Gi-9HN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0va-L2-MQg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1132,7 +1130,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sideLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="zsY-9a-9vU">
-                                <rect key="frame" x="70" y="40" width="87" height="114"/>
+                                <rect key="frame" x="70" y="45" width="87" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1151,8 +1149,8 @@
             <objects>
                 <viewController id="miC-4I-23m" customClass="ReservationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h4v-q0-z5W"/>
-                        <viewControllerLayoutGuide type="bottom" id="eGs-L5-etY"/>
+                        <viewControllerLayoutGuide type="top" id="Btz-Z6-86B"/>
+                        <viewControllerLayoutGuide type="bottom" id="565-4e-BB6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bMK-41-s89">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1166,10 +1164,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NSp-5P-neH" firstAttribute="leading" secondItem="bMK-41-s89" secondAttribute="leading" id="3bN-ff-va4"/>
-                            <constraint firstAttribute="bottom" secondItem="NSp-5P-neH" secondAttribute="bottom" id="Fp3-co-Ghs"/>
-                            <constraint firstAttribute="trailing" secondItem="NSp-5P-neH" secondAttribute="trailing" id="Jjp-lb-E8E"/>
-                            <constraint firstItem="NSp-5P-neH" firstAttribute="top" secondItem="bMK-41-s89" secondAttribute="top" id="RZv-wK-FBo"/>
+                            <constraint firstItem="NSp-5P-neH" firstAttribute="leading" secondItem="bMK-41-s89" secondAttribute="leading" id="1gM-rF-Au8"/>
+                            <constraint firstItem="NSp-5P-neH" firstAttribute="top" secondItem="bMK-41-s89" secondAttribute="top" id="TmJ-Zg-oRQ"/>
+                            <constraint firstAttribute="bottom" secondItem="NSp-5P-neH" secondAttribute="bottom" id="e1j-8T-w7c"/>
+                            <constraint firstAttribute="trailing" secondItem="NSp-5P-neH" secondAttribute="trailing" id="rWP-YW-jLx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="预 约" id="ZC7-D6-ejP">
@@ -1195,8 +1193,8 @@
             <objects>
                 <viewController storyboardIdentifier="orderDetailView" id="lCh-fD-3UT" customClass="OrderDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pBN-TH-XHV"/>
-                        <viewControllerLayoutGuide type="bottom" id="UVr-ZL-hvO"/>
+                        <viewControllerLayoutGuide type="top" id="YFe-Ez-foz"/>
+                        <viewControllerLayoutGuide type="bottom" id="HRO-IH-7Rb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1ZS-sR-upF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1221,8 +1219,8 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="S9d-Nr-6xA" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aAm-98-egi"/>
-                        <viewControllerLayoutGuide type="bottom" id="EHi-GV-vBw"/>
+                        <viewControllerLayoutGuide type="top" id="XXI-Vo-8JP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ge8-D7-Rzj"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hsP-hi-MkZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -1249,7 +1247,7 @@
         <image name="backButton.png" width="20" height="19"/>
         <image name="btnMinus.png" width="32" height="32"/>
         <image name="btnPlus.png" width="32" height="32"/>
-        <image name="btnRegistSubmit.png" width="274" height="54"/>
+        <image name="btnRegistSubmit.png" width="278" height="59"/>
         <image name="buttonGroupNormal.png" width="106" height="51"/>
         <image name="buttonGroupSelected.png" width="107" height="51"/>
         <image name="centerTopImage.png" width="300" height="200"/>
@@ -1262,20 +1260,19 @@
         <image name="iconMenu.png" width="20" height="14"/>
         <image name="iconPerson.png" width="19" height="22"/>
         <image name="iconShopcart.png" width="22" height="19"/>
-        <image name="logotext.png" width="257" height="93"/>
+        <image name="inputs.png" width="271" height="115"/>
         <image name="order-background.png" width="305" height="407"/>
         <image name="shopcart.png" width="305" height="407"/>
         <image name="sideLogo.png" width="175" height="240"/>
         <image name="sidemenuBg.png" width="246" height="443"/>
         <image name="slider-track-fill.png" width="74" height="8"/>
         <image name="slider-track.png" width="257" height="8"/>
-        <image name="tmp_login.png" width="271" height="247"/>
-        <image name="tmp_modifypwd.png" width="308" height="46"/>
+        <image name="tmp_modifypwd.png" width="307" height="46"/>
         <image name="tmp_modifypwdTableBG.png" width="312" height="165"/>
         <image name="tmp_package.png" width="309" height="399"/>
         <image name="tmp_personalcenterTable.png" width="320" height="213"/>
         <image name="tmp_regist_bg.png" width="320" height="204"/>
-        <image name="tmp_配送地址.png" width="308" height="46"/>
+        <image name="tmp_配送地址.png" width="307" height="46"/>
         <image name="主页.png" width="74" height="24"/>
         <image name="我的培育园.png" width="131" height="22"/>
         <image name="新用户.png" width="102" height="45"/>

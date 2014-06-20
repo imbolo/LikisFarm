@@ -28,14 +28,53 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    _logoView = [[UIImageView alloc] initWithFrame:CGRectMake(14, 116, 293, 142)];
+    [_logoView setImage:[UIImage imageNamed:@"logo.png"]];
+    [self.view addSubview:_logoView];
+    
     //background image
-    UIImage* image = [UIImage imageNamed:@"signinBG.png"];
+    UIImage* image = [UIImage imageNamed:@"底纹.png"];
     self.view.layer.contents = (id) image.CGImage;
     //hide top bar
     self.navigationController.navigationBarHidden = YES;
     
+    CGRect frame = _logoView.frame;
+    //         frame.origin.y = 0;
+    frame.origin.y = 116;
+    _logoView.frame = frame;
+
     
 //    [self.text addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self playAnimation];
+}
+
+- (void) playAnimation
+{
+    [UIImageView animateWithDuration:1.2
+                          delay:0
+                        options:UIViewAnimationCurveEaseOut
+                     animations:^
+     {
+         CGRect frame = _logoView.frame;
+         //         frame.origin.y = 0;
+         frame.origin.y = 56;
+         _logoView.frame = frame;
+         
+     }
+                     completion:^(BOOL finished)
+     {
+         NSLog(@"Fade out Completed");
+         _formView.hidden = NO;
+         
+         CGRect rect = _logoView.frame;
+         [_logoView setFrame:CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)];
+     }];
 }
 
 - (void)textFieldDidChange:(id)sender

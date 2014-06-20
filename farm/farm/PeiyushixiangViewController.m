@@ -7,6 +7,7 @@
 //
 
 #import "PeiyushixiangViewController.h"
+#import "Config.h"
 
 @interface PeiyushixiangViewController ()
 
@@ -62,7 +63,13 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-//    request.URL;
+    NSString* url = [request.URL absoluteString];
+    
+//    NSArray* param = [url componentsSeparatedByString:@"?"];
+    
+    if ([url isEqual: @"action:operation:addtodo"]) {
+        [Config getInstance].todoCount = @"3";
+    }
     return YES;
 }
 
