@@ -203,6 +203,7 @@
 				<li>紫甘蓝</li>
 				<li>草莓</li>
 				<li>芦笋</li>
+				<li>胡萝卜</li>
 			</ul>
 		</div>
 		<div id="food-list" class="food-list">
@@ -235,6 +236,9 @@
 			<div class="food-item">
 				<img class='foodImg' src="www/reservation/foods/lusun.png" width="240px" />
 			</div>
+			<div class="food-item">
+				<img class='foodImg' src="www/reservation/foods/huluobo.png" width="240px" />
+			</div>
 		</div>		
 		
 		<div class="arrow">
@@ -245,7 +249,7 @@
 			<div class="count">
 				
 				<div class="cost">
-					<img src="www/tmp_price.png" style="width: 94px; margin-top: 14px; margin-left: 8px" />
+					<img id="imgPrice" src="www/reservation/foods/西兰花价格-27.png" style="width: 108px; margin-top: 14px; margin-left: 8px" />
 					<!-- <span class="font-yahei" style="margin-left: 3px;">¥</span>
 					<span class="font-yahei" style="margin-left: -4px">27</span>
 					<img style="width: 20px;margin-left: -17px;vertical-align: -14px;" src="www/slash.png" />
@@ -282,31 +286,43 @@
 			foodImg: 'www/reservation/foods/xilanhua.png',
 			aboutIcon: 'www/reservation/foods/关于西兰花-印章.png',
 			title: '栽培到收获：13周<br>栽培季节：秋季',
-			content: '西兰花，富含丰富维生素C和膳食纤维，还含有具强效抗癌性能的多种营养成分, 如二吲哚甲烷和少量硒。每一百克西兰花就含有89.2毫克的维他命C。当中发现一种叫做3,3\'-二吲哚甲烷的物质，对人的先天免疫系统好比一个有效的调制器，具有抗病毒，抗细菌和抗肿瘤活性作用。'
+			content: '西兰花，富含丰富维生素C和膳食纤维，还含有具强效抗癌性能的多种营养成分, 如二吲哚甲烷和少量硒。每一百克西兰花就含有89.2毫克的维他命C。当中发现一种叫做3,3\'-二吲哚甲烷的物质，对人的先天免疫系统好比一个有效的调制器，具有抗病毒，抗细菌和抗肿瘤活性作用。',
+			price: 'www/reservation/foods/西兰花价格-27.png'
 		},
 		{
 			foodImg: 'www/reservation/foods/fanqie.png',
 			aboutIcon: 'www/reservation/foods/关于番茄-印章.png',
 			title: '栽培到收获：10周<br>栽培季节：夏季',
-			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。',
+			price: 'www/reservation/foods/番茄价格-23.png'
 		},
 		{
 			foodImg: 'www/reservation/foods/ziganlan.png',
 			aboutIcon: 'www/reservation/foods/关于紫甘蓝-印章.png',
 			title: '栽培到收获：10周<br>栽培季节：夏季',
-			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。',
+			price: 'www/reservation/foods/紫甘蓝价格-32.png'
 		},
 		{
 			foodImg: 'www/reservation/foods/caomei.png',
 			aboutIcon: 'www/reservation/foods/关于草莓-印章.png',
 			title: '栽培到收获：10周<br>栽培季节：夏季',
-			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。',
+			price: 'www/reservation/foods/草莓价格-20.png'
 		},
 		{
 			foodImg: 'www/reservation/foods/lusun.png',
 			aboutIcon: 'www/reservation/foods/关于芦笋-印章.png',
 			title: '栽培到收获：10周<br>栽培季节：夏季',
-			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。'
+			content: '番茄，为一年生茄科草本植物。果实营养丰富，具特殊风味。具有减肥瘦身、消除疲劳、增进食欲、提高对蛋白质的消化、减少胃胀食积等功效。由于番茄中维生素A、维生素C的比例合适，所以常吃可增强小血管功能，预防血管老化。另外，还可以美容和治愈口疮（可含些番茄汁，使其接触疮面，每次数分钟，每日数次，效果显著）。',
+			price: 'www/reservation/foods/芦笋价格-33_5根.png'
+		},
+		{
+			foodImg: 'www/reservation/foods/huluobo.png',
+			aboutIcon: 'www/reservation/foods/关于胡萝卜-印章.png',
+			title: '栽培到收获：10周<br>栽培季节：春季',
+			content: '胡萝卜，是伞形科二年生草本植物，以呈肉质的根作为蔬菜来食用。肉质根富含蔗糖、葡萄糖、淀粉、胡萝卜素以及钾、钙、磷等。每100克鲜重含1.67～12.1毫克胡萝卜素，含量高于番茄的5～7倍，食用后经肠胃消化分解成维生素A，能防治夜盲症和呼吸道疾病。胡萝卜可以抗癌，有地下“小人参”之称。',
+			price: 'www/reservation/foods/胡萝卜价格-18.png'
 		}
 		];
 		
@@ -332,6 +348,7 @@
 			var countText = $('#count');
 			var topMenuList = $('#listMenu li');
 			var foodList = $('#food-list');
+			var priceImg = $('#imgPrice');
 			var mvStep = 10.2,
 				translateX = 0,
 				leftBound = 0;
@@ -375,6 +392,9 @@
 			function selectItem(index) {				
 				topMenuList.removeClass('current');
 				topMenuList[index].className = "current";
+				
+				priceImg.attr('src', data[index].price);
+				
 				moveMenuItemToScreen($(topMenuList[index]));
 			}
 			function moveMenuItemToScreen(item) {
